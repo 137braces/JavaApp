@@ -7,7 +7,9 @@
         <title>Hello Template</title>
     </head>
     <body>
-        <h1>Hello Template</h1>
+        <h1>こんにちは、テンプレートさん</h1>
         <%= new java.util.Date() %>
+        <% String message = (String)request.getAttribute("message");%>
+        <p><%= message %></p>
     </body>
 </html>
