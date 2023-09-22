@@ -1,0 +1,788 @@
+22-Sep-2023 16:09:06.173 情報 [Catalina-utility-1] org.apache.catalina.startup.HostConfig.deployDirectory Web アプリケーションディレクトリ [/Users/aokihayata/aoki_app/tomcat/webapps/ProEnv] を配備します
+22-Sep-2023 16:09:06.388 情報 [Catalina-utility-1] org.apache.catalina.startup.HostConfig.deployDirectory ディレクトリ [/Users/aokihayata/aoki_app/tomcat/webapps/ProEnv] の Web アプリケーションの配備は [259] ミリ秒で完了しました。
+22-Sep-2023 16:54:34.410 情報 [Catalina-utility-2] org.apache.catalina.startup.HostConfig.undeploy コンテキストパス [/mydatabase] のWebアプリケーションの配備を解除します
+22-Sep-2023 16:54:34.495 警告 [Catalina-utility-2] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc Web アプリケーション [mydatabase] は自身で登録した JDBC ドライバー [com.mysql.cj.jdbc.Driver] を停止時に解除できませんでした。メモリーリークの発生を防ぐには JDBC ドライバーを強制的に解除してください。
+22-Sep-2023 16:54:34.513 警告 [Catalina-utility-2] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads Webアプリケーション [mydatabase] は [mysql-cj-abandoned-connection-cleanup] という名前のスレッドを開始したようですが、停止に失敗しました。これはメモリリークを引き起こす可能性が非常に高いです。スレッドのスタックトレース: 
+ java.base@16.0.1/java.lang.Object.wait(Native Method)
+ java.base@16.0.1/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:155)
+ com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.run(AbandonedConnectionCleanupThread.java:91)
+ java.base@16.0.1/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+ java.base@16.0.1/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+ java.base@16.0.1/java.lang.Thread.run(Thread.java:831)
+22-Sep-2023 16:54:39.062 情報 [mysql-cj-abandoned-connection-cleanup] org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading 不正なアクセス: このWebアプリケーションのインスタンスは既に停止されています  Could not load []. 不正なアクセスを引き起こしたスレッドを終了させ、投げられたエラーによりデバッグ用に次のスタックトレースが生成されましたが，機能に影響はありません
+	java.lang.IllegalStateException: 不正なアクセス: このWebアプリケーションのインスタンスは既に停止されています  Could not load []. 不正なアクセスを引き起こしたスレッドを終了させ、投げられたエラーによりデバッグ用に次のスタックトレースが生成されましたが，機能に影響はありません
+		at org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading(WebappClassLoaderBase.java:1457)
+		at org.apache.catalina.loader.WebappClassLoaderBase.getResource(WebappClassLoaderBase.java:1047)
+		at com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.checkThreadContextClassLoader(AbandonedConnectionCleanupThread.java:123)
+		at com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.run(AbandonedConnectionCleanupThread.java:90)
+		at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+		at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+		at java.base/java.lang.Thread.run(Thread.java:831)
+22-Sep-2023 16:54:44.584 情報 [Catalina-utility-2] org.apache.catalina.startup.HostConfig.deployDirectory Web アプリケーションディレクトリ [/Users/aokihayata/aoki_app/tomcat/webapps/mydatabase] を配備します
+22-Sep-2023 16:54:44.625 情報 [Catalina-utility-2] org.apache.catalina.startup.HostConfig.deployDirectory ディレクトリ [/Users/aokihayata/aoki_app/tomcat/webapps/mydatabase] の Web アプリケーションの配備は [40] ミリ秒で完了しました。
+22-Sep-2023 21:14:16.821 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log Serverのバージョン名:     Apache Tomcat/10.1.13
+22-Sep-2023 21:14:16.826 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log Server ビルド:            Aug 23 2023 21:34:59 UTC
+22-Sep-2023 21:14:16.826 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log サーバーのバージョン番号: 10.1.13.0
+22-Sep-2023 21:14:16.826 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log OS 名:                    Mac OS X
+22-Sep-2023 21:14:16.826 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log OS バージョン:            11.5
+22-Sep-2023 21:14:16.826 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log アーキテクチャ:           x86_64
+22-Sep-2023 21:14:16.826 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:                /Library/Java/JavaVirtualMachines/jdk-16.0.1.jdk/Contents/Home
+22-Sep-2023 21:14:16.826 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log JVM バージョン:           16.0.1+9-24
+22-Sep-2023 21:14:16.827 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log JVM ベンダ:               Oracle Corporation
+22-Sep-2023 21:14:16.827 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:            /Users/aokihayata/aoki_app/tomcat
+22-Sep-2023 21:14:16.827 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:            /Users/aokihayata/aoki_app/tomcat
+22-Sep-2023 21:14:16.849 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       -Djava.util.logging.config.file=/Users/aokihayata/aoki_app/tomcat/conf/logging.properties
+22-Sep-2023 21:14:16.849 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+22-Sep-2023 21:14:16.849 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       -Djdk.tls.ephemeralDHKeySize=2048
+22-Sep-2023 21:14:16.850 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+22-Sep-2023 21:14:16.850 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+22-Sep-2023 21:14:16.850 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       --add-opens=java.base/java.lang=ALL-UNNAMED
+22-Sep-2023 21:14:16.850 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       --add-opens=java.base/java.io=ALL-UNNAMED
+22-Sep-2023 21:14:16.850 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       --add-opens=java.base/java.util=ALL-UNNAMED
+22-Sep-2023 21:14:16.850 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+22-Sep-2023 21:14:16.850 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+22-Sep-2023 21:14:16.851 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       -Dcatalina.base=/Users/aokihayata/aoki_app/tomcat
+22-Sep-2023 21:14:16.851 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       -Dcatalina.home=/Users/aokihayata/aoki_app/tomcat
+22-Sep-2023 21:14:16.851 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       -Djava.io.tmpdir=/Users/aokihayata/aoki_app/tomcat/temp
+22-Sep-2023 21:14:16.857 情報 [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent 商用環境に最適な性能を発揮する APR ベースの Tomcat ネイティブライブラリが java.library.path [/Users/aokihayata/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.] に存在しません。
+22-Sep-2023 21:14:17.097 情報 [main] org.apache.coyote.AbstractProtocol.init プロトコルハンドラ ["http-nio-8080"] を初期化します。
+22-Sep-2023 21:14:17.128 重大 [main] org.apache.catalina.util.LifecycleBase.handleSubClassException コンポーネント [Connector["http-nio-8080"]] の初期化に失敗しました
+	org.apache.catalina.LifecycleException: プロトコルハンドラの初期化に失敗しました
+		at org.apache.catalina.connector.Connector.initInternal(Connector.java:1015)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:127)
+		at org.apache.catalina.core.StandardService.initInternal(StandardService.java:554)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:127)
+		at org.apache.catalina.core.StandardServer.initInternal(StandardServer.java:1011)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:127)
+		at org.apache.catalina.startup.Catalina.load(Catalina.java:747)
+		at org.apache.catalina.startup.Catalina.load(Catalina.java:769)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+		at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+		at org.apache.catalina.startup.Bootstrap.load(Bootstrap.java:307)
+		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:477)
+	Caused by: java.net.BindException: Address already in use
+		at java.base/sun.nio.ch.Net.bind0(Native Method)
+		at java.base/sun.nio.ch.Net.bind(Net.java:552)
+		at java.base/sun.nio.ch.ServerSocketChannelImpl.netBind(ServerSocketChannelImpl.java:336)
+		at java.base/sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:294)
+		at org.apache.tomcat.util.net.NioEndpoint.initServerSocket(NioEndpoint.java:247)
+		at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:202)
+		at org.apache.tomcat.util.net.AbstractEndpoint.bindWithCleanup(AbstractEndpoint.java:1278)
+		at org.apache.tomcat.util.net.AbstractEndpoint.init(AbstractEndpoint.java:1291)
+		at org.apache.coyote.AbstractProtocol.init(AbstractProtocol.java:622)
+		at org.apache.coyote.http11.AbstractHttp11Protocol.init(AbstractHttp11Protocol.java:77)
+		at org.apache.catalina.connector.Connector.initInternal(Connector.java:1013)
+		... 13 more
+22-Sep-2023 21:14:17.129 情報 [main] org.apache.catalina.startup.Catalina.load サーバーの初期化 [529] ミリ秒
+22-Sep-2023 21:14:17.175 情報 [main] org.apache.catalina.core.StandardService.startInternal サービス [Catalina] を起動します
+22-Sep-2023 21:14:17.175 情報 [main] org.apache.catalina.core.StandardEngine.startInternal サーブレットエンジンの起動：[Apache Tomcat/10.1.13]
+22-Sep-2023 21:14:17.183 情報 [main] org.apache.catalina.startup.HostConfig.deployDescriptor 配備記述子 [/Users/aokihayata/aoki_app/tomcat/conf/Catalina/localhost/mywork.xml] を配備します
+22-Sep-2023 21:14:17.486 情報 [main] org.apache.catalina.startup.HostConfig.deployDescriptor 配備記述子 [/Users/aokihayata/aoki_app/tomcat/conf/Catalina/localhost/mywork.xml] の展開が [300] ミリ秒で完了しました
+22-Sep-2023 21:14:17.487 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory Web アプリケーションディレクトリ [/Users/aokihayata/aoki_app/tomcat/webapps/ProEnv] を配備します
+22-Sep-2023 21:14:17.515 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory ディレクトリ [/Users/aokihayata/aoki_app/tomcat/webapps/ProEnv] の Web アプリケーションの配備は [27] ミリ秒で完了しました。
+22-Sep-2023 21:14:17.515 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory Web アプリケーションディレクトリ [/Users/aokihayata/aoki_app/tomcat/webapps/docs] を配備します
+22-Sep-2023 21:14:17.538 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory ディレクトリ [/Users/aokihayata/aoki_app/tomcat/webapps/docs] の Web アプリケーションの配備は [23] ミリ秒で完了しました。
+22-Sep-2023 21:14:17.538 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory Web アプリケーションディレクトリ [/Users/aokihayata/aoki_app/tomcat/webapps/manager] を配備します
+22-Sep-2023 21:14:17.574 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory ディレクトリ [/Users/aokihayata/aoki_app/tomcat/webapps/manager] の Web アプリケーションの配備は [36] ミリ秒で完了しました。
+22-Sep-2023 21:14:17.574 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory Web アプリケーションディレクトリ [/Users/aokihayata/aoki_app/tomcat/webapps/examples] を配備します
+22-Sep-2023 21:14:17.855 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory ディレクトリ [/Users/aokihayata/aoki_app/tomcat/webapps/examples] の Web アプリケーションの配備は [281] ミリ秒で完了しました。
+22-Sep-2023 21:14:17.856 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory Web アプリケーションディレクトリ [/Users/aokihayata/aoki_app/tomcat/webapps/ROOT] を配備します
+22-Sep-2023 21:14:17.868 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory ディレクトリ [/Users/aokihayata/aoki_app/tomcat/webapps/ROOT] の Web アプリケーションの配備は [13] ミリ秒で完了しました。
+22-Sep-2023 21:14:17.869 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory Web アプリケーションディレクトリ [/Users/aokihayata/aoki_app/tomcat/webapps/mydatabase] を配備します
+22-Sep-2023 21:14:17.881 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory ディレクトリ [/Users/aokihayata/aoki_app/tomcat/webapps/mydatabase] の Web アプリケーションの配備は [12] ミリ秒で完了しました。
+22-Sep-2023 21:14:17.881 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory Web アプリケーションディレクトリ [/Users/aokihayata/aoki_app/tomcat/webapps/host-manager] を配備します
+22-Sep-2023 21:14:17.898 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory ディレクトリ [/Users/aokihayata/aoki_app/tomcat/webapps/host-manager] の Web アプリケーションの配備は [17] ミリ秒で完了しました。
+22-Sep-2023 21:14:17.901 情報 [main] org.apache.catalina.startup.Catalina.start サーバーの起動 [771] ミリ秒
+22-Sep-2023 21:14:17.907 重大 [main] org.apache.catalina.core.StandardServer.await アドレス [localhost] のポート番号 [8005] にサーバー停止ソケットを作成できませんでした (基本ポート番号は [8005]、オフセットは [0] です)
+	java.net.BindException: Address already in use
+		at java.base/sun.nio.ch.Net.bind0(Native Method)
+		at java.base/sun.nio.ch.Net.bind(Net.java:552)
+		at java.base/sun.nio.ch.Net.bind(Net.java:541)
+		at java.base/sun.nio.ch.NioSocketImpl.bind(NioSocketImpl.java:643)
+		at java.base/java.net.ServerSocket.bind(ServerSocket.java:395)
+		at java.base/java.net.ServerSocket.<init>(ServerSocket.java:281)
+		at org.apache.catalina.core.StandardServer.await(StandardServer.java:578)
+		at org.apache.catalina.startup.Catalina.await(Catalina.java:887)
+		at org.apache.catalina.startup.Catalina.start(Catalina.java:833)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+		at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+		at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:347)
+		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:478)
+22-Sep-2023 21:14:17.908 情報 [main] org.apache.coyote.AbstractProtocol.pause ProtocolHandler ["http-nio-8080"] を一時停止します。
+22-Sep-2023 21:14:17.908 情報 [main] org.apache.catalina.core.StandardService.stopInternal サービス [Catalina] を停止します
+22-Sep-2023 21:14:17.930 情報 [main] org.apache.coyote.AbstractProtocol.stop ProtocolHandler ["http-nio-8080"]の停止中
+22-Sep-2023 21:14:17.931 情報 [main] org.apache.coyote.AbstractProtocol.destroy ProtocolHandler ["http-nio-8080"] を破棄します。
+22-Sep-2023 21:17:23.427 情報 [Catalina-utility-2] org.apache.catalina.startup.HostConfig.reload リロード中のコンテキスト [/ProEnv]
+22-Sep-2023 21:17:23.430 情報 [Catalina-utility-2] org.apache.catalina.core.StandardContext.reload このコンテキストの再ロードを開始しました
+22-Sep-2023 21:17:23.507 情報 [Catalina-utility-2] org.apache.catalina.core.StandardContext.reload このコンテキストの再ロードが完了しました
+22-Sep-2023 21:18:43.538 情報 [Catalina-utility-1] org.apache.catalina.startup.HostConfig.reload リロード中のコンテキスト [/ProEnv]
+22-Sep-2023 21:18:43.538 情報 [Catalina-utility-1] org.apache.catalina.core.StandardContext.reload このコンテキストの再ロードを開始しました
+22-Sep-2023 21:18:43.583 情報 [Catalina-utility-1] org.apache.catalina.core.StandardContext.reload このコンテキストの再ロードが完了しました
+22-Sep-2023 21:20:38.164 情報 [main] org.apache.catalina.core.StandardServer.await 有効なシャットダウンコマンドがシャットダウンポート経由で受信されました。 サーバーインスタンスを停止します。
+22-Sep-2023 21:20:38.168 情報 [main] org.apache.coyote.AbstractProtocol.pause ProtocolHandler ["http-nio-8080"] を一時停止します。
+22-Sep-2023 21:20:38.174 情報 [main] org.apache.catalina.core.StandardService.stopInternal サービス [Catalina] を停止します
+22-Sep-2023 21:20:38.199 情報 [main] org.apache.coyote.AbstractProtocol.stop ProtocolHandler ["http-nio-8080"]の停止中
+22-Sep-2023 21:20:38.254 情報 [main] org.apache.coyote.AbstractProtocol.destroy ProtocolHandler ["http-nio-8080"] を破棄します。
+22-Sep-2023 21:20:52.200 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log Serverのバージョン名:     Apache Tomcat/10.1.13
+22-Sep-2023 21:20:52.203 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log Server ビルド:            Aug 23 2023 21:34:59 UTC
+22-Sep-2023 21:20:52.204 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log サーバーのバージョン番号: 10.1.13.0
+22-Sep-2023 21:20:52.204 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log OS 名:                    Mac OS X
+22-Sep-2023 21:20:52.204 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log OS バージョン:            11.5
+22-Sep-2023 21:20:52.204 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log アーキテクチャ:           x86_64
+22-Sep-2023 21:20:52.204 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:                /Library/Java/JavaVirtualMachines/jdk-16.0.1.jdk/Contents/Home
+22-Sep-2023 21:20:52.204 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log JVM バージョン:           16.0.1+9-24
+22-Sep-2023 21:20:52.204 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log JVM ベンダ:               Oracle Corporation
+22-Sep-2023 21:20:52.204 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:            /Users/aokihayata/aoki_app/tomcat
+22-Sep-2023 21:20:52.204 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:            /Users/aokihayata/aoki_app/tomcat
+22-Sep-2023 21:20:52.217 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       -Djava.util.logging.config.file=/Users/aokihayata/aoki_app/tomcat/conf/logging.properties
+22-Sep-2023 21:20:52.217 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+22-Sep-2023 21:20:52.217 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       -Djdk.tls.ephemeralDHKeySize=2048
+22-Sep-2023 21:20:52.217 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+22-Sep-2023 21:20:52.217 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+22-Sep-2023 21:20:52.217 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       --add-opens=java.base/java.lang=ALL-UNNAMED
+22-Sep-2023 21:20:52.218 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       --add-opens=java.base/java.io=ALL-UNNAMED
+22-Sep-2023 21:20:52.218 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       --add-opens=java.base/java.util=ALL-UNNAMED
+22-Sep-2023 21:20:52.218 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+22-Sep-2023 21:20:52.218 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+22-Sep-2023 21:20:52.218 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       -Dcatalina.base=/Users/aokihayata/aoki_app/tomcat
+22-Sep-2023 21:20:52.218 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       -Dcatalina.home=/Users/aokihayata/aoki_app/tomcat
+22-Sep-2023 21:20:52.218 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       -Djava.io.tmpdir=/Users/aokihayata/aoki_app/tomcat/temp
+22-Sep-2023 21:20:52.220 情報 [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent 商用環境に最適な性能を発揮する APR ベースの Tomcat ネイティブライブラリが java.library.path [/Users/aokihayata/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.] に存在しません。
+22-Sep-2023 21:20:52.439 情報 [main] org.apache.coyote.AbstractProtocol.init プロトコルハンドラ ["http-nio-8080"] を初期化します。
+22-Sep-2023 21:20:52.466 情報 [main] org.apache.catalina.startup.Catalina.load サーバーの初期化 [424] ミリ秒
+22-Sep-2023 21:20:52.513 情報 [main] org.apache.catalina.core.StandardService.startInternal サービス [Catalina] を起動します
+22-Sep-2023 21:20:52.513 情報 [main] org.apache.catalina.core.StandardEngine.startInternal サーブレットエンジンの起動：[Apache Tomcat/10.1.13]
+22-Sep-2023 21:20:52.522 情報 [main] org.apache.catalina.startup.HostConfig.deployDescriptor 配備記述子 [/Users/aokihayata/aoki_app/tomcat/conf/Catalina/localhost/mywork.xml] を配備します
+22-Sep-2023 21:20:52.765 情報 [main] org.apache.catalina.startup.HostConfig.deployDescriptor 配備記述子 [/Users/aokihayata/aoki_app/tomcat/conf/Catalina/localhost/mywork.xml] の展開が [242] ミリ秒で完了しました
+22-Sep-2023 21:20:52.766 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory Web アプリケーションディレクトリ [/Users/aokihayata/aoki_app/tomcat/webapps/ProEnv] を配備します
+22-Sep-2023 21:20:52.784 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory ディレクトリ [/Users/aokihayata/aoki_app/tomcat/webapps/ProEnv] の Web アプリケーションの配備は [18] ミリ秒で完了しました。
+22-Sep-2023 21:20:52.785 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory Web アプリケーションディレクトリ [/Users/aokihayata/aoki_app/tomcat/webapps/docs] を配備します
+22-Sep-2023 21:20:52.804 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory ディレクトリ [/Users/aokihayata/aoki_app/tomcat/webapps/docs] の Web アプリケーションの配備は [19] ミリ秒で完了しました。
+22-Sep-2023 21:20:52.804 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory Web アプリケーションディレクトリ [/Users/aokihayata/aoki_app/tomcat/webapps/manager] を配備します
+22-Sep-2023 21:20:52.832 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory ディレクトリ [/Users/aokihayata/aoki_app/tomcat/webapps/manager] の Web アプリケーションの配備は [27] ミリ秒で完了しました。
+22-Sep-2023 21:20:52.832 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory Web アプリケーションディレクトリ [/Users/aokihayata/aoki_app/tomcat/webapps/examples] を配備します
+22-Sep-2023 21:20:53.053 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory ディレクトリ [/Users/aokihayata/aoki_app/tomcat/webapps/examples] の Web アプリケーションの配備は [221] ミリ秒で完了しました。
+22-Sep-2023 21:20:53.054 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory Web アプリケーションディレクトリ [/Users/aokihayata/aoki_app/tomcat/webapps/ROOT] を配備します
+22-Sep-2023 21:20:53.067 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory ディレクトリ [/Users/aokihayata/aoki_app/tomcat/webapps/ROOT] の Web アプリケーションの配備は [13] ミリ秒で完了しました。
+22-Sep-2023 21:20:53.068 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory Web アプリケーションディレクトリ [/Users/aokihayata/aoki_app/tomcat/webapps/mydatabase] を配備します
+22-Sep-2023 21:20:53.085 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory ディレクトリ [/Users/aokihayata/aoki_app/tomcat/webapps/mydatabase] の Web アプリケーションの配備は [16] ミリ秒で完了しました。
+22-Sep-2023 21:20:53.085 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory Web アプリケーションディレクトリ [/Users/aokihayata/aoki_app/tomcat/webapps/host-manager] を配備します
+22-Sep-2023 21:20:53.100 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory ディレクトリ [/Users/aokihayata/aoki_app/tomcat/webapps/host-manager] の Web アプリケーションの配備は [15] ミリ秒で完了しました。
+22-Sep-2023 21:20:53.103 情報 [main] org.apache.coyote.AbstractProtocol.start プロトコルハンドラー ["http-nio-8080"] を開始しました。
+22-Sep-2023 21:20:53.116 情報 [main] org.apache.catalina.startup.Catalina.start サーバーの起動 [649] ミリ秒
+22-Sep-2023 21:28:05.070 情報 [main] org.apache.catalina.core.StandardServer.await 有効なシャットダウンコマンドがシャットダウンポート経由で受信されました。 サーバーインスタンスを停止します。
+22-Sep-2023 21:28:05.072 情報 [main] org.apache.coyote.AbstractProtocol.pause ProtocolHandler ["http-nio-8080"] を一時停止します。
+22-Sep-2023 21:28:05.078 情報 [main] org.apache.catalina.core.StandardService.stopInternal サービス [Catalina] を停止します
+22-Sep-2023 21:28:05.121 情報 [main] org.apache.coyote.AbstractProtocol.stop ProtocolHandler ["http-nio-8080"]の停止中
+22-Sep-2023 21:28:05.140 情報 [main] org.apache.coyote.AbstractProtocol.destroy ProtocolHandler ["http-nio-8080"] を破棄します。
+22-Sep-2023 21:28:18.457 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log Serverのバージョン名:     Apache Tomcat/10.1.13
+22-Sep-2023 21:28:18.461 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log Server ビルド:            Aug 23 2023 21:34:59 UTC
+22-Sep-2023 21:28:18.461 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log サーバーのバージョン番号: 10.1.13.0
+22-Sep-2023 21:28:18.461 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log OS 名:                    Mac OS X
+22-Sep-2023 21:28:18.461 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log OS バージョン:            11.5
+22-Sep-2023 21:28:18.461 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log アーキテクチャ:           x86_64
+22-Sep-2023 21:28:18.461 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:                /Library/Java/JavaVirtualMachines/jdk-16.0.1.jdk/Contents/Home
+22-Sep-2023 21:28:18.461 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log JVM バージョン:           16.0.1+9-24
+22-Sep-2023 21:28:18.461 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log JVM ベンダ:               Oracle Corporation
+22-Sep-2023 21:28:18.462 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:            /Users/aokihayata/aoki_app/tomcat
+22-Sep-2023 21:28:18.462 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:            /Users/aokihayata/aoki_app/tomcat
+22-Sep-2023 21:28:18.474 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       -Djava.util.logging.config.file=/Users/aokihayata/aoki_app/tomcat/conf/logging.properties
+22-Sep-2023 21:28:18.474 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+22-Sep-2023 21:28:18.474 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       -Djdk.tls.ephemeralDHKeySize=2048
+22-Sep-2023 21:28:18.474 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+22-Sep-2023 21:28:18.474 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+22-Sep-2023 21:28:18.475 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       --add-opens=java.base/java.lang=ALL-UNNAMED
+22-Sep-2023 21:28:18.475 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       --add-opens=java.base/java.io=ALL-UNNAMED
+22-Sep-2023 21:28:18.475 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       --add-opens=java.base/java.util=ALL-UNNAMED
+22-Sep-2023 21:28:18.475 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+22-Sep-2023 21:28:18.475 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+22-Sep-2023 21:28:18.475 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       -Dcatalina.base=/Users/aokihayata/aoki_app/tomcat
+22-Sep-2023 21:28:18.475 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       -Dcatalina.home=/Users/aokihayata/aoki_app/tomcat
+22-Sep-2023 21:28:18.475 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       -Djava.io.tmpdir=/Users/aokihayata/aoki_app/tomcat/temp
+22-Sep-2023 21:28:18.478 情報 [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent 商用環境に最適な性能を発揮する APR ベースの Tomcat ネイティブライブラリが java.library.path [/Users/aokihayata/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.] に存在しません。
+22-Sep-2023 21:28:18.673 情報 [main] org.apache.coyote.AbstractProtocol.init プロトコルハンドラ ["http-nio-8080"] を初期化します。
+22-Sep-2023 21:28:18.700 情報 [main] org.apache.catalina.startup.Catalina.load サーバーの初期化 [399] ミリ秒
+22-Sep-2023 21:28:18.745 情報 [main] org.apache.catalina.core.StandardService.startInternal サービス [Catalina] を起動します
+22-Sep-2023 21:28:18.746 情報 [main] org.apache.catalina.core.StandardEngine.startInternal サーブレットエンジンの起動：[Apache Tomcat/10.1.13]
+22-Sep-2023 21:28:18.756 情報 [main] org.apache.catalina.startup.HostConfig.deployDescriptor 配備記述子 [/Users/aokihayata/aoki_app/tomcat/conf/Catalina/localhost/mywork.xml] を配備します
+22-Sep-2023 21:28:19.044 情報 [main] org.apache.catalina.startup.HostConfig.deployDescriptor 配備記述子 [/Users/aokihayata/aoki_app/tomcat/conf/Catalina/localhost/mywork.xml] の展開が [288] ミリ秒で完了しました
+22-Sep-2023 21:28:19.045 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory Web アプリケーションディレクトリ [/Users/aokihayata/aoki_app/tomcat/webapps/ProEnv] を配備します
+22-Sep-2023 21:28:19.366 情報 [main] org.apache.jasper.servlet.TldScanner.scanJars 少なくとも1つのJARでTLDをスキャンしましたが、TLDが含まれていませんでした。スキャンしたもののTLDが見つからなかったJARの完全なリストについては、このロガーのデバッグログを有効にしてください。スキャン中に不要なJARをスキップすると、起動時間とJSPのコンパイル時間が短縮されます。
+22-Sep-2023 21:28:19.368 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory ディレクトリ [/Users/aokihayata/aoki_app/tomcat/webapps/ProEnv] の Web アプリケーションの配備は [323] ミリ秒で完了しました。
+22-Sep-2023 21:28:19.368 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory Web アプリケーションディレクトリ [/Users/aokihayata/aoki_app/tomcat/webapps/docs] を配備します
+22-Sep-2023 21:28:19.386 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory ディレクトリ [/Users/aokihayata/aoki_app/tomcat/webapps/docs] の Web アプリケーションの配備は [18] ミリ秒で完了しました。
+22-Sep-2023 21:28:19.386 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory Web アプリケーションディレクトリ [/Users/aokihayata/aoki_app/tomcat/webapps/manager] を配備します
+22-Sep-2023 21:28:19.413 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory ディレクトリ [/Users/aokihayata/aoki_app/tomcat/webapps/manager] の Web アプリケーションの配備は [27] ミリ秒で完了しました。
+22-Sep-2023 21:28:19.414 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory Web アプリケーションディレクトリ [/Users/aokihayata/aoki_app/tomcat/webapps/examples] を配備します
+22-Sep-2023 21:28:19.624 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory ディレクトリ [/Users/aokihayata/aoki_app/tomcat/webapps/examples] の Web アプリケーションの配備は [210] ミリ秒で完了しました。
+22-Sep-2023 21:28:19.624 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory Web アプリケーションディレクトリ [/Users/aokihayata/aoki_app/tomcat/webapps/ROOT] を配備します
+22-Sep-2023 21:28:19.639 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory ディレクトリ [/Users/aokihayata/aoki_app/tomcat/webapps/ROOT] の Web アプリケーションの配備は [15] ミリ秒で完了しました。
+22-Sep-2023 21:28:19.640 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory Web アプリケーションディレクトリ [/Users/aokihayata/aoki_app/tomcat/webapps/mydatabase] を配備します
+22-Sep-2023 21:28:19.657 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory ディレクトリ [/Users/aokihayata/aoki_app/tomcat/webapps/mydatabase] の Web アプリケーションの配備は [17] ミリ秒で完了しました。
+22-Sep-2023 21:28:19.658 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory Web アプリケーションディレクトリ [/Users/aokihayata/aoki_app/tomcat/webapps/host-manager] を配備します
+22-Sep-2023 21:28:19.674 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory ディレクトリ [/Users/aokihayata/aoki_app/tomcat/webapps/host-manager] の Web アプリケーションの配備は [17] ミリ秒で完了しました。
+22-Sep-2023 21:28:19.676 情報 [main] org.apache.coyote.AbstractProtocol.start プロトコルハンドラー ["http-nio-8080"] を開始しました。
+22-Sep-2023 21:28:19.686 情報 [main] org.apache.catalina.startup.Catalina.start サーバーの起動 [985] ミリ秒
+22-Sep-2023 21:48:49.786 情報 [main] org.apache.catalina.core.StandardServer.await 有効なシャットダウンコマンドがシャットダウンポート経由で受信されました。 サーバーインスタンスを停止します。
+22-Sep-2023 21:48:49.788 情報 [main] org.apache.coyote.AbstractProtocol.pause ProtocolHandler ["http-nio-8080"] を一時停止します。
+22-Sep-2023 21:48:49.791 情報 [main] org.apache.catalina.core.StandardService.stopInternal サービス [Catalina] を停止します
+22-Sep-2023 21:48:49.843 警告 [main] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc Web アプリケーション [ProEnv] は自身で登録した JDBC ドライバー [com.mysql.cj.jdbc.Driver] を停止時に解除できませんでした。メモリーリークの発生を防ぐには JDBC ドライバーを強制的に解除してください。
+22-Sep-2023 21:48:49.844 警告 [main] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads Webアプリケーション [ProEnv] は [mysql-cj-abandoned-connection-cleanup] という名前のスレッドを開始したようですが、停止に失敗しました。これはメモリリークを引き起こす可能性が非常に高いです。スレッドのスタックトレース: 
+ java.base@16.0.1/java.lang.Object.wait(Native Method)
+ java.base@16.0.1/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:155)
+ com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.run(AbandonedConnectionCleanupThread.java:91)
+ java.base@16.0.1/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+ java.base@16.0.1/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+ java.base@16.0.1/java.lang.Thread.run(Thread.java:831)
+22-Sep-2023 21:48:49.848 情報 [main] org.apache.coyote.AbstractProtocol.stop ProtocolHandler ["http-nio-8080"]の停止中
+22-Sep-2023 21:48:49.861 情報 [main] org.apache.coyote.AbstractProtocol.destroy ProtocolHandler ["http-nio-8080"] を破棄します。
+22-Sep-2023 21:49:07.092 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log Serverのバージョン名:     Apache Tomcat/10.1.13
+22-Sep-2023 21:49:07.098 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log Server ビルド:            Aug 23 2023 21:34:59 UTC
+22-Sep-2023 21:49:07.098 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log サーバーのバージョン番号: 10.1.13.0
+22-Sep-2023 21:49:07.098 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log OS 名:                    Mac OS X
+22-Sep-2023 21:49:07.098 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log OS バージョン:            11.5
+22-Sep-2023 21:49:07.098 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log アーキテクチャ:           x86_64
+22-Sep-2023 21:49:07.098 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:                /Library/Java/JavaVirtualMachines/jdk-16.0.1.jdk/Contents/Home
+22-Sep-2023 21:49:07.098 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log JVM バージョン:           16.0.1+9-24
+22-Sep-2023 21:49:07.099 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log JVM ベンダ:               Oracle Corporation
+22-Sep-2023 21:49:07.099 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:            /Users/aokihayata/aoki_app/tomcat
+22-Sep-2023 21:49:07.099 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:            /Users/aokihayata/aoki_app/tomcat
+22-Sep-2023 21:49:07.122 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       -Djava.util.logging.config.file=/Users/aokihayata/aoki_app/tomcat/conf/logging.properties
+22-Sep-2023 21:49:07.122 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+22-Sep-2023 21:49:07.122 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       -Djdk.tls.ephemeralDHKeySize=2048
+22-Sep-2023 21:49:07.122 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+22-Sep-2023 21:49:07.122 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+22-Sep-2023 21:49:07.123 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       --add-opens=java.base/java.lang=ALL-UNNAMED
+22-Sep-2023 21:49:07.123 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       --add-opens=java.base/java.io=ALL-UNNAMED
+22-Sep-2023 21:49:07.123 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       --add-opens=java.base/java.util=ALL-UNNAMED
+22-Sep-2023 21:49:07.123 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+22-Sep-2023 21:49:07.123 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+22-Sep-2023 21:49:07.123 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       -Dcatalina.base=/Users/aokihayata/aoki_app/tomcat
+22-Sep-2023 21:49:07.123 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       -Dcatalina.home=/Users/aokihayata/aoki_app/tomcat
+22-Sep-2023 21:49:07.123 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       -Djava.io.tmpdir=/Users/aokihayata/aoki_app/tomcat/temp
+22-Sep-2023 21:49:07.126 情報 [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent 商用環境に最適な性能を発揮する APR ベースの Tomcat ネイティブライブラリが java.library.path [/Users/aokihayata/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.] に存在しません。
+22-Sep-2023 21:49:07.407 情報 [main] org.apache.coyote.AbstractProtocol.init プロトコルハンドラ ["http-nio-8080"] を初期化します。
+22-Sep-2023 21:49:07.436 情報 [main] org.apache.catalina.startup.Catalina.load サーバーの初期化 [552] ミリ秒
+22-Sep-2023 21:49:07.482 情報 [main] org.apache.catalina.core.StandardService.startInternal サービス [Catalina] を起動します
+22-Sep-2023 21:49:07.482 情報 [main] org.apache.catalina.core.StandardEngine.startInternal サーブレットエンジンの起動：[Apache Tomcat/10.1.13]
+22-Sep-2023 21:49:07.491 情報 [main] org.apache.catalina.startup.HostConfig.deployDescriptor 配備記述子 [/Users/aokihayata/aoki_app/tomcat/conf/Catalina/localhost/mywork.xml] を配備します
+22-Sep-2023 21:49:07.782 情報 [main] org.apache.catalina.startup.HostConfig.deployDescriptor 配備記述子 [/Users/aokihayata/aoki_app/tomcat/conf/Catalina/localhost/mywork.xml] の展開が [288] ミリ秒で完了しました
+22-Sep-2023 21:49:07.783 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory Web アプリケーションディレクトリ [/Users/aokihayata/aoki_app/tomcat/webapps/ProEnv] を配備します
+22-Sep-2023 21:49:08.115 情報 [main] org.apache.jasper.servlet.TldScanner.scanJars 少なくとも1つのJARでTLDをスキャンしましたが、TLDが含まれていませんでした。スキャンしたもののTLDが見つからなかったJARの完全なリストについては、このロガーのデバッグログを有効にしてください。スキャン中に不要なJARをスキップすると、起動時間とJSPのコンパイル時間が短縮されます。
+22-Sep-2023 21:49:08.117 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory ディレクトリ [/Users/aokihayata/aoki_app/tomcat/webapps/ProEnv] の Web アプリケーションの配備は [334] ミリ秒で完了しました。
+22-Sep-2023 21:49:08.117 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory Web アプリケーションディレクトリ [/Users/aokihayata/aoki_app/tomcat/webapps/docs] を配備します
+22-Sep-2023 21:49:08.139 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory ディレクトリ [/Users/aokihayata/aoki_app/tomcat/webapps/docs] の Web アプリケーションの配備は [22] ミリ秒で完了しました。
+22-Sep-2023 21:49:08.140 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory Web アプリケーションディレクトリ [/Users/aokihayata/aoki_app/tomcat/webapps/manager] を配備します
+22-Sep-2023 21:49:08.174 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory ディレクトリ [/Users/aokihayata/aoki_app/tomcat/webapps/manager] の Web アプリケーションの配備は [35] ミリ秒で完了しました。
+22-Sep-2023 21:49:08.174 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory Web アプリケーションディレクトリ [/Users/aokihayata/aoki_app/tomcat/webapps/examples] を配備します
+22-Sep-2023 21:49:08.373 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory ディレクトリ [/Users/aokihayata/aoki_app/tomcat/webapps/examples] の Web アプリケーションの配備は [199] ミリ秒で完了しました。
+22-Sep-2023 21:49:08.374 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory Web アプリケーションディレクトリ [/Users/aokihayata/aoki_app/tomcat/webapps/ROOT] を配備します
+22-Sep-2023 21:49:08.387 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory ディレクトリ [/Users/aokihayata/aoki_app/tomcat/webapps/ROOT] の Web アプリケーションの配備は [13] ミリ秒で完了しました。
+22-Sep-2023 21:49:08.388 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory Web アプリケーションディレクトリ [/Users/aokihayata/aoki_app/tomcat/webapps/mydatabase] を配備します
+22-Sep-2023 21:49:08.409 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory ディレクトリ [/Users/aokihayata/aoki_app/tomcat/webapps/mydatabase] の Web アプリケーションの配備は [21] ミリ秒で完了しました。
+22-Sep-2023 21:49:08.409 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory Web アプリケーションディレクトリ [/Users/aokihayata/aoki_app/tomcat/webapps/host-manager] を配備します
+22-Sep-2023 21:49:08.425 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory ディレクトリ [/Users/aokihayata/aoki_app/tomcat/webapps/host-manager] の Web アプリケーションの配備は [16] ミリ秒で完了しました。
+22-Sep-2023 21:49:08.429 情報 [main] org.apache.coyote.AbstractProtocol.start プロトコルハンドラー ["http-nio-8080"] を開始しました。
+22-Sep-2023 21:49:08.443 情報 [main] org.apache.catalina.startup.Catalina.start サーバーの起動 [1007] ミリ秒
+22-Sep-2023 21:49:28.439 情報 [Catalina-utility-1] org.apache.catalina.startup.HostConfig.reload リロード中のコンテキスト [/mydatabase]
+22-Sep-2023 21:49:28.441 情報 [Catalina-utility-1] org.apache.catalina.core.StandardContext.reload このコンテキストの再ロードを開始しました
+22-Sep-2023 21:49:28.473 重大 [Catalina-utility-1] org.apache.tomcat.util.digester.Digester.fatalError 行[1]の列[1]で致命的なエラーを解析します。
+	org.xml.sax.SAXParseException; systemId: file:/Users/aokihayata/aoki_app/tomcat/webapps/mydatabase/WEB-INF/web.xml; lineNumber: 1; columnNumber: 1; 途中でファイルの末尾に達しました。
+		at java.xml/com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.createSAXParseException(ErrorHandlerWrapper.java:204)
+		at java.xml/com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.fatalError(ErrorHandlerWrapper.java:178)
+		at java.xml/com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:400)
+		at java.xml/com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:327)
+		at java.xml/com.sun.org.apache.xerces.internal.impl.XMLScanner.reportFatalError(XMLScanner.java:1471)
+		at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl$PrologDriver.next(XMLDocumentScannerImpl.java:1013)
+		at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:605)
+		at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:541)
+		at java.xml/com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:888)
+		at java.xml/com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:824)
+		at java.xml/com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141)
+		at java.xml/com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(AbstractSAXParser.java:1224)
+		at java.xml/com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser.parse(SAXParserImpl.java:635)
+		at org.apache.tomcat.util.digester.Digester.parse(Digester.java:1522)
+		at org.apache.tomcat.util.descriptor.web.WebXmlParser.parseWebXml(WebXmlParser.java:119)
+		at org.apache.catalina.startup.ContextConfig.webConfig(ContextConfig.java:1278)
+		at org.apache.catalina.startup.ContextConfig.configureStart(ContextConfig.java:987)
+		at org.apache.catalina.startup.ContextConfig.lifecycleEvent(ContextConfig.java:304)
+		at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:114)
+		at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:4766)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171)
+		at org.apache.catalina.core.StandardContext.reload(StandardContext.java:3546)
+		at org.apache.catalina.startup.HostConfig.reload(HostConfig.java:1481)
+		at org.apache.catalina.startup.HostConfig.checkResources(HostConfig.java:1453)
+		at org.apache.catalina.startup.HostConfig.check(HostConfig.java:1692)
+		at org.apache.catalina.startup.HostConfig.lifecycleEvent(HostConfig.java:305)
+		at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:114)
+		at org.apache.catalina.core.ContainerBase.backgroundProcess(ContainerBase.java:1098)
+		at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1301)
+		at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1305)
+		at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.run(ContainerBase.java:1283)
+		at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+		at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305)
+		at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+		at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+		at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:831)
+22-Sep-2023 21:49:28.474 重大 [Catalina-utility-1] org.apache.tomcat.util.descriptor.web.WebXmlParser.parseWebXml アプリケーションweb.xmlファイルの位置 [file:/Users/aokihayata/aoki_app/tomcat/webapps/mydatabase/WEB-INF/web.xml] の解析エラー
+	org.xml.sax.SAXParseException; systemId: file:/Users/aokihayata/aoki_app/tomcat/webapps/mydatabase/WEB-INF/web.xml; lineNumber: 1; columnNumber: 1; 途中でファイルの末尾に達しました。
+		at java.xml/com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.createSAXParseException(ErrorHandlerWrapper.java:204)
+		at java.xml/com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.fatalError(ErrorHandlerWrapper.java:178)
+		at java.xml/com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:400)
+		at java.xml/com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:327)
+		at java.xml/com.sun.org.apache.xerces.internal.impl.XMLScanner.reportFatalError(XMLScanner.java:1471)
+		at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl$PrologDriver.next(XMLDocumentScannerImpl.java:1013)
+		at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:605)
+		at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:541)
+		at java.xml/com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:888)
+		at java.xml/com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:824)
+		at java.xml/com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141)
+		at java.xml/com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(AbstractSAXParser.java:1224)
+		at java.xml/com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser.parse(SAXParserImpl.java:635)
+		at org.apache.tomcat.util.digester.Digester.parse(Digester.java:1522)
+		at org.apache.tomcat.util.descriptor.web.WebXmlParser.parseWebXml(WebXmlParser.java:119)
+		at org.apache.catalina.startup.ContextConfig.webConfig(ContextConfig.java:1278)
+		at org.apache.catalina.startup.ContextConfig.configureStart(ContextConfig.java:987)
+		at org.apache.catalina.startup.ContextConfig.lifecycleEvent(ContextConfig.java:304)
+		at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:114)
+		at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:4766)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171)
+		at org.apache.catalina.core.StandardContext.reload(StandardContext.java:3546)
+		at org.apache.catalina.startup.HostConfig.reload(HostConfig.java:1481)
+		at org.apache.catalina.startup.HostConfig.checkResources(HostConfig.java:1453)
+		at org.apache.catalina.startup.HostConfig.check(HostConfig.java:1692)
+		at org.apache.catalina.startup.HostConfig.lifecycleEvent(HostConfig.java:305)
+		at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:114)
+		at org.apache.catalina.core.ContainerBase.backgroundProcess(ContainerBase.java:1098)
+		at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1301)
+		at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1305)
+		at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.run(ContainerBase.java:1283)
+		at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+		at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305)
+		at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+		at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+		at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:831)
+22-Sep-2023 21:49:28.475 重大 [Catalina-utility-1] org.apache.tomcat.util.descriptor.web.WebXmlParser.parseWebXml 行[1]列[1]で発生しました。
+22-Sep-2023 21:49:28.477 重大 [Catalina-utility-1] org.apache.catalina.startup.ContextConfig.configureStart 以前のエラーのためにこのアプリケーションは利用できないようにマークします
+22-Sep-2023 21:49:28.478 重大 [Catalina-utility-1] org.apache.catalina.core.StandardContext.startInternal コンテキストが正しく設定されていないとマークされた1つ以上のコンポーネント
+22-Sep-2023 21:49:28.478 重大 [Catalina-utility-1] org.apache.catalina.core.StandardContext.startInternal 以前のエラーのためにコンテキストの起動が失敗しました [/mydatabase]
+22-Sep-2023 21:49:28.481 情報 [Catalina-utility-1] org.apache.catalina.core.StandardContext.reload このコンテキストの再ロードが完了しました
+22-Sep-2023 21:49:58.494 情報 [Catalina-utility-2] org.apache.catalina.startup.HostConfig.reload リロード中のコンテキスト [/mydatabase]
+22-Sep-2023 21:49:58.504 重大 [Catalina-utility-2] org.apache.tomcat.util.digester.Digester.fatalError 行[3]の列[2]で致命的なエラーを解析します。
+	org.xml.sax.SAXParseException; systemId: file:/Users/aokihayata/aoki_app/tomcat/webapps/mydatabase/WEB-INF/web.xml; lineNumber: 3; columnNumber: 2; ドキュメント内のルート要素より前のマークアップは整形式である必要があります。
+		at java.xml/com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.createSAXParseException(ErrorHandlerWrapper.java:204)
+		at java.xml/com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.fatalError(ErrorHandlerWrapper.java:178)
+		at java.xml/com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:400)
+		at java.xml/com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:327)
+		at java.xml/com.sun.org.apache.xerces.internal.impl.XMLScanner.reportFatalError(XMLScanner.java:1471)
+		at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl$PrologDriver.next(XMLDocumentScannerImpl.java:862)
+		at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:605)
+		at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:541)
+		at java.xml/com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:888)
+		at java.xml/com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:824)
+		at java.xml/com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141)
+		at java.xml/com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(AbstractSAXParser.java:1224)
+		at java.xml/com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser.parse(SAXParserImpl.java:635)
+		at org.apache.tomcat.util.digester.Digester.parse(Digester.java:1522)
+		at org.apache.tomcat.util.descriptor.web.WebXmlParser.parseWebXml(WebXmlParser.java:119)
+		at org.apache.catalina.startup.ContextConfig.webConfig(ContextConfig.java:1278)
+		at org.apache.catalina.startup.ContextConfig.configureStart(ContextConfig.java:987)
+		at org.apache.catalina.startup.ContextConfig.lifecycleEvent(ContextConfig.java:304)
+		at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:114)
+		at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:4766)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171)
+		at org.apache.catalina.startup.HostConfig.reload(HostConfig.java:1490)
+		at org.apache.catalina.startup.HostConfig.checkResources(HostConfig.java:1453)
+		at org.apache.catalina.startup.HostConfig.check(HostConfig.java:1692)
+		at org.apache.catalina.startup.HostConfig.lifecycleEvent(HostConfig.java:305)
+		at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:114)
+		at org.apache.catalina.core.ContainerBase.backgroundProcess(ContainerBase.java:1098)
+		at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1301)
+		at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1305)
+		at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.run(ContainerBase.java:1283)
+		at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+		at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305)
+		at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+		at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+		at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:831)
+22-Sep-2023 21:49:58.505 重大 [Catalina-utility-2] org.apache.tomcat.util.descriptor.web.WebXmlParser.parseWebXml アプリケーションweb.xmlファイルの位置 [file:/Users/aokihayata/aoki_app/tomcat/webapps/mydatabase/WEB-INF/web.xml] の解析エラー
+	org.xml.sax.SAXParseException; systemId: file:/Users/aokihayata/aoki_app/tomcat/webapps/mydatabase/WEB-INF/web.xml; lineNumber: 3; columnNumber: 2; ドキュメント内のルート要素より前のマークアップは整形式である必要があります。
+		at java.xml/com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.createSAXParseException(ErrorHandlerWrapper.java:204)
+		at java.xml/com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.fatalError(ErrorHandlerWrapper.java:178)
+		at java.xml/com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:400)
+		at java.xml/com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:327)
+		at java.xml/com.sun.org.apache.xerces.internal.impl.XMLScanner.reportFatalError(XMLScanner.java:1471)
+		at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl$PrologDriver.next(XMLDocumentScannerImpl.java:862)
+		at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:605)
+		at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:541)
+		at java.xml/com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:888)
+		at java.xml/com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:824)
+		at java.xml/com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141)
+		at java.xml/com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(AbstractSAXParser.java:1224)
+		at java.xml/com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser.parse(SAXParserImpl.java:635)
+		at org.apache.tomcat.util.digester.Digester.parse(Digester.java:1522)
+		at org.apache.tomcat.util.descriptor.web.WebXmlParser.parseWebXml(WebXmlParser.java:119)
+		at org.apache.catalina.startup.ContextConfig.webConfig(ContextConfig.java:1278)
+		at org.apache.catalina.startup.ContextConfig.configureStart(ContextConfig.java:987)
+		at org.apache.catalina.startup.ContextConfig.lifecycleEvent(ContextConfig.java:304)
+		at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:114)
+		at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:4766)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171)
+		at org.apache.catalina.startup.HostConfig.reload(HostConfig.java:1490)
+		at org.apache.catalina.startup.HostConfig.checkResources(HostConfig.java:1453)
+		at org.apache.catalina.startup.HostConfig.check(HostConfig.java:1692)
+		at org.apache.catalina.startup.HostConfig.lifecycleEvent(HostConfig.java:305)
+		at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:114)
+		at org.apache.catalina.core.ContainerBase.backgroundProcess(ContainerBase.java:1098)
+		at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1301)
+		at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1305)
+		at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.run(ContainerBase.java:1283)
+		at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+		at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305)
+		at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+		at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+		at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:831)
+22-Sep-2023 21:49:58.505 重大 [Catalina-utility-2] org.apache.tomcat.util.descriptor.web.WebXmlParser.parseWebXml 行[3]列[2]で発生しました。
+22-Sep-2023 21:49:58.508 重大 [Catalina-utility-2] org.apache.catalina.startup.ContextConfig.configureStart 以前のエラーのためにこのアプリケーションは利用できないようにマークします
+22-Sep-2023 21:49:58.509 重大 [Catalina-utility-2] org.apache.catalina.core.StandardContext.startInternal コンテキストが正しく設定されていないとマークされた1つ以上のコンポーネント
+22-Sep-2023 21:49:58.509 重大 [Catalina-utility-2] org.apache.catalina.core.StandardContext.startInternal 以前のエラーのためにコンテキストの起動が失敗しました [/mydatabase]
+22-Sep-2023 21:52:48.638 情報 [Catalina-utility-1] org.apache.catalina.startup.HostConfig.reload リロード中のコンテキスト [/mydatabase]
+22-Sep-2023 21:53:18.683 情報 [Catalina-utility-1] org.apache.catalina.startup.HostConfig.reload リロード中のコンテキスト [/mydatabase]
+22-Sep-2023 21:53:18.683 情報 [Catalina-utility-1] org.apache.catalina.core.StandardContext.reload このコンテキストの再ロードを開始しました
+22-Sep-2023 21:53:18.705 情報 [Catalina-utility-1] org.apache.catalina.core.StandardContext.reload このコンテキストの再ロードが完了しました
+22-Sep-2023 22:03:27.241 情報 [main] org.apache.catalina.core.StandardServer.await 有効なシャットダウンコマンドがシャットダウンポート経由で受信されました。 サーバーインスタンスを停止します。
+22-Sep-2023 22:03:27.243 情報 [main] org.apache.coyote.AbstractProtocol.pause ProtocolHandler ["http-nio-8080"] を一時停止します。
+22-Sep-2023 22:03:27.246 情報 [main] org.apache.catalina.core.StandardService.stopInternal サービス [Catalina] を停止します
+22-Sep-2023 22:03:27.274 警告 [main] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc Web アプリケーション [ProEnv] は自身で登録した JDBC ドライバー [com.mysql.cj.jdbc.Driver] を停止時に解除できませんでした。メモリーリークの発生を防ぐには JDBC ドライバーを強制的に解除してください。
+22-Sep-2023 22:03:27.275 警告 [main] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads Webアプリケーション [ProEnv] は [mysql-cj-abandoned-connection-cleanup] という名前のスレッドを開始したようですが、停止に失敗しました。これはメモリリークを引き起こす可能性が非常に高いです。スレッドのスタックトレース: 
+ java.base@16.0.1/java.lang.Object.wait(Native Method)
+ java.base@16.0.1/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:155)
+ com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.run(AbandonedConnectionCleanupThread.java:91)
+ java.base@16.0.1/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+ java.base@16.0.1/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+ java.base@16.0.1/java.lang.Thread.run(Thread.java:831)
+22-Sep-2023 22:03:27.279 情報 [main] org.apache.coyote.AbstractProtocol.stop ProtocolHandler ["http-nio-8080"]の停止中
+22-Sep-2023 22:03:27.289 情報 [main] org.apache.coyote.AbstractProtocol.destroy ProtocolHandler ["http-nio-8080"] を破棄します。
+22-Sep-2023 22:03:37.908 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log Serverのバージョン名:     Apache Tomcat/10.1.13
+22-Sep-2023 22:03:37.912 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log Server ビルド:            Aug 23 2023 21:34:59 UTC
+22-Sep-2023 22:03:37.913 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log サーバーのバージョン番号: 10.1.13.0
+22-Sep-2023 22:03:37.913 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log OS 名:                    Mac OS X
+22-Sep-2023 22:03:37.913 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log OS バージョン:            11.5
+22-Sep-2023 22:03:37.913 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log アーキテクチャ:           x86_64
+22-Sep-2023 22:03:37.913 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:                /Library/Java/JavaVirtualMachines/jdk-16.0.1.jdk/Contents/Home
+22-Sep-2023 22:03:37.913 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log JVM バージョン:           16.0.1+9-24
+22-Sep-2023 22:03:37.913 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log JVM ベンダ:               Oracle Corporation
+22-Sep-2023 22:03:37.913 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:            /Users/aokihayata/aoki_app/tomcat
+22-Sep-2023 22:03:37.914 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:            /Users/aokihayata/aoki_app/tomcat
+22-Sep-2023 22:03:37.926 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       -Djava.util.logging.config.file=/Users/aokihayata/aoki_app/tomcat/conf/logging.properties
+22-Sep-2023 22:03:37.926 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+22-Sep-2023 22:03:37.926 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       -Djdk.tls.ephemeralDHKeySize=2048
+22-Sep-2023 22:03:37.926 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+22-Sep-2023 22:03:37.926 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+22-Sep-2023 22:03:37.926 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       --add-opens=java.base/java.lang=ALL-UNNAMED
+22-Sep-2023 22:03:37.926 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       --add-opens=java.base/java.io=ALL-UNNAMED
+22-Sep-2023 22:03:37.927 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       --add-opens=java.base/java.util=ALL-UNNAMED
+22-Sep-2023 22:03:37.927 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+22-Sep-2023 22:03:37.927 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+22-Sep-2023 22:03:37.927 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       -Dcatalina.base=/Users/aokihayata/aoki_app/tomcat
+22-Sep-2023 22:03:37.927 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       -Dcatalina.home=/Users/aokihayata/aoki_app/tomcat
+22-Sep-2023 22:03:37.927 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       -Djava.io.tmpdir=/Users/aokihayata/aoki_app/tomcat/temp
+22-Sep-2023 22:03:37.929 情報 [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent 商用環境に最適な性能を発揮する APR ベースの Tomcat ネイティブライブラリが java.library.path [/Users/aokihayata/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.] に存在しません。
+22-Sep-2023 22:03:38.136 情報 [main] org.apache.coyote.AbstractProtocol.init プロトコルハンドラ ["http-nio-8080"] を初期化します。
+22-Sep-2023 22:03:38.161 情報 [main] org.apache.catalina.startup.Catalina.load サーバーの初期化 [436] ミリ秒
+22-Sep-2023 22:03:38.198 情報 [main] org.apache.catalina.core.StandardService.startInternal サービス [Catalina] を起動します
+22-Sep-2023 22:03:38.198 情報 [main] org.apache.catalina.core.StandardEngine.startInternal サーブレットエンジンの起動：[Apache Tomcat/10.1.13]
+22-Sep-2023 22:03:38.206 情報 [main] org.apache.catalina.startup.HostConfig.deployDescriptor 配備記述子 [/Users/aokihayata/aoki_app/tomcat/conf/Catalina/localhost/mywork.xml] を配備します
+22-Sep-2023 22:03:38.494 情報 [main] org.apache.catalina.startup.HostConfig.deployDescriptor 配備記述子 [/Users/aokihayata/aoki_app/tomcat/conf/Catalina/localhost/mywork.xml] の展開が [285] ミリ秒で完了しました
+22-Sep-2023 22:03:38.495 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory Web アプリケーションディレクトリ [/Users/aokihayata/aoki_app/tomcat/webapps/ProEnv] を配備します
+22-Sep-2023 22:03:38.926 情報 [main] org.apache.jasper.servlet.TldScanner.scanJars 少なくとも1つのJARでTLDをスキャンしましたが、TLDが含まれていませんでした。スキャンしたもののTLDが見つからなかったJARの完全なリストについては、このロガーのデバッグログを有効にしてください。スキャン中に不要なJARをスキップすると、起動時間とJSPのコンパイル時間が短縮されます。
+22-Sep-2023 22:03:38.928 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory ディレクトリ [/Users/aokihayata/aoki_app/tomcat/webapps/ProEnv] の Web アプリケーションの配備は [434] ミリ秒で完了しました。
+22-Sep-2023 22:03:38.928 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory Web アプリケーションディレクトリ [/Users/aokihayata/aoki_app/tomcat/webapps/docs] を配備します
+22-Sep-2023 22:03:38.947 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory ディレクトリ [/Users/aokihayata/aoki_app/tomcat/webapps/docs] の Web アプリケーションの配備は [19] ミリ秒で完了しました。
+22-Sep-2023 22:03:38.948 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory Web アプリケーションディレクトリ [/Users/aokihayata/aoki_app/tomcat/webapps/manager] を配備します
+22-Sep-2023 22:03:38.979 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory ディレクトリ [/Users/aokihayata/aoki_app/tomcat/webapps/manager] の Web アプリケーションの配備は [31] ミリ秒で完了しました。
+22-Sep-2023 22:03:38.979 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory Web アプリケーションディレクトリ [/Users/aokihayata/aoki_app/tomcat/webapps/examples] を配備します
+22-Sep-2023 22:03:39.196 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory ディレクトリ [/Users/aokihayata/aoki_app/tomcat/webapps/examples] の Web アプリケーションの配備は [217] ミリ秒で完了しました。
+22-Sep-2023 22:03:39.197 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory Web アプリケーションディレクトリ [/Users/aokihayata/aoki_app/tomcat/webapps/ROOT] を配備します
+22-Sep-2023 22:03:39.215 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory ディレクトリ [/Users/aokihayata/aoki_app/tomcat/webapps/ROOT] の Web アプリケーションの配備は [17] ミリ秒で完了しました。
+22-Sep-2023 22:03:39.215 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory Web アプリケーションディレクトリ [/Users/aokihayata/aoki_app/tomcat/webapps/mydatabase] を配備します
+22-Sep-2023 22:03:39.239 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory ディレクトリ [/Users/aokihayata/aoki_app/tomcat/webapps/mydatabase] の Web アプリケーションの配備は [23] ミリ秒で完了しました。
+22-Sep-2023 22:03:39.239 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory Web アプリケーションディレクトリ [/Users/aokihayata/aoki_app/tomcat/webapps/host-manager] を配備します
+22-Sep-2023 22:03:39.258 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory ディレクトリ [/Users/aokihayata/aoki_app/tomcat/webapps/host-manager] の Web アプリケーションの配備は [18] ミリ秒で完了しました。
+22-Sep-2023 22:03:39.260 情報 [main] org.apache.coyote.AbstractProtocol.start プロトコルハンドラー ["http-nio-8080"] を開始しました。
+22-Sep-2023 22:03:39.275 情報 [main] org.apache.catalina.startup.Catalina.start サーバーの起動 [1113] ミリ秒
+22-Sep-2023 22:04:46.391 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log Serverのバージョン名:     Apache Tomcat/10.1.13
+22-Sep-2023 22:04:46.396 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log Server ビルド:            Aug 23 2023 21:34:59 UTC
+22-Sep-2023 22:04:46.396 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log サーバーのバージョン番号: 10.1.13.0
+22-Sep-2023 22:04:46.396 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log OS 名:                    Mac OS X
+22-Sep-2023 22:04:46.396 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log OS バージョン:            11.5
+22-Sep-2023 22:04:46.396 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log アーキテクチャ:           x86_64
+22-Sep-2023 22:04:46.396 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:                /Library/Java/JavaVirtualMachines/jdk-16.0.1.jdk/Contents/Home
+22-Sep-2023 22:04:46.397 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log JVM バージョン:           16.0.1+9-24
+22-Sep-2023 22:04:46.397 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log JVM ベンダ:               Oracle Corporation
+22-Sep-2023 22:04:46.397 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:            /Users/aokihayata/aoki_app/tomcat
+22-Sep-2023 22:04:46.397 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:            /Users/aokihayata/aoki_app/tomcat
+22-Sep-2023 22:04:46.409 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       -Djava.util.logging.config.file=/Users/aokihayata/aoki_app/tomcat/conf/logging.properties
+22-Sep-2023 22:04:46.409 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+22-Sep-2023 22:04:46.410 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       -Djdk.tls.ephemeralDHKeySize=2048
+22-Sep-2023 22:04:46.410 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+22-Sep-2023 22:04:46.410 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+22-Sep-2023 22:04:46.410 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       --add-opens=java.base/java.lang=ALL-UNNAMED
+22-Sep-2023 22:04:46.410 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       --add-opens=java.base/java.io=ALL-UNNAMED
+22-Sep-2023 22:04:46.410 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       --add-opens=java.base/java.util=ALL-UNNAMED
+22-Sep-2023 22:04:46.410 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+22-Sep-2023 22:04:46.410 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+22-Sep-2023 22:04:46.410 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       -Dcatalina.base=/Users/aokihayata/aoki_app/tomcat
+22-Sep-2023 22:04:46.411 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       -Dcatalina.home=/Users/aokihayata/aoki_app/tomcat
+22-Sep-2023 22:04:46.411 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       -Djava.io.tmpdir=/Users/aokihayata/aoki_app/tomcat/temp
+22-Sep-2023 22:04:46.413 情報 [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent 商用環境に最適な性能を発揮する APR ベースの Tomcat ネイティブライブラリが java.library.path [/Users/aokihayata/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.] に存在しません。
+22-Sep-2023 22:04:46.614 情報 [main] org.apache.coyote.AbstractProtocol.init プロトコルハンドラ ["http-nio-8080"] を初期化します。
+22-Sep-2023 22:04:46.634 重大 [main] org.apache.catalina.util.LifecycleBase.handleSubClassException コンポーネント [Connector["http-nio-8080"]] の初期化に失敗しました
+	org.apache.catalina.LifecycleException: プロトコルハンドラの初期化に失敗しました
+		at org.apache.catalina.connector.Connector.initInternal(Connector.java:1015)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:127)
+		at org.apache.catalina.core.StandardService.initInternal(StandardService.java:554)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:127)
+		at org.apache.catalina.core.StandardServer.initInternal(StandardServer.java:1011)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:127)
+		at org.apache.catalina.startup.Catalina.load(Catalina.java:747)
+		at org.apache.catalina.startup.Catalina.load(Catalina.java:769)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+		at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+		at org.apache.catalina.startup.Bootstrap.load(Bootstrap.java:307)
+		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:477)
+	Caused by: java.net.BindException: Address already in use
+		at java.base/sun.nio.ch.Net.bind0(Native Method)
+		at java.base/sun.nio.ch.Net.bind(Net.java:552)
+		at java.base/sun.nio.ch.ServerSocketChannelImpl.netBind(ServerSocketChannelImpl.java:336)
+		at java.base/sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:294)
+		at org.apache.tomcat.util.net.NioEndpoint.initServerSocket(NioEndpoint.java:247)
+		at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:202)
+		at org.apache.tomcat.util.net.AbstractEndpoint.bindWithCleanup(AbstractEndpoint.java:1278)
+		at org.apache.tomcat.util.net.AbstractEndpoint.init(AbstractEndpoint.java:1291)
+		at org.apache.coyote.AbstractProtocol.init(AbstractProtocol.java:622)
+		at org.apache.coyote.http11.AbstractHttp11Protocol.init(AbstractHttp11Protocol.java:77)
+		at org.apache.catalina.connector.Connector.initInternal(Connector.java:1013)
+		... 13 more
+22-Sep-2023 22:04:46.635 情報 [main] org.apache.catalina.startup.Catalina.load サーバーの初期化 [424] ミリ秒
+22-Sep-2023 22:04:46.675 情報 [main] org.apache.catalina.core.StandardService.startInternal サービス [Catalina] を起動します
+22-Sep-2023 22:04:46.675 情報 [main] org.apache.catalina.core.StandardEngine.startInternal サーブレットエンジンの起動：[Apache Tomcat/10.1.13]
+22-Sep-2023 22:04:46.685 情報 [main] org.apache.catalina.startup.HostConfig.deployDescriptor 配備記述子 [/Users/aokihayata/aoki_app/tomcat/conf/Catalina/localhost/mywork.xml] を配備します
+22-Sep-2023 22:04:46.988 情報 [main] org.apache.catalina.startup.HostConfig.deployDescriptor 配備記述子 [/Users/aokihayata/aoki_app/tomcat/conf/Catalina/localhost/mywork.xml] の展開が [301] ミリ秒で完了しました
+22-Sep-2023 22:04:46.988 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory Web アプリケーションディレクトリ [/Users/aokihayata/aoki_app/tomcat/webapps/ProEnv] を配備します
+22-Sep-2023 22:04:47.315 情報 [main] org.apache.jasper.servlet.TldScanner.scanJars 少なくとも1つのJARでTLDをスキャンしましたが、TLDが含まれていませんでした。スキャンしたもののTLDが見つからなかったJARの完全なリストについては、このロガーのデバッグログを有効にしてください。スキャン中に不要なJARをスキップすると、起動時間とJSPのコンパイル時間が短縮されます。
+22-Sep-2023 22:04:47.318 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory ディレクトリ [/Users/aokihayata/aoki_app/tomcat/webapps/ProEnv] の Web アプリケーションの配備は [330] ミリ秒で完了しました。
+22-Sep-2023 22:04:47.319 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory Web アプリケーションディレクトリ [/Users/aokihayata/aoki_app/tomcat/webapps/docs] を配備します
+22-Sep-2023 22:04:47.343 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory ディレクトリ [/Users/aokihayata/aoki_app/tomcat/webapps/docs] の Web アプリケーションの配備は [24] ミリ秒で完了しました。
+22-Sep-2023 22:04:47.344 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory Web アプリケーションディレクトリ [/Users/aokihayata/aoki_app/tomcat/webapps/manager] を配備します
+22-Sep-2023 22:04:47.375 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory ディレクトリ [/Users/aokihayata/aoki_app/tomcat/webapps/manager] の Web アプリケーションの配備は [31] ミリ秒で完了しました。
+22-Sep-2023 22:04:47.375 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory Web アプリケーションディレクトリ [/Users/aokihayata/aoki_app/tomcat/webapps/examples] を配備します
+22-Sep-2023 22:04:47.589 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory ディレクトリ [/Users/aokihayata/aoki_app/tomcat/webapps/examples] の Web アプリケーションの配備は [214] ミリ秒で完了しました。
+22-Sep-2023 22:04:47.589 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory Web アプリケーションディレクトリ [/Users/aokihayata/aoki_app/tomcat/webapps/ROOT] を配備します
+22-Sep-2023 22:04:47.603 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory ディレクトリ [/Users/aokihayata/aoki_app/tomcat/webapps/ROOT] の Web アプリケーションの配備は [14] ミリ秒で完了しました。
+22-Sep-2023 22:04:47.603 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory Web アプリケーションディレクトリ [/Users/aokihayata/aoki_app/tomcat/webapps/mydatabase] を配備します
+22-Sep-2023 22:04:47.621 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory ディレクトリ [/Users/aokihayata/aoki_app/tomcat/webapps/mydatabase] の Web アプリケーションの配備は [18] ミリ秒で完了しました。
+22-Sep-2023 22:04:47.621 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory Web アプリケーションディレクトリ [/Users/aokihayata/aoki_app/tomcat/webapps/host-manager] を配備します
+22-Sep-2023 22:04:47.638 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory ディレクトリ [/Users/aokihayata/aoki_app/tomcat/webapps/host-manager] の Web アプリケーションの配備は [16] ミリ秒で完了しました。
+22-Sep-2023 22:04:47.640 情報 [main] org.apache.catalina.startup.Catalina.start サーバーの起動 [1004] ミリ秒
+22-Sep-2023 22:04:47.644 重大 [main] org.apache.catalina.core.StandardServer.await アドレス [localhost] のポート番号 [8005] にサーバー停止ソケットを作成できませんでした (基本ポート番号は [8005]、オフセットは [0] です)
+	java.net.BindException: Address already in use
+		at java.base/sun.nio.ch.Net.bind0(Native Method)
+		at java.base/sun.nio.ch.Net.bind(Net.java:552)
+		at java.base/sun.nio.ch.Net.bind(Net.java:541)
+		at java.base/sun.nio.ch.NioSocketImpl.bind(NioSocketImpl.java:643)
+		at java.base/java.net.ServerSocket.bind(ServerSocket.java:395)
+		at java.base/java.net.ServerSocket.<init>(ServerSocket.java:281)
+		at org.apache.catalina.core.StandardServer.await(StandardServer.java:578)
+		at org.apache.catalina.startup.Catalina.await(Catalina.java:887)
+		at org.apache.catalina.startup.Catalina.start(Catalina.java:833)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+		at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+		at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:347)
+		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:478)
+22-Sep-2023 22:04:47.644 情報 [main] org.apache.coyote.AbstractProtocol.pause ProtocolHandler ["http-nio-8080"] を一時停止します。
+22-Sep-2023 22:04:47.644 情報 [main] org.apache.catalina.core.StandardService.stopInternal サービス [Catalina] を停止します
+22-Sep-2023 22:04:47.662 情報 [main] org.apache.coyote.AbstractProtocol.stop ProtocolHandler ["http-nio-8080"]の停止中
+22-Sep-2023 22:04:47.663 情報 [main] org.apache.coyote.AbstractProtocol.destroy ProtocolHandler ["http-nio-8080"] を破棄します。
+22-Sep-2023 22:09:14.469 情報 [main] org.apache.catalina.core.StandardServer.await 有効なシャットダウンコマンドがシャットダウンポート経由で受信されました。 サーバーインスタンスを停止します。
+22-Sep-2023 22:09:14.471 情報 [main] org.apache.coyote.AbstractProtocol.pause ProtocolHandler ["http-nio-8080"] を一時停止します。
+22-Sep-2023 22:09:14.473 情報 [main] org.apache.catalina.core.StandardService.stopInternal サービス [Catalina] を停止します
+22-Sep-2023 22:09:14.507 警告 [main] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc Web アプリケーション [ProEnv] は自身で登録した JDBC ドライバー [com.mysql.cj.jdbc.Driver] を停止時に解除できませんでした。メモリーリークの発生を防ぐには JDBC ドライバーを強制的に解除してください。
+22-Sep-2023 22:09:14.508 警告 [main] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads Webアプリケーション [ProEnv] は [mysql-cj-abandoned-connection-cleanup] という名前のスレッドを開始したようですが、停止に失敗しました。これはメモリリークを引き起こす可能性が非常に高いです。スレッドのスタックトレース: 
+ java.base@16.0.1/java.lang.Object.wait(Native Method)
+ java.base@16.0.1/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:155)
+ com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.run(AbandonedConnectionCleanupThread.java:91)
+ java.base@16.0.1/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+ java.base@16.0.1/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+ java.base@16.0.1/java.lang.Thread.run(Thread.java:831)
+22-Sep-2023 22:09:14.512 情報 [main] org.apache.coyote.AbstractProtocol.stop ProtocolHandler ["http-nio-8080"]の停止中
+22-Sep-2023 22:09:14.524 情報 [main] org.apache.coyote.AbstractProtocol.destroy ProtocolHandler ["http-nio-8080"] を破棄します。
+22-Sep-2023 22:09:31.613 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log Serverのバージョン名:     Apache Tomcat/10.1.13
+22-Sep-2023 22:09:31.617 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log Server ビルド:            Aug 23 2023 21:34:59 UTC
+22-Sep-2023 22:09:31.617 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log サーバーのバージョン番号: 10.1.13.0
+22-Sep-2023 22:09:31.617 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log OS 名:                    Mac OS X
+22-Sep-2023 22:09:31.617 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log OS バージョン:            11.5
+22-Sep-2023 22:09:31.617 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log アーキテクチャ:           x86_64
+22-Sep-2023 22:09:31.617 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:                /Library/Java/JavaVirtualMachines/jdk-16.0.1.jdk/Contents/Home
+22-Sep-2023 22:09:31.617 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log JVM バージョン:           16.0.1+9-24
+22-Sep-2023 22:09:31.618 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log JVM ベンダ:               Oracle Corporation
+22-Sep-2023 22:09:31.618 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:            /Users/aokihayata/aoki_app/tomcat
+22-Sep-2023 22:09:31.618 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:            /Users/aokihayata/aoki_app/tomcat
+22-Sep-2023 22:09:31.630 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       -Djava.util.logging.config.file=/Users/aokihayata/aoki_app/tomcat/conf/logging.properties
+22-Sep-2023 22:09:31.631 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+22-Sep-2023 22:09:31.631 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       -Djdk.tls.ephemeralDHKeySize=2048
+22-Sep-2023 22:09:31.631 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+22-Sep-2023 22:09:31.631 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+22-Sep-2023 22:09:31.631 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       --add-opens=java.base/java.lang=ALL-UNNAMED
+22-Sep-2023 22:09:31.631 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       --add-opens=java.base/java.io=ALL-UNNAMED
+22-Sep-2023 22:09:31.631 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       --add-opens=java.base/java.util=ALL-UNNAMED
+22-Sep-2023 22:09:31.631 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+22-Sep-2023 22:09:31.631 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+22-Sep-2023 22:09:31.632 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       -Dcatalina.base=/Users/aokihayata/aoki_app/tomcat
+22-Sep-2023 22:09:31.632 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       -Dcatalina.home=/Users/aokihayata/aoki_app/tomcat
+22-Sep-2023 22:09:31.632 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       -Djava.io.tmpdir=/Users/aokihayata/aoki_app/tomcat/temp
+22-Sep-2023 22:09:31.634 情報 [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent 商用環境に最適な性能を発揮する APR ベースの Tomcat ネイティブライブラリが java.library.path [/Users/aokihayata/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.] に存在しません。
+22-Sep-2023 22:09:31.865 情報 [main] org.apache.coyote.AbstractProtocol.init プロトコルハンドラ ["http-nio-8080"] を初期化します。
+22-Sep-2023 22:09:31.891 情報 [main] org.apache.catalina.startup.Catalina.load サーバーの初期化 [460] ミリ秒
+22-Sep-2023 22:09:31.939 情報 [main] org.apache.catalina.core.StandardService.startInternal サービス [Catalina] を起動します
+22-Sep-2023 22:09:31.940 情報 [main] org.apache.catalina.core.StandardEngine.startInternal サーブレットエンジンの起動：[Apache Tomcat/10.1.13]
+22-Sep-2023 22:09:31.951 情報 [main] org.apache.catalina.startup.HostConfig.deployDescriptor 配備記述子 [/Users/aokihayata/aoki_app/tomcat/conf/Catalina/localhost/mywork.xml] を配備します
+22-Sep-2023 22:09:32.206 情報 [main] org.apache.catalina.startup.HostConfig.deployDescriptor 配備記述子 [/Users/aokihayata/aoki_app/tomcat/conf/Catalina/localhost/mywork.xml] の展開が [253] ミリ秒で完了しました
+22-Sep-2023 22:09:32.206 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory Web アプリケーションディレクトリ [/Users/aokihayata/aoki_app/tomcat/webapps/ProEnv] を配備します
+22-Sep-2023 22:09:32.512 情報 [main] org.apache.jasper.servlet.TldScanner.scanJars 少なくとも1つのJARでTLDをスキャンしましたが、TLDが含まれていませんでした。スキャンしたもののTLDが見つからなかったJARの完全なリストについては、このロガーのデバッグログを有効にしてください。スキャン中に不要なJARをスキップすると、起動時間とJSPのコンパイル時間が短縮されます。
+22-Sep-2023 22:09:32.514 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory ディレクトリ [/Users/aokihayata/aoki_app/tomcat/webapps/ProEnv] の Web アプリケーションの配備は [308] ミリ秒で完了しました。
+22-Sep-2023 22:09:32.514 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory Web アプリケーションディレクトリ [/Users/aokihayata/aoki_app/tomcat/webapps/docs] を配備します
+22-Sep-2023 22:09:32.562 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory ディレクトリ [/Users/aokihayata/aoki_app/tomcat/webapps/docs] の Web アプリケーションの配備は [48] ミリ秒で完了しました。
+22-Sep-2023 22:09:32.562 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory Web アプリケーションディレクトリ [/Users/aokihayata/aoki_app/tomcat/webapps/manager] を配備します
+22-Sep-2023 22:09:32.612 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory ディレクトリ [/Users/aokihayata/aoki_app/tomcat/webapps/manager] の Web アプリケーションの配備は [49] ミリ秒で完了しました。
+22-Sep-2023 22:09:32.612 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory Web アプリケーションディレクトリ [/Users/aokihayata/aoki_app/tomcat/webapps/examples] を配備します
+22-Sep-2023 22:09:32.837 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory ディレクトリ [/Users/aokihayata/aoki_app/tomcat/webapps/examples] の Web アプリケーションの配備は [225] ミリ秒で完了しました。
+22-Sep-2023 22:09:32.837 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory Web アプリケーションディレクトリ [/Users/aokihayata/aoki_app/tomcat/webapps/ROOT] を配備します
+22-Sep-2023 22:09:32.854 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory ディレクトリ [/Users/aokihayata/aoki_app/tomcat/webapps/ROOT] の Web アプリケーションの配備は [16] ミリ秒で完了しました。
+22-Sep-2023 22:09:32.854 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory Web アプリケーションディレクトリ [/Users/aokihayata/aoki_app/tomcat/webapps/mydatabase] を配備します
+22-Sep-2023 22:09:32.874 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory ディレクトリ [/Users/aokihayata/aoki_app/tomcat/webapps/mydatabase] の Web アプリケーションの配備は [20] ミリ秒で完了しました。
+22-Sep-2023 22:09:32.874 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory Web アプリケーションディレクトリ [/Users/aokihayata/aoki_app/tomcat/webapps/host-manager] を配備します
+22-Sep-2023 22:09:32.893 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory ディレクトリ [/Users/aokihayata/aoki_app/tomcat/webapps/host-manager] の Web アプリケーションの配備は [19] ミリ秒で完了しました。
+22-Sep-2023 22:09:32.897 情報 [main] org.apache.coyote.AbstractProtocol.start プロトコルハンドラー ["http-nio-8080"] を開始しました。
+22-Sep-2023 22:09:32.911 情報 [main] org.apache.catalina.startup.Catalina.start サーバーの起動 [1018] ミリ秒
+22-Sep-2023 23:30:43.545 情報 [Thread-1] org.apache.coyote.AbstractProtocol.pause ProtocolHandler ["http-nio-8080"] を一時停止します。
+22-Sep-2023 23:30:43.556 情報 [Thread-1] org.apache.catalina.core.StandardService.stopInternal サービス [Catalina] を停止します
+22-Sep-2023 23:30:43.681 警告 [Thread-1] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc Web アプリケーション [ProEnv] は自身で登録した JDBC ドライバー [com.mysql.cj.jdbc.Driver] を停止時に解除できませんでした。メモリーリークの発生を防ぐには JDBC ドライバーを強制的に解除してください。
+22-Sep-2023 23:30:43.683 警告 [Thread-1] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads Webアプリケーション [ProEnv] は [mysql-cj-abandoned-connection-cleanup] という名前のスレッドを開始したようですが、停止に失敗しました。これはメモリリークを引き起こす可能性が非常に高いです。スレッドのスタックトレース: 
+ java.base@16.0.1/java.lang.Object.wait(Native Method)
+ java.base@16.0.1/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:155)
+ com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.run(AbandonedConnectionCleanupThread.java:91)
+ java.base@16.0.1/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+ java.base@16.0.1/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+ java.base@16.0.1/java.lang.Thread.run(Thread.java:831)
+22-Sep-2023 23:30:43.688 情報 [Thread-1] org.apache.coyote.AbstractProtocol.stop ProtocolHandler ["http-nio-8080"]の停止中
+22-Sep-2023 23:30:43.704 情報 [Thread-1] org.apache.coyote.AbstractProtocol.destroy ProtocolHandler ["http-nio-8080"] を破棄します。
+22-Sep-2023 23:30:43.729 情報 [mysql-cj-abandoned-connection-cleanup] org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading 不正なアクセス: このWebアプリケーションのインスタンスは既に停止されています  Could not load []. 不正なアクセスを引き起こしたスレッドを終了させ、投げられたエラーによりデバッグ用に次のスタックトレースが生成されましたが，機能に影響はありません
+	java.lang.IllegalStateException: 不正なアクセス: このWebアプリケーションのインスタンスは既に停止されています  Could not load []. 不正なアクセスを引き起こしたスレッドを終了させ、投げられたエラーによりデバッグ用に次のスタックトレースが生成されましたが，機能に影響はありません
+		at org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading(WebappClassLoaderBase.java:1457)
+		at org.apache.catalina.loader.WebappClassLoaderBase.getResource(WebappClassLoaderBase.java:1047)
+		at com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.checkThreadContextClassLoader(AbandonedConnectionCleanupThread.java:123)
+		at com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.run(AbandonedConnectionCleanupThread.java:90)
+		at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+		at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+		at java.base/java.lang.Thread.run(Thread.java:831)
+22-Sep-2023 23:30:43.730 情報 [mysql-cj-abandoned-connection-cleanup] org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading 不正なアクセス: このWebアプリケーションのインスタンスは既に停止されています  Could not load []. 不正なアクセスを引き起こしたスレッドを終了させ、投げられたエラーによりデバッグ用に次のスタックトレースが生成されましたが，機能に影響はありません
+	java.lang.IllegalStateException: 不正なアクセス: このWebアプリケーションのインスタンスは既に停止されています  Could not load []. 不正なアクセスを引き起こしたスレッドを終了させ、投げられたエラーによりデバッグ用に次のスタックトレースが生成されましたが，機能に影響はありません
+		at org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading(WebappClassLoaderBase.java:1457)
+		at org.apache.catalina.loader.WebappClassLoaderBase.getResource(WebappClassLoaderBase.java:1047)
+		at com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.checkThreadContextClassLoader(AbandonedConnectionCleanupThread.java:123)
+		at com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.run(AbandonedConnectionCleanupThread.java:90)
+		at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+		at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+		at java.base/java.lang.Thread.run(Thread.java:831)
+22-Sep-2023 23:30:43.730 情報 [mysql-cj-abandoned-connection-cleanup] org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading 不正なアクセス: このWebアプリケーションのインスタンスは既に停止されています  Could not load []. 不正なアクセスを引き起こしたスレッドを終了させ、投げられたエラーによりデバッグ用に次のスタックトレースが生成されましたが，機能に影響はありません
+	java.lang.IllegalStateException: 不正なアクセス: このWebアプリケーションのインスタンスは既に停止されています  Could not load []. 不正なアクセスを引き起こしたスレッドを終了させ、投げられたエラーによりデバッグ用に次のスタックトレースが生成されましたが，機能に影響はありません
+		at org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading(WebappClassLoaderBase.java:1457)
+		at org.apache.catalina.loader.WebappClassLoaderBase.getResource(WebappClassLoaderBase.java:1047)
+		at com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.checkThreadContextClassLoader(AbandonedConnectionCleanupThread.java:123)
+		at com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.run(AbandonedConnectionCleanupThread.java:90)
+		at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+		at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+		at java.base/java.lang.Thread.run(Thread.java:831)
+22-Sep-2023 23:30:43.730 情報 [mysql-cj-abandoned-connection-cleanup] org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading 不正なアクセス: このWebアプリケーションのインスタンスは既に停止されています  Could not load []. 不正なアクセスを引き起こしたスレッドを終了させ、投げられたエラーによりデバッグ用に次のスタックトレースが生成されましたが，機能に影響はありません
+	java.lang.IllegalStateException: 不正なアクセス: このWebアプリケーションのインスタンスは既に停止されています  Could not load []. 不正なアクセスを引き起こしたスレッドを終了させ、投げられたエラーによりデバッグ用に次のスタックトレースが生成されましたが，機能に影響はありません
+		at org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading(WebappClassLoaderBase.java:1457)
+		at org.apache.catalina.loader.WebappClassLoaderBase.getResource(WebappClassLoaderBase.java:1047)
+		at com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.checkThreadContextClassLoader(AbandonedConnectionCleanupThread.java:123)
+		at com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.run(AbandonedConnectionCleanupThread.java:90)
+		at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+		at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+		at java.base/java.lang.Thread.run(Thread.java:831)
+22-Sep-2023 23:30:43.731 情報 [mysql-cj-abandoned-connection-cleanup] org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading 不正なアクセス: このWebアプリケーションのインスタンスは既に停止されています  Could not load []. 不正なアクセスを引き起こしたスレッドを終了させ、投げられたエラーによりデバッグ用に次のスタックトレースが生成されましたが，機能に影響はありません
+	java.lang.IllegalStateException: 不正なアクセス: このWebアプリケーションのインスタンスは既に停止されています  Could not load []. 不正なアクセスを引き起こしたスレッドを終了させ、投げられたエラーによりデバッグ用に次のスタックトレースが生成されましたが，機能に影響はありません
+		at org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading(WebappClassLoaderBase.java:1457)
+		at org.apache.catalina.loader.WebappClassLoaderBase.getResource(WebappClassLoaderBase.java:1047)
+		at com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.checkThreadContextClassLoader(AbandonedConnectionCleanupThread.java:123)
+		at com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.run(AbandonedConnectionCleanupThread.java:90)
+		at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+		at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+		at java.base/java.lang.Thread.run(Thread.java:831)
+22-Sep-2023 23:36:08.202 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log Serverのバージョン名:     Apache Tomcat/10.1.13
+22-Sep-2023 23:36:08.207 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log Server ビルド:            Aug 23 2023 21:34:59 UTC
+22-Sep-2023 23:36:08.207 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log サーバーのバージョン番号: 10.1.13.0
+22-Sep-2023 23:36:08.207 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log OS 名:                    Mac OS X
+22-Sep-2023 23:36:08.207 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log OS バージョン:            11.5
+22-Sep-2023 23:36:08.207 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log アーキテクチャ:           x86_64
+22-Sep-2023 23:36:08.208 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:                /Library/Java/JavaVirtualMachines/jdk-16.0.1.jdk/Contents/Home
+22-Sep-2023 23:36:08.208 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log JVM バージョン:           16.0.1+9-24
+22-Sep-2023 23:36:08.208 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log JVM ベンダ:               Oracle Corporation
+22-Sep-2023 23:36:08.208 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:            /Users/aokihayata/aoki_app/tomcat
+22-Sep-2023 23:36:08.208 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:            /Users/aokihayata/aoki_app/tomcat
+22-Sep-2023 23:36:08.264 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       -Djava.util.logging.config.file=/Users/aokihayata/aoki_app/tomcat/conf/logging.properties
+22-Sep-2023 23:36:08.264 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+22-Sep-2023 23:36:08.265 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       -Djdk.tls.ephemeralDHKeySize=2048
+22-Sep-2023 23:36:08.265 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+22-Sep-2023 23:36:08.265 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+22-Sep-2023 23:36:08.265 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       --add-opens=java.base/java.lang=ALL-UNNAMED
+22-Sep-2023 23:36:08.265 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       --add-opens=java.base/java.io=ALL-UNNAMED
+22-Sep-2023 23:36:08.265 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       --add-opens=java.base/java.util=ALL-UNNAMED
+22-Sep-2023 23:36:08.265 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+22-Sep-2023 23:36:08.265 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+22-Sep-2023 23:36:08.266 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       -Dcatalina.base=/Users/aokihayata/aoki_app/tomcat
+22-Sep-2023 23:36:08.266 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       -Dcatalina.home=/Users/aokihayata/aoki_app/tomcat
+22-Sep-2023 23:36:08.266 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       -Djava.io.tmpdir=/Users/aokihayata/aoki_app/tomcat/temp
+22-Sep-2023 23:36:08.269 情報 [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent 商用環境に最適な性能を発揮する APR ベースの Tomcat ネイティブライブラリが java.library.path [/Users/aokihayata/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.] に存在しません。
+22-Sep-2023 23:36:08.610 情報 [main] org.apache.coyote.AbstractProtocol.init プロトコルハンドラ ["http-nio-8080"] を初期化します。
+22-Sep-2023 23:36:08.670 情報 [main] org.apache.catalina.startup.Catalina.load サーバーの初期化 [740] ミリ秒
+22-Sep-2023 23:36:08.728 情報 [main] org.apache.catalina.core.StandardService.startInternal サービス [Catalina] を起動します
+22-Sep-2023 23:36:08.729 情報 [main] org.apache.catalina.core.StandardEngine.startInternal サーブレットエンジンの起動：[Apache Tomcat/10.1.13]
+22-Sep-2023 23:36:08.739 情報 [main] org.apache.catalina.startup.HostConfig.deployDescriptor 配備記述子 [/Users/aokihayata/aoki_app/tomcat/conf/Catalina/localhost/mywork.xml] を配備します
+22-Sep-2023 23:36:09.141 情報 [main] org.apache.catalina.startup.HostConfig.deployDescriptor 配備記述子 [/Users/aokihayata/aoki_app/tomcat/conf/Catalina/localhost/mywork.xml] の展開が [396] ミリ秒で完了しました
+22-Sep-2023 23:36:09.142 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory Web アプリケーションディレクトリ [/Users/aokihayata/aoki_app/tomcat/webapps/ProEnv] を配備します
+22-Sep-2023 23:36:09.609 情報 [main] org.apache.jasper.servlet.TldScanner.scanJars 少なくとも1つのJARでTLDをスキャンしましたが、TLDが含まれていませんでした。スキャンしたもののTLDが見つからなかったJARの完全なリストについては、このロガーのデバッグログを有効にしてください。スキャン中に不要なJARをスキップすると、起動時間とJSPのコンパイル時間が短縮されます。
+22-Sep-2023 23:36:09.611 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory ディレクトリ [/Users/aokihayata/aoki_app/tomcat/webapps/ProEnv] の Web アプリケーションの配備は [469] ミリ秒で完了しました。
+22-Sep-2023 23:36:09.611 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory Web アプリケーションディレクトリ [/Users/aokihayata/aoki_app/tomcat/webapps/docs] を配備します
+22-Sep-2023 23:36:09.639 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory ディレクトリ [/Users/aokihayata/aoki_app/tomcat/webapps/docs] の Web アプリケーションの配備は [28] ミリ秒で完了しました。
+22-Sep-2023 23:36:09.639 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory Web アプリケーションディレクトリ [/Users/aokihayata/aoki_app/tomcat/webapps/manager] を配備します
+22-Sep-2023 23:36:09.695 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory ディレクトリ [/Users/aokihayata/aoki_app/tomcat/webapps/manager] の Web アプリケーションの配備は [56] ミリ秒で完了しました。
+22-Sep-2023 23:36:09.695 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory Web アプリケーションディレクトリ [/Users/aokihayata/aoki_app/tomcat/webapps/examples] を配備します
+22-Sep-2023 23:36:09.983 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory ディレクトリ [/Users/aokihayata/aoki_app/tomcat/webapps/examples] の Web アプリケーションの配備は [287] ミリ秒で完了しました。
+22-Sep-2023 23:36:09.983 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory Web アプリケーションディレクトリ [/Users/aokihayata/aoki_app/tomcat/webapps/ROOT] を配備します
+22-Sep-2023 23:36:10.000 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory ディレクトリ [/Users/aokihayata/aoki_app/tomcat/webapps/ROOT] の Web アプリケーションの配備は [17] ミリ秒で完了しました。
+22-Sep-2023 23:36:10.000 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory Web アプリケーションディレクトリ [/Users/aokihayata/aoki_app/tomcat/webapps/mydatabase] を配備します
+22-Sep-2023 23:36:10.020 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory ディレクトリ [/Users/aokihayata/aoki_app/tomcat/webapps/mydatabase] の Web アプリケーションの配備は [20] ミリ秒で完了しました。
+22-Sep-2023 23:36:10.020 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory Web アプリケーションディレクトリ [/Users/aokihayata/aoki_app/tomcat/webapps/host-manager] を配備します
+22-Sep-2023 23:36:10.041 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory ディレクトリ [/Users/aokihayata/aoki_app/tomcat/webapps/host-manager] の Web アプリケーションの配備は [21] ミリ秒で完了しました。
+22-Sep-2023 23:36:10.044 情報 [main] org.apache.coyote.AbstractProtocol.start プロトコルハンドラー ["http-nio-8080"] を開始しました。
+22-Sep-2023 23:36:10.062 情報 [main] org.apache.catalina.startup.Catalina.start サーバーの起動 [1392] ミリ秒
