@@ -35,7 +35,7 @@ public class User extends HttpServlet {
         
 
         //emailとパスワードが一致した場合、select文で該当のユーザーを格納
-        String sql = "SELECT * FROM users WHERE email=? AND password=?";
+        String sql = "SELECT name FROM users WHERE email=? AND password=?";
 
         try {
             Class.forName("com.mysql.jdbc.Driver");
@@ -56,19 +56,20 @@ public class User extends HttpServlet {
             
 
             ResultSet res = ps.executeQuery();
+
+            
+
             if(res.next()){
-                String gender = res.getString("gender");
-                request.setAttribute("gender",gender);
+                HttpSession session = request.getSession(true);
+                request.setAttribute("email",email);
+                
                 path = "/WEB-INF/views/user.jsp";
                 RequestDispatcher rd = request.getRequestDispatcher(path);
                 rd.forward(request, response);
-            } else{
-
+                
+            } else {
+                
             }
-            
-            
-
-            
         }catch (SQLException e) {
             e.printStackTrace();
         }       
