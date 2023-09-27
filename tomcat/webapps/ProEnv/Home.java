@@ -21,7 +21,7 @@ public class Home extends HttpServlet {
         }
 
         try (Connection connection = DriverManager.getConnection(url, root, password);
-             PreparedStatement statment = connection.prepareStatement("SELECT * FROM user");
+             PreparedStatement statment = connection.prepareStatement("SELECT * FROM users");
              ResultSet results = statment.executeQuery()) {
 
             ArrayList<HashMap<String, String>> rows = new ArrayList<HashMap<String, String>>();
