@@ -6,6 +6,7 @@ import java.io.*;
 import jakarta.servlet.*;
 import jakarta.servlet.http.*;
 import java.sql.*;
+import org.mindrot.jbcrypt.BCrypt;
 
 public class User extends HttpServlet {
 
@@ -25,6 +26,8 @@ public class User extends HttpServlet {
 
         String email = request.getParameter("email");
         String password = request.getParameter("password");
+
+        String hashed = BCrypt.hashpw(passw, BCrypt.gensalt());
        
         //request.setAttribute("email",res.getString("email"));
         
@@ -56,9 +59,16 @@ public class User extends HttpServlet {
             
 
             ResultSet res = ps.executeQuery();
+            
+
             if(res.next()){
+                String name = res.getString("name");
                 String gender = res.getString("gender");
+                int age = res.getInt("age");
+                request.setAttribute("name",name);
                 request.setAttribute("gender",gender);
+                request.setAttribute("age",age);
+               
                 path = "/WEB-INF/views/user.jsp";
                 RequestDispatcher rd = request.getRequestDispatcher(path);
                 rd.forward(request, response);

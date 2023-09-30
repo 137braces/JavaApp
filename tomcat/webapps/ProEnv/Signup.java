@@ -8,20 +8,18 @@ public class Signup extends HttpServlet {
 
     public void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException {
 
-        String url = "jdbc:mysql://localhost/mydb";
-        String root = "root";
-        String password = "";
-
-        try {
-            Class.forName("com.mysql.jdbc.Driver");
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-
-        
-
         String view = "/WEB-INF/views/signup.jsp";
         RequestDispatcher dispatcher = request.getRequestDispatcher(view);
         dispatcher.forward(request, response);
     }
+
+    public void doPost(HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException {
+        
+        
+
+        String view = "/WEB-INF/views/user.jsp";
+        RequestDispatcher dispatcher = request.getRequestDispatcher(view);
+        dispatcher.forward(request, response);
+    }
+
 }
