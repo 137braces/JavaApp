@@ -27,12 +27,12 @@
         <!-- リクエストスコープからログインユーザーのIDを取得する -->
         <%String name = (String)request.getAttribute("name"); %>
         <%String gender = (String)request.getAttribute("gender"); %>
-        <%int age = (int)request.getAttribute("age"); %>
+        
         <!-- メッセージを表示する -->
         
         <h2><%=name %></h2>
         <h2><%=gender %></h2>
-        <h2><%=age %>歳</h2>
+        
        
 
         

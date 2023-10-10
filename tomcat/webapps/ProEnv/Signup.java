@@ -13,13 +13,4 @@ public class Signup extends HttpServlet {
         dispatcher.forward(request, response);
     }
 
-    public void doPost(HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException {
-        
-        
-
-        String view = "/WEB-INF/views/user.jsp";
-        RequestDispatcher dispatcher = request.getRequestDispatcher(view);
-        dispatcher.forward(request, response);
-    }
-
 }

@@ -6,7 +6,6 @@ import java.io.*;
 import jakarta.servlet.*;
 import jakarta.servlet.http.*;
 import java.sql.*;
-import org.mindrot.jbcrypt.BCrypt;
 
 public class User extends HttpServlet {
 

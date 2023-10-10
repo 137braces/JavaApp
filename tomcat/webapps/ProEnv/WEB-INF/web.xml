@@ -45,6 +45,15 @@
         <servlet-name>User</servlet-name>
         <url-pattern>/user</url-pattern>
     </servlet-mapping>
+
+    <servlet>
+        <servlet-name>AccountRegister</servlet-name>
+        <servlet-class>AccountRegister</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AccountRegister</servlet-name>
+        <url-pattern>/accountRegister</url-pattern>
+    </servlet-mapping>
         
     
 </web-app>
