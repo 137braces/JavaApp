@@ -15,7 +15,7 @@ public class AccountRegisterSQL {
 
         //データベースに接続
         try {
-            Class.forName("com.mysql.jdbc.Driver");
+            Class.forName("com.mysql.cj.jdbc.Driver");
         } catch (Exception e) {
             e.printStackTrace();
         }
@@ -23,23 +23,24 @@ public class AccountRegisterSQL {
         final String SqlUrl = "jdbc:mysql://localhost/mydb";
         final String SqlRoot = "root";
         final String SqlPass = "";
-        int res = 0;
+      
         
 
         try (Connection con = DriverManager.getConnection(SqlUrl, SqlRoot, SqlPass);
         PreparedStatement ps = con.prepareStatement(sql)) {
+
         
         ps.setString(1, usermodel.getName());
         ps.setString(2, usermodel.getEmail());
         ps.setString(3, usermodel.getPassword());
         
         
-        res = ps.executeUpdate(sql);
+        int res = ps.executeUpdate();
 
         if(res > 0){
-
+            System.out.println("成功しました。");
         } else if(res == 0){
-            
+            System.out.println("失敗しました。");
         }
         
     

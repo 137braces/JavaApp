@@ -1,3 +1,7 @@
 {
-    "java.compile.nullAnalysis.mode": "automatic"
+    "java.compile.nullAnalysis.mode": "automatic",
+    "java.project.referencedLibraries": [
+        "lib/**/*.jar",
+        "mysql-connector-j-8.1.0/mysql-connector-j-8.1.0.jar"
+    ]
 }
