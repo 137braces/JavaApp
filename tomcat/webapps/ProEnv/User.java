@@ -6,11 +6,14 @@ import java.io.*;
 import jakarta.servlet.*;
 import jakarta.servlet.http.*;
 import java.sql.*;
+import pakage.usermodel.UserModel;
 
 public class User extends HttpServlet {
 
     public void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException {
-        HttpSession session = request.getSession(true);
+        HttpSession session = request.getSession();
+        UserModel usermodel = (UserModel) session.getAttribute("users");
+
         RequestDispatcher rd = request.getRequestDispatcher("/WEB-INF/views/user.jsp");
         rd.forward(request, response);
         
@@ -26,7 +29,7 @@ public class User extends HttpServlet {
         String email = request.getParameter("email");
         String password = request.getParameter("password");
 
-        String hashed = BCrypt.hashpw(passw, BCrypt.gensalt());
+        
        
         //request.setAttribute("email",res.getString("email"));
         
@@ -55,18 +58,19 @@ public class User extends HttpServlet {
             ps.setString(1,email);
             ps.setString(2, password);
             
+            ResultSet res = ps.executeQuery();
             
 
-            ResultSet res = ps.executeQuery();
             
 
             if(res.next()){
                 String name = res.getString("name");
                 String gender = res.getString("gender");
                 int age = res.getInt("age");
-                request.setAttribute("name",name);
-                request.setAttribute("gender",gender);
-                request.setAttribute("age",age);
+                
+                HttpSession session = request.getSession();
+                session.setAttribute("name", name);
+
                
                 path = "/WEB-INF/views/user.jsp";
                 RequestDispatcher rd = request.getRequestDispatcher(path);

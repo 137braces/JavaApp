@@ -15,3 +15,7 @@
 0:0:0:0:0:0:0:1 - - [18/Oct/2023:20:28:29 +0900] "POST /ProEnv/accountRegister HTTP/1.1" 200 383
 0:0:0:0:0:0:0:1 - - [18/Oct/2023:20:46:40 +0900] "GET /ProEnv/signup HTTP/1.1" 200 4289
 0:0:0:0:0:0:0:1 - - [18/Oct/2023:20:46:52 +0900] "POST /ProEnv/accountRegister HTTP/1.1" 200 383
+0:0:0:0:0:0:0:1 - - [18/Oct/2023:20:57:58 +0900] "POST /ProEnv/accountRegister HTTP/1.1" 200 383
+0:0:0:0:0:0:0:1 - - [18/Oct/2023:20:58:20 +0900] "GET /ProEnv/signup HTTP/1.1" 200 4289
+0:0:0:0:0:0:0:1 - - [18/Oct/2023:21:00:05 +0900] "GET /ProEnv/signup HTTP/1.1" 200 4289
+0:0:0:0:0:0:0:1 - - [18/Oct/2023:21:00:14 +0900] "POST /ProEnv/accountRegister HTTP/1.1" 200 377

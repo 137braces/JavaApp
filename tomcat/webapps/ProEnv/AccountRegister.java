@@ -5,6 +5,7 @@ import java.io.*;
 import jakarta.servlet.*;
 import jakarta.servlet.http.*;
 
+
 import java.sql.*;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
@@ -31,6 +32,8 @@ public class AccountRegister extends HttpServlet {
         usermodel.setPassword(password);
 
         AccountRegisterSQL dbRegister = new AccountRegisterSQL(usermodel);
+        HttpSession session = request.getSession();
+        session.setAttribute("users", usermodel);
 
 
         request.setAttribute("name", name);
