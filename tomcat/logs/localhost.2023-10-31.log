@@ -1,0 +1,1001 @@
+31-Oct-2023 01:31:16.642 情報 [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextDestroyed()
+31-Oct-2023 01:31:16.642 情報 [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextDestroyed()
+31-Oct-2023 01:31:18.537 情報 [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextInitialized()
+31-Oct-2023 01:31:18.538 情報 [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextInitialized()
+31-Oct-2023 01:31:18.539 情報 [main] org.apache.catalina.core.ApplicationContext.log ContextListener: attributeAdded('StockTicker', 'async.Stockticker@19569ebd')
+31-Oct-2023 01:31:41.319 情報 [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextDestroyed()
+31-Oct-2023 01:31:41.319 情報 [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextDestroyed()
+31-Oct-2023 01:31:43.196 情報 [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextInitialized()
+31-Oct-2023 01:31:43.196 情報 [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextInitialized()
+31-Oct-2023 01:31:43.198 情報 [main] org.apache.catalina.core.ApplicationContext.log ContextListener: attributeAdded('StockTicker', 'async.Stockticker@6e1f8469')
+31-Oct-2023 01:31:49.756 情報 [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextDestroyed()
+31-Oct-2023 01:31:49.756 情報 [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextDestroyed()
+31-Oct-2023 01:31:51.342 情報 [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextInitialized()
+31-Oct-2023 01:31:51.342 情報 [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextInitialized()
+31-Oct-2023 01:31:51.344 情報 [main] org.apache.catalina.core.ApplicationContext.log ContextListener: attributeAdded('StockTicker', 'async.Stockticker@7ec58feb')
+31-Oct-2023 01:36:29.788 重大 [http-nio-8080-exec-6] org.apache.catalina.core.ApplicationDispatcher.invoke サーブレット [jsp] のServlet.service()が例外を投げました
+	org.apache.jasper.JasperException: JSPのクラスをコンパイルできません: 
+
+JSPファイル: [/WEB-INF/views/search.jsp] の中の [23] 行目でエラーが発生しました
+Syntax error on token ">", delete this token
+20:                 <li class="nav__item"><a href="#"><%= name %></a></li>
+21:                 <% if(name == "れのん") { %>
+22:                 <li class="nav__item"><a href="#">さがす</a></li>
+23:                 <% }>
+24:                
+25:                 <li class="nav__item"><a href="#">ログアウト</a></li>
+26:               </ul>
+
+
+JSPファイル: [/WEB-INF/views/search.jsp] の中の [25] 行目でエラーが発生しました
+Syntax error on tokens, Expression expected instead
+22:                 <li class="nav__item"><a href="#">さがす</a></li>
+23:                 <% }>
+24:                
+25:                 <li class="nav__item"><a href="#">ログアウト</a></li>
+26:               </ul>
+27:             </nav>
+28:           </header>
+
+
+JSPファイル: [/WEB-INF/views/search.jsp] の中の [25] 行目でエラーが発生しました
+Syntax error on tokens, Expression expected instead
+22:                 <li class="nav__item"><a href="#">さがす</a></li>
+23:                 <% }>
+24:                
+25:                 <li class="nav__item"><a href="#">ログアウト</a></li>
+26:               </ul>
+27:             </nav>
+28:           </header>
+
+
+JSPファイル: [/WEB-INF/views/search.jsp] の中の [25] 行目でエラーが発生しました
+Syntax error on token "<", @ expected
+22:                 <li class="nav__item"><a href="#">さがす</a></li>
+23:                 <% }>
+24:                
+25:                 <li class="nav__item"><a href="#">ログアウト</a></li>
+26:               </ul>
+27:             </nav>
+28:           </header>
+
+
+JSPファイル: [/WEB-INF/views/search.jsp] の中の [25] 行目でエラーが発生しました
+Syntax error on token "=", <= expected
+22:                 <li class="nav__item"><a href="#">さがす</a></li>
+23:                 <% }>
+24:                
+25:                 <li class="nav__item"><a href="#">ログアウト</a></li>
+26:               </ul>
+27:             </nav>
+28:           </header>
+
+
+JSPファイル: [/WEB-INF/views/search.jsp] の中の [25] 行目でエラーが発生しました
+Syntax error on token "/", delete this token
+22:                 <li class="nav__item"><a href="#">さがす</a></li>
+23:                 <% }>
+24:                
+25:                 <li class="nav__item"><a href="#">ログアウト</a></li>
+26:               </ul>
+27:             </nav>
+28:           </header>
+
+
+JSPファイル: [/WEB-INF/views/search.jsp] の中の [25] 行目でエラーが発生しました
+Syntax error on token "<", invalid Expression
+22:                 <li class="nav__item"><a href="#">さがす</a></li>
+23:                 <% }>
+24:                
+25:                 <li class="nav__item"><a href="#">ログアウト</a></li>
+26:               </ul>
+27:             </nav>
+28:           </header>
+
+
+JSPファイル: [/WEB-INF/views/search.jsp] の中の [26] 行目でエラーが発生しました
+Syntax error on token "<", invalid Expression
+23:                 <% }>
+24:                
+25:                 <li class="nav__item"><a href="#">ログアウト</a></li>
+26:               </ul>
+27:             </nav>
+28:           </header>
+29:     
+
+
+JSPファイル: [/WEB-INF/views/search.jsp] の中の [27] 行目でエラーが発生しました
+Syntax error on token "<", invalid Expression
+24:                
+25:                 <li class="nav__item"><a href="#">ログアウト</a></li>
+26:               </ul>
+27:             </nav>
+28:           </header>
+29:     
+30:         
+
+
+JSPファイル: [/WEB-INF/views/search.jsp] の中の [28] 行目でエラーが発生しました
+Syntax error on token "<", invalid Expression
+25:                 <li class="nav__item"><a href="#">ログアウト</a></li>
+26:               </ul>
+27:             </nav>
+28:           </header>
+29:     
+30:         
+31:           <div class="arraylist">
+
+
+JSPファイル: [/WEB-INF/views/search.jsp] の中の [28] 行目でエラーが発生しました
+Syntax error on token(s), misplaced construct(s)
+25:                 <li class="nav__item"><a href="#">ログアウト</a></li>
+26:               </ul>
+27:             </nav>
+28:           </header>
+29:     
+30:         
+31:           <div class="arraylist">
+
+
+JSPファイル: [/WEB-INF/views/search.jsp] の中の [32] 行目でエラーが発生しました
+Syntax error on token "<", invalid Expression
+29:     
+30:         
+31:           <div class="arraylist">
+32:             <%
+33:             ArrayList<HashMap<String,String>> rows = (ArrayList<HashMap<String,String>>)request.getAttribute("rows");
+34:             %>
+35: 
+
+
+JSPファイル: [/WEB-INF/views/search.jsp] の中の [33] 行目でエラーが発生しました
+Syntax error on token ",", . expected
+30:         
+31:           <div class="arraylist">
+32:             <%
+33:             ArrayList<HashMap<String,String>> rows = (ArrayList<HashMap<String,String>>)request.getAttribute("rows");
+34:             %>
+35: 
+36:             <%
+
+
+JSPファイル: [/WEB-INF/views/search.jsp] の中の [33] 行目でエラーが発生しました
+Syntax error on token "=", <= expected
+30:         
+31:           <div class="arraylist">
+32:             <%
+33:             ArrayList<HashMap<String,String>> rows = (ArrayList<HashMap<String,String>>)request.getAttribute("rows");
+34:             %>
+35: 
+36:             <%
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:213)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:513)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:402)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:372)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:356)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:396)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:642)
+		at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:408)
+		at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:340)
+		at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:277)
+		at Search.doGet(Search.java:62)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:894)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1740)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:831)
+31-Oct-2023 01:36:29.788 重大 [http-nio-8080-exec-6] org.apache.catalina.core.StandardWrapperValve.invoke パス [/ProEnv] を持つコンテキスト内のサーブレット [Search] のServlet.service() が例外 [JSPのクラスをコンパイルできません: 
+
+JSPファイル: [/WEB-INF/views/search.jsp] の中の [23] 行目でエラーが発生しました
+Syntax error on token ">", delete this token
+20:                 <li class="nav__item"><a href="#"><%= name %></a></li>
+21:                 <% if(name == "れのん") { %>
+22:                 <li class="nav__item"><a href="#">さがす</a></li>
+23:                 <% }>
+24:                
+25:                 <li class="nav__item"><a href="#">ログアウト</a></li>
+26:               </ul>
+
+
+JSPファイル: [/WEB-INF/views/search.jsp] の中の [25] 行目でエラーが発生しました
+Syntax error on tokens, Expression expected instead
+22:                 <li class="nav__item"><a href="#">さがす</a></li>
+23:                 <% }>
+24:                
+25:                 <li class="nav__item"><a href="#">ログアウト</a></li>
+26:               </ul>
+27:             </nav>
+28:           </header>
+
+
+JSPファイル: [/WEB-INF/views/search.jsp] の中の [25] 行目でエラーが発生しました
+Syntax error on tokens, Expression expected instead
+22:                 <li class="nav__item"><a href="#">さがす</a></li>
+23:                 <% }>
+24:                
+25:                 <li class="nav__item"><a href="#">ログアウト</a></li>
+26:               </ul>
+27:             </nav>
+28:           </header>
+
+
+JSPファイル: [/WEB-INF/views/search.jsp] の中の [25] 行目でエラーが発生しました
+Syntax error on token "<", @ expected
+22:                 <li class="nav__item"><a href="#">さがす</a></li>
+23:                 <% }>
+24:                
+25:                 <li class="nav__item"><a href="#">ログアウト</a></li>
+26:               </ul>
+27:             </nav>
+28:           </header>
+
+
+JSPファイル: [/WEB-INF/views/search.jsp] の中の [25] 行目でエラーが発生しました
+Syntax error on token "=", <= expected
+22:                 <li class="nav__item"><a href="#">さがす</a></li>
+23:                 <% }>
+24:                
+25:                 <li class="nav__item"><a href="#">ログアウト</a></li>
+26:               </ul>
+27:             </nav>
+28:           </header>
+
+
+JSPファイル: [/WEB-INF/views/search.jsp] の中の [25] 行目でエラーが発生しました
+Syntax error on token "/", delete this token
+22:                 <li class="nav__item"><a href="#">さがす</a></li>
+23:                 <% }>
+24:                
+25:                 <li class="nav__item"><a href="#">ログアウト</a></li>
+26:               </ul>
+27:             </nav>
+28:           </header>
+
+
+JSPファイル: [/WEB-INF/views/search.jsp] の中の [25] 行目でエラーが発生しました
+Syntax error on token "<", invalid Expression
+22:                 <li class="nav__item"><a href="#">さがす</a></li>
+23:                 <% }>
+24:                
+25:                 <li class="nav__item"><a href="#">ログアウト</a></li>
+26:               </ul>
+27:             </nav>
+28:           </header>
+
+
+JSPファイル: [/WEB-INF/views/search.jsp] の中の [26] 行目でエラーが発生しました
+Syntax error on token "<", invalid Expression
+23:                 <% }>
+24:                
+25:                 <li class="nav__item"><a href="#">ログアウト</a></li>
+26:               </ul>
+27:             </nav>
+28:           </header>
+29:     
+
+
+JSPファイル: [/WEB-INF/views/search.jsp] の中の [27] 行目でエラーが発生しました
+Syntax error on token "<", invalid Expression
+24:                
+25:                 <li class="nav__item"><a href="#">ログアウト</a></li>
+26:               </ul>
+27:             </nav>
+28:           </header>
+29:     
+30:         
+
+
+JSPファイル: [/WEB-INF/views/search.jsp] の中の [28] 行目でエラーが発生しました
+Syntax error on token "<", invalid Expression
+25:                 <li class="nav__item"><a href="#">ログアウト</a></li>
+26:               </ul>
+27:             </nav>
+28:           </header>
+29:     
+30:         
+31:           <div class="arraylist">
+
+
+JSPファイル: [/WEB-INF/views/search.jsp] の中の [28] 行目でエラーが発生しました
+Syntax error on token(s), misplaced construct(s)
+25:                 <li class="nav__item"><a href="#">ログアウト</a></li>
+26:               </ul>
+27:             </nav>
+28:           </header>
+29:     
+30:         
+31:           <div class="arraylist">
+
+
+JSPファイル: [/WEB-INF/views/search.jsp] の中の [32] 行目でエラーが発生しました
+Syntax error on token "<", invalid Expression
+29:     
+30:         
+31:           <div class="arraylist">
+32:             <%
+33:             ArrayList<HashMap<String,String>> rows = (ArrayList<HashMap<String,String>>)request.getAttribute("rows");
+34:             %>
+35: 
+
+
+JSPファイル: [/WEB-INF/views/search.jsp] の中の [33] 行目でエラーが発生しました
+Syntax error on token ",", . expected
+30:         
+31:           <div class="arraylist">
+32:             <%
+33:             ArrayList<HashMap<String,String>> rows = (ArrayList<HashMap<String,String>>)request.getAttribute("rows");
+34:             %>
+35: 
+36:             <%
+
+
+JSPファイル: [/WEB-INF/views/search.jsp] の中の [33] 行目でエラーが発生しました
+Syntax error on token "=", <= expected
+30:         
+31:           <div class="arraylist">
+32:             <%
+33:             ArrayList<HashMap<String,String>> rows = (ArrayList<HashMap<String,String>>)request.getAttribute("rows");
+34:             %>
+35: 
+36:             <%
+
+
+Stacktrace:] が根本的要因と共に投げられました
+	org.apache.jasper.JasperException: JSPのクラスをコンパイルできません: 
+
+JSPファイル: [/WEB-INF/views/search.jsp] の中の [23] 行目でエラーが発生しました
+Syntax error on token ">", delete this token
+20:                 <li class="nav__item"><a href="#"><%= name %></a></li>
+21:                 <% if(name == "れのん") { %>
+22:                 <li class="nav__item"><a href="#">さがす</a></li>
+23:                 <% }>
+24:                
+25:                 <li class="nav__item"><a href="#">ログアウト</a></li>
+26:               </ul>
+
+
+JSPファイル: [/WEB-INF/views/search.jsp] の中の [25] 行目でエラーが発生しました
+Syntax error on tokens, Expression expected instead
+22:                 <li class="nav__item"><a href="#">さがす</a></li>
+23:                 <% }>
+24:                
+25:                 <li class="nav__item"><a href="#">ログアウト</a></li>
+26:               </ul>
+27:             </nav>
+28:           </header>
+
+
+JSPファイル: [/WEB-INF/views/search.jsp] の中の [25] 行目でエラーが発生しました
+Syntax error on tokens, Expression expected instead
+22:                 <li class="nav__item"><a href="#">さがす</a></li>
+23:                 <% }>
+24:                
+25:                 <li class="nav__item"><a href="#">ログアウト</a></li>
+26:               </ul>
+27:             </nav>
+28:           </header>
+
+
+JSPファイル: [/WEB-INF/views/search.jsp] の中の [25] 行目でエラーが発生しました
+Syntax error on token "<", @ expected
+22:                 <li class="nav__item"><a href="#">さがす</a></li>
+23:                 <% }>
+24:                
+25:                 <li class="nav__item"><a href="#">ログアウト</a></li>
+26:               </ul>
+27:             </nav>
+28:           </header>
+
+
+JSPファイル: [/WEB-INF/views/search.jsp] の中の [25] 行目でエラーが発生しました
+Syntax error on token "=", <= expected
+22:                 <li class="nav__item"><a href="#">さがす</a></li>
+23:                 <% }>
+24:                
+25:                 <li class="nav__item"><a href="#">ログアウト</a></li>
+26:               </ul>
+27:             </nav>
+28:           </header>
+
+
+JSPファイル: [/WEB-INF/views/search.jsp] の中の [25] 行目でエラーが発生しました
+Syntax error on token "/", delete this token
+22:                 <li class="nav__item"><a href="#">さがす</a></li>
+23:                 <% }>
+24:                
+25:                 <li class="nav__item"><a href="#">ログアウト</a></li>
+26:               </ul>
+27:             </nav>
+28:           </header>
+
+
+JSPファイル: [/WEB-INF/views/search.jsp] の中の [25] 行目でエラーが発生しました
+Syntax error on token "<", invalid Expression
+22:                 <li class="nav__item"><a href="#">さがす</a></li>
+23:                 <% }>
+24:                
+25:                 <li class="nav__item"><a href="#">ログアウト</a></li>
+26:               </ul>
+27:             </nav>
+28:           </header>
+
+
+JSPファイル: [/WEB-INF/views/search.jsp] の中の [26] 行目でエラーが発生しました
+Syntax error on token "<", invalid Expression
+23:                 <% }>
+24:                
+25:                 <li class="nav__item"><a href="#">ログアウト</a></li>
+26:               </ul>
+27:             </nav>
+28:           </header>
+29:     
+
+
+JSPファイル: [/WEB-INF/views/search.jsp] の中の [27] 行目でエラーが発生しました
+Syntax error on token "<", invalid Expression
+24:                
+25:                 <li class="nav__item"><a href="#">ログアウト</a></li>
+26:               </ul>
+27:             </nav>
+28:           </header>
+29:     
+30:         
+
+
+JSPファイル: [/WEB-INF/views/search.jsp] の中の [28] 行目でエラーが発生しました
+Syntax error on token "<", invalid Expression
+25:                 <li class="nav__item"><a href="#">ログアウト</a></li>
+26:               </ul>
+27:             </nav>
+28:           </header>
+29:     
+30:         
+31:           <div class="arraylist">
+
+
+JSPファイル: [/WEB-INF/views/search.jsp] の中の [28] 行目でエラーが発生しました
+Syntax error on token(s), misplaced construct(s)
+25:                 <li class="nav__item"><a href="#">ログアウト</a></li>
+26:               </ul>
+27:             </nav>
+28:           </header>
+29:     
+30:         
+31:           <div class="arraylist">
+
+
+JSPファイル: [/WEB-INF/views/search.jsp] の中の [32] 行目でエラーが発生しました
+Syntax error on token "<", invalid Expression
+29:     
+30:         
+31:           <div class="arraylist">
+32:             <%
+33:             ArrayList<HashMap<String,String>> rows = (ArrayList<HashMap<String,String>>)request.getAttribute("rows");
+34:             %>
+35: 
+
+
+JSPファイル: [/WEB-INF/views/search.jsp] の中の [33] 行目でエラーが発生しました
+Syntax error on token ",", . expected
+30:         
+31:           <div class="arraylist">
+32:             <%
+33:             ArrayList<HashMap<String,String>> rows = (ArrayList<HashMap<String,String>>)request.getAttribute("rows");
+34:             %>
+35: 
+36:             <%
+
+
+JSPファイル: [/WEB-INF/views/search.jsp] の中の [33] 行目でエラーが発生しました
+Syntax error on token "=", <= expected
+30:         
+31:           <div class="arraylist">
+32:             <%
+33:             ArrayList<HashMap<String,String>> rows = (ArrayList<HashMap<String,String>>)request.getAttribute("rows");
+34:             %>
+35: 
+36:             <%
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:213)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:513)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:402)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:372)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:356)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:396)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:642)
+		at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:408)
+		at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:340)
+		at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:277)
+		at Search.doGet(Search.java:62)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:894)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1740)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:831)
+31-Oct-2023 01:49:16.508 情報 [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextDestroyed()
+31-Oct-2023 01:49:16.508 情報 [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextDestroyed()
+31-Oct-2023 01:49:18.353 情報 [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextInitialized()
+31-Oct-2023 01:49:18.353 情報 [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextInitialized()
+31-Oct-2023 01:49:18.354 情報 [main] org.apache.catalina.core.ApplicationContext.log ContextListener: attributeAdded('StockTicker', 'async.Stockticker@6124287a')
+31-Oct-2023 01:53:07.381 重大 [http-nio-8080-exec-8] org.apache.catalina.core.ApplicationDispatcher.invoke サーブレット [jsp] のServlet.service()が例外を投げました
+	org.apache.jasper.JasperException: JSPのクラスをコンパイルできません: 
+
+JSPファイル: [/WEB-INF/views/user.jsp] の中の [31] 行目でエラーが発生しました
+The operator ! is undefined for the argument type(s) String
+28:         <nav>
+29:           <ul class="nav__list">
+30:             <li class="nav__item"><a href="#"><%= name %></a></li>
+31:             <% if(name ==! "青木駿太") { %>
+32:               <li class="nav__item"><a href="search_woman">さがす</a></li>
+33:             <% } %>
+34:             <li class="nav__item"><a href="post">つぶやき</a></li>
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:213)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:513)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:402)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:372)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:356)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:396)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:642)
+		at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:408)
+		at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:340)
+		at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:277)
+		at User.doPost(User.java:81)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:894)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1740)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:831)
+31-Oct-2023 01:53:07.382 重大 [http-nio-8080-exec-8] org.apache.catalina.core.StandardWrapperValve.invoke パス [/ProEnv] を持つコンテキスト内のサーブレット [User] のServlet.service() が例外 [JSPのクラスをコンパイルできません: 
+
+JSPファイル: [/WEB-INF/views/user.jsp] の中の [31] 行目でエラーが発生しました
+The operator ! is undefined for the argument type(s) String
+28:         <nav>
+29:           <ul class="nav__list">
+30:             <li class="nav__item"><a href="#"><%= name %></a></li>
+31:             <% if(name ==! "青木駿太") { %>
+32:               <li class="nav__item"><a href="search_woman">さがす</a></li>
+33:             <% } %>
+34:             <li class="nav__item"><a href="post">つぶやき</a></li>
+
+
+Stacktrace:] が根本的要因と共に投げられました
+	org.apache.jasper.JasperException: JSPのクラスをコンパイルできません: 
+
+JSPファイル: [/WEB-INF/views/user.jsp] の中の [31] 行目でエラーが発生しました
+The operator ! is undefined for the argument type(s) String
+28:         <nav>
+29:           <ul class="nav__list">
+30:             <li class="nav__item"><a href="#"><%= name %></a></li>
+31:             <% if(name ==! "青木駿太") { %>
+32:               <li class="nav__item"><a href="search_woman">さがす</a></li>
+33:             <% } %>
+34:             <li class="nav__item"><a href="post">つぶやき</a></li>
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:213)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:513)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:402)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:372)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:356)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:396)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:642)
+		at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:408)
+		at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:340)
+		at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:277)
+		at User.doPost(User.java:81)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:894)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1740)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:831)
+31-Oct-2023 01:53:17.885 重大 [http-nio-8080-exec-9] org.apache.catalina.core.ApplicationDispatcher.invoke サーブレット [jsp] のServlet.service()が例外を投げました
+	org.apache.jasper.JasperException: JSPのクラスをコンパイルできません: 
+
+JSPファイル: [/WEB-INF/views/user.jsp] の中の [31] 行目でエラーが発生しました
+The operator ! is undefined for the argument type(s) String
+28:         <nav>
+29:           <ul class="nav__list">
+30:             <li class="nav__item"><a href="#"><%= name %></a></li>
+31:             <% if(name =! "青木駿太") { %>
+32:               <li class="nav__item"><a href="search_woman">さがす</a></li>
+33:             <% } %>
+34:             <li class="nav__item"><a href="post">つぶやき</a></li>
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:213)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:513)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:402)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:372)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:356)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:396)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:642)
+		at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:408)
+		at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:340)
+		at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:277)
+		at User.doPost(User.java:81)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:894)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1740)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:831)
+31-Oct-2023 01:53:17.885 重大 [http-nio-8080-exec-9] org.apache.catalina.core.StandardWrapperValve.invoke パス [/ProEnv] を持つコンテキスト内のサーブレット [User] のServlet.service() が例外 [JSPのクラスをコンパイルできません: 
+
+JSPファイル: [/WEB-INF/views/user.jsp] の中の [31] 行目でエラーが発生しました
+The operator ! is undefined for the argument type(s) String
+28:         <nav>
+29:           <ul class="nav__list">
+30:             <li class="nav__item"><a href="#"><%= name %></a></li>
+31:             <% if(name =! "青木駿太") { %>
+32:               <li class="nav__item"><a href="search_woman">さがす</a></li>
+33:             <% } %>
+34:             <li class="nav__item"><a href="post">つぶやき</a></li>
+
+
+Stacktrace:] が根本的要因と共に投げられました
+	org.apache.jasper.JasperException: JSPのクラスをコンパイルできません: 
+
+JSPファイル: [/WEB-INF/views/user.jsp] の中の [31] 行目でエラーが発生しました
+The operator ! is undefined for the argument type(s) String
+28:         <nav>
+29:           <ul class="nav__list">
+30:             <li class="nav__item"><a href="#"><%= name %></a></li>
+31:             <% if(name =! "青木駿太") { %>
+32:               <li class="nav__item"><a href="search_woman">さがす</a></li>
+33:             <% } %>
+34:             <li class="nav__item"><a href="post">つぶやき</a></li>
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:213)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:513)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:402)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:372)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:356)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:396)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:642)
+		at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:408)
+		at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:340)
+		at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:277)
+		at User.doPost(User.java:81)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:894)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1740)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:831)
+31-Oct-2023 01:53:55.784 情報 [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextDestroyed()
+31-Oct-2023 01:53:55.784 情報 [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextDestroyed()
+31-Oct-2023 01:53:57.486 情報 [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextInitialized()
+31-Oct-2023 01:53:57.486 情報 [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextInitialized()
+31-Oct-2023 01:53:57.487 情報 [main] org.apache.catalina.core.ApplicationContext.log ContextListener: attributeAdded('StockTicker', 'async.Stockticker@7ec58feb')
+31-Oct-2023 01:54:33.779 重大 [http-nio-8080-exec-6] org.apache.catalina.core.ApplicationDispatcher.invoke サーブレット [jsp] のServlet.service()が例外を投げました
+	org.apache.jasper.JasperException: JSPのクラスをコンパイルできません: 
+
+JSPファイル: [/WEB-INF/views/user.jsp] の中の [31] 行目でエラーが発生しました
+Syntax error on token "=", delete this token
+28:         <nav>
+29:           <ul class="nav__list">
+30:             <li class="nav__item"><a href="#"><%= name %></a></li>
+31:             <% if(gender === "男性") { %>
+32:               <li class="nav__item"><a href="search_woman">さがす</a></li>
+33:             <% } %>
+34:             <li class="nav__item"><a href="post">つぶやき</a></li>
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:213)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:513)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:402)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:372)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:356)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:396)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:642)
+		at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:408)
+		at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:340)
+		at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:277)
+		at User.doPost(User.java:81)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:894)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1740)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:831)
+31-Oct-2023 01:54:33.779 重大 [http-nio-8080-exec-6] org.apache.catalina.core.StandardWrapperValve.invoke パス [/ProEnv] を持つコンテキスト内のサーブレット [User] のServlet.service() が例外 [JSPのクラスをコンパイルできません: 
+
+JSPファイル: [/WEB-INF/views/user.jsp] の中の [31] 行目でエラーが発生しました
+Syntax error on token "=", delete this token
+28:         <nav>
+29:           <ul class="nav__list">
+30:             <li class="nav__item"><a href="#"><%= name %></a></li>
+31:             <% if(gender === "男性") { %>
+32:               <li class="nav__item"><a href="search_woman">さがす</a></li>
+33:             <% } %>
+34:             <li class="nav__item"><a href="post">つぶやき</a></li>
+
+
+Stacktrace:] が根本的要因と共に投げられました
+	org.apache.jasper.JasperException: JSPのクラスをコンパイルできません: 
+
+JSPファイル: [/WEB-INF/views/user.jsp] の中の [31] 行目でエラーが発生しました
+Syntax error on token "=", delete this token
+28:         <nav>
+29:           <ul class="nav__list">
+30:             <li class="nav__item"><a href="#"><%= name %></a></li>
+31:             <% if(gender === "男性") { %>
+32:               <li class="nav__item"><a href="search_woman">さがす</a></li>
+33:             <% } %>
+34:             <li class="nav__item"><a href="post">つぶやき</a></li>
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:213)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:513)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:402)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:372)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:356)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:396)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:642)
+		at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:408)
+		at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:340)
+		at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:277)
+		at User.doPost(User.java:81)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:894)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1740)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:831)
+31-Oct-2023 16:31:17.765 情報 [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextDestroyed()
+31-Oct-2023 16:31:17.766 情報 [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextDestroyed()
+31-Oct-2023 16:31:19.429 情報 [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextInitialized()
+31-Oct-2023 16:31:19.429 情報 [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextInitialized()
+31-Oct-2023 16:31:19.431 情報 [main] org.apache.catalina.core.ApplicationContext.log ContextListener: attributeAdded('StockTicker', 'async.Stockticker@6e1f8469')
+31-Oct-2023 16:34:14.700 情報 [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextDestroyed()
+31-Oct-2023 16:34:14.700 情報 [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextDestroyed()
+31-Oct-2023 16:34:16.807 情報 [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextInitialized()
+31-Oct-2023 16:34:16.807 情報 [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextInitialized()
+31-Oct-2023 16:34:16.809 情報 [main] org.apache.catalina.core.ApplicationContext.log ContextListener: attributeAdded('StockTicker', 'async.Stockticker@52a70627')
+31-Oct-2023 16:34:46.607 情報 [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextDestroyed()
+31-Oct-2023 16:34:46.607 情報 [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextDestroyed()
+31-Oct-2023 16:34:48.427 情報 [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextInitialized()
+31-Oct-2023 16:34:48.427 情報 [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextInitialized()
+31-Oct-2023 16:34:48.429 情報 [main] org.apache.catalina.core.ApplicationContext.log ContextListener: attributeAdded('StockTicker', 'async.Stockticker@52a70627')

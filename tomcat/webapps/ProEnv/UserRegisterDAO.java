@@ -1,18 +1,17 @@
 import java.util.*;
+
+import pakage.userbean.UserBean;
+
 import java.io.*;
 import java.sql.*;
-import pakage.usermodel.UserModel;
 
-public class AccountRegisterSQL {
+public class UserRegisterDAO {
 
     
         //名前、Eメール、パスワード、性別、アドレスを取得
         
-    public AccountRegisterSQL(UserModel usermodel) {
+    public UserRegisterDAO(UserBean user_bean) {
     
-    
-        String sql = "INSERT INTO users (name, email, password) VALUES (?, ?, ?)";
-
         //データベースに接続
         try {
             Class.forName("com.mysql.cj.jdbc.Driver");
@@ -25,14 +24,16 @@ public class AccountRegisterSQL {
         final String SqlPass = "";
       
         
+        String sql = "INSERT INTO users (name, email, password) VALUES (?, ?, ?)";
+
 
         try (Connection con = DriverManager.getConnection(SqlUrl, SqlRoot, SqlPass);
         PreparedStatement ps = con.prepareStatement(sql)) {
 
         
-        ps.setString(1, usermodel.getName());
-        ps.setString(2, usermodel.getEmail());
-        ps.setString(3, usermodel.getPassword());
+        ps.setString(1, user_bean.getName());
+        ps.setString(2, user_bean.getEmail());
+        ps.setString(3, user_bean.getPassword());
         
         
         int res = ps.executeUpdate();

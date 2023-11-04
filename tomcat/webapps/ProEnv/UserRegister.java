@@ -1,10 +1,8 @@
-import pakage.usermodel.UserModel;
-
 import java.util.*;
 import java.io.*;
 import jakarta.servlet.*;
 import jakarta.servlet.http.*;
-
+import pakage.userbean.UserBean;
 
 import java.sql.*;
 import java.time.LocalDate;
@@ -12,8 +10,12 @@ import java.time.format.DateTimeFormatter;
 import java.time.temporal.ChronoUnit;
 
 
-public class AccountRegister extends HttpServlet {
+public class UserRegister extends HttpServlet {
 
+    //空のコンストラクタ
+    public UserRegister(){
+        super();
+    }
     
     public void doPost(HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException {
         
@@ -24,16 +26,16 @@ public class AccountRegister extends HttpServlet {
         
         
         // Beanを生成
-        UserModel usermodel = new UserModel();
+        UserBean userBean = new UserBean();
 
         // getterを使ってプロパティを代入
-        usermodel.setName(name);
-        usermodel.setEmail(email);
-        usermodel.setPassword(password);
+        userBean.setName(name);
+        userBean.setEmail(email);
+        userBean.setPassword(password);
 
-        AccountRegisterSQL dbRegister = new AccountRegisterSQL(usermodel);
+        UserRegisterDAO dbRegister = new UserRegisterDAO(userBean);
         HttpSession session = request.getSession();
-        session.setAttribute("users", usermodel);
+        session.setAttribute("users", userBean);
 
 
         request.setAttribute("name", name);

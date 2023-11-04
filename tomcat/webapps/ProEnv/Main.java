@@ -1,9 +1,9 @@
-import pakage.usermodel.UserModel;
+import pakage.userbean.UserBean;
 
 public class Main {
     public static void main(String[] args) {
         // Beanを生成
-        UserModel usermodel = new UserModel();
+        UserBean usermodel = new UserBean();
 
         // getterを使ってプロパティを代入
         usermodel.setName("太郎");
