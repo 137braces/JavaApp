@@ -9,6 +9,7 @@ public class UserBean implements Serializable {
     private String password;
     private String address;
     private String job;
+    private int res;
 
     //getterメソッド集
     public String getName(){
@@ -31,6 +32,9 @@ public class UserBean implements Serializable {
         return job;
     }
     
+    public int getRes(){
+        return res;
+    }
 
     //setterメソッド集
     public void setName(String name){
@@ -52,6 +56,11 @@ public class UserBean implements Serializable {
     public void setJob(String job){
         this.job = job;
     }
+
+    public void setRes(int res){
+        this.res = res;
+    }
+
 
     //空のコンストラクタ
     public UserBean(){

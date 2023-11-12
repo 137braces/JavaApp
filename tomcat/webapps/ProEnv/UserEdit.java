@@ -38,6 +38,9 @@ public class UserEdit extends HttpServlet {
                 e.printStackTrace();
             }
 
+            HttpSession session = request.getSession();
+            String id = (String)session.getAttribute("id");
+
             // Beanを生成
             UserBean user_bean = new UserBean();
             
@@ -52,15 +55,15 @@ public class UserEdit extends HttpServlet {
             //→nullじゃなければ変更したカラムに対応したINSERT文をsql変数に格納。
             //同時にUserBeanインスタンスのプロパティにもsetterメソッド格納。
             if(name != null){
-                sql = "UPDATE users SET name = (?) where id = 1";
+                sql = "UPDATE users SET name = (?) where id = (?)";
                 user_bean.setName(name);
 
             }else if(address != null){
-                sql = "UPDATE users SET address = (?) where id = 1";
+                sql = "UPDATE users SET address = (?) where id = (?)";
                 user_bean.setAddress(address);
 
             }else if(job != null){
-                sql = "UPDATE users SET job = (?) where id = 1";
+                sql = "UPDATE users SET job = (?) where id = (?)";
                 user_bean.setJob(job);
             }
 
@@ -76,6 +79,7 @@ public class UserEdit extends HttpServlet {
                 ps.setString(1, user_bean.getJob());
             }
             
+            ps.setString(2, id);
             
             int res = ps.executeUpdate();
 

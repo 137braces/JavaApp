@@ -33,13 +33,15 @@ public class UserRegister extends HttpServlet {
         userBean.setEmail(email);
         userBean.setPassword(password);
 
-        UserRegisterDAO dbRegister = new UserRegisterDAO(userBean);
-        HttpSession session = request.getSession();
-        session.setAttribute("users", userBean);
+        if(userBean.getRes() != 0){
+            UserRegisterDAO dbRegister = new UserRegisterDAO(userBean);
+            HttpSession session = request.getSession();
+            session.setAttribute("users", userBean);
+        } else {
 
+        }
 
-        request.setAttribute("name", name);
-
+        
         String path = "/WEB-INF/views/AccountRegisterResult.jsp";
         RequestDispatcher rd = request.getRequestDispatcher(path);
         rd.forward(request, response);

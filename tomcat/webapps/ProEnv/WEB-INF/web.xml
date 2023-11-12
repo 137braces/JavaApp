@@ -85,6 +85,17 @@
         <url-pattern>/user_edit</url-pattern>
     </servlet-mapping>
 
+       <servlet>
+        <servlet-name>SearchResult</servlet-name>
+        <servlet-class>SearchResult</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>SearchResult</servlet-name>
+        <url-pattern>/search_result</url-pattern>
+    </servlet-mapping>
+
+
         
     
 </web-app>

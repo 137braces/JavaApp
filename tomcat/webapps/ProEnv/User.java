@@ -61,8 +61,10 @@ public class User extends HttpServlet {
                 int age = res.getInt("age");
                 String address = res.getString(("address"));
                 String job = res.getString(("job"));
+                String id = res.getString("id");
 
                 HttpSession session = request.getSession();
+                session.setAttribute("id", id);
                 session.setAttribute("name", name);
                 session.setAttribute("age",age);
                 session.setAttribute("image",image);

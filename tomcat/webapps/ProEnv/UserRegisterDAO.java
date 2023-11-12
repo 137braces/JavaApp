@@ -38,11 +38,7 @@ public class UserRegisterDAO {
         
         int res = ps.executeUpdate();
 
-        if(res > 0){
-            System.out.println("成功しました。");
-        } else if(res == 0){
-            System.out.println("失敗しました。");
-        }
+        user_bean.setRes(res);
         
     
         }catch (SQLException e) {
