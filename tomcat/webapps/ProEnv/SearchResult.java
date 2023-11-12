@@ -30,11 +30,7 @@ public class SearchResult extends HttpServlet {
         String filter_gender = (String)session.getAttribute("gender");
         String man = "";
 
-        if(filter_gender.equals("男性")){
-            man = "女性";
-        }else if(filter_gender.equals("女性")){
-            man = "男性";
-        }
+        
         //ここまで↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑
 
         String name = request.getParameter("name");
