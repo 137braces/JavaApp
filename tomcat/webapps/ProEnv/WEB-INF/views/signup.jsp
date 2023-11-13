@@ -12,7 +12,7 @@
     <body>
         
       <div id = "app">
-        <form method="post" action="accountRegister">
+        <form method="post" action="userRegisterResult">
             <h1>新規登録</h1>
 
             <input type="text" name="name" placeholder="ニックネーム">
@@ -52,20 +52,6 @@ function passLengthCheck (){
 }
 
 </script>
-
-<script>
-  new Vue({
-    el:"#app",
-    data : {
-        
-    },
-    methods : {
-        passwordVisibility: function() {
-        this.isChecked = !this.isChecked;
-    }
-  })
-</script>
-
 
 <style>
 a{

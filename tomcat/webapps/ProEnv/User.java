@@ -3,6 +3,9 @@ import java.util.*;
 import javax.sql.rowset.serial.SerialException;
 
 import java.io.*;
+import java.security.MessageDigest;
+import java.security.NoSuchAlgorithmException;
+
 import jakarta.servlet.*;
 import jakarta.servlet.http.*;
 import pakage.userbean.UserBean;
@@ -26,6 +29,21 @@ public class User extends HttpServlet {
         String email = request.getParameter("email");
         String password = request.getParameter("password");
 
+        //ハッシュ化したパスワードを入れる変数
+        String hash = "";
+
+        
+        //パスワードをハッシュ化
+        try {
+            MessageDigest md = MessageDigest.getInstance("SHA-256");
+            md.update(password.getBytes());
+            byte[] hashBytes = md.digest();
+            hash = Base64.getEncoder().encodeToString(hashBytes);
+            System.out.println("Hashed Password: " + hash);
+            } catch (NoSuchAlgorithmException e) {
+            e.printStackTrace();
+            }
+
         
         //ログイン後、遷移先ページのパス
         String path = "";
@@ -48,7 +66,7 @@ public class User extends HttpServlet {
         PreparedStatement ps = con.prepareStatement(sql)) {
         
             ps.setString(1,email);
-            ps.setString(2, password);
+            ps.setString(2, hash);
             
             ResultSet res = ps.executeQuery();
 

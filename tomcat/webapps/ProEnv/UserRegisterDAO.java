@@ -1,8 +1,4 @@
-import java.util.*;
-
 import pakage.userbean.UserBean;
-
-import java.io.*;
 import java.sql.*;
 
 public class UserRegisterDAO {
@@ -11,6 +7,11 @@ public class UserRegisterDAO {
         //名前、Eメール、パスワード、性別、アドレスを取得
         
     public UserRegisterDAO(UserBean user_bean) {
+
+        //データベース接続情報
+        final String SqlUrl = "jdbc:mysql://localhost/mydb";
+        final String SqlRoot = "root";
+        final String SqlPass = "";
     
         //データベースに接続
         try {
@@ -19,12 +20,7 @@ public class UserRegisterDAO {
             e.printStackTrace();
         }
         
-        final String SqlUrl = "jdbc:mysql://localhost/mydb";
-        final String SqlRoot = "root";
-        final String SqlPass = "";
-      
-        
-        String sql = "INSERT INTO users (name, email, password) VALUES (?, ?, ?)";
+        final String sql = "INSERT INTO users (name, email, password) VALUES (?, ?, ?)";
 
 
         try (Connection con = DriverManager.getConnection(SqlUrl, SqlRoot, SqlPass);

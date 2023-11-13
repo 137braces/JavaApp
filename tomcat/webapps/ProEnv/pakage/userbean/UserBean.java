@@ -2,14 +2,29 @@ package pakage.userbean;
 
 
 import java.io.Serializable;
+import java.security.MessageDigest;
+import java.security.NoSuchAlgorithmException;
+import java.util.Base64;
 
 public class UserBean implements Serializable {
+    //各データベースのカラムに登録するプロパティ
     private String name;
     private String email;
     private String password;
     private String address;
     private String job;
+    private String hash;
+
+    //SQLでインサートした結果の件数を入れるための変数
     private int res;
+
+    
+
+
+    //空のコンストラクタ
+    public UserBean(){
+        super();
+    }
 
     //getterメソッド集
     public String getName(){
@@ -21,7 +36,7 @@ public class UserBean implements Serializable {
     }
 
     public String getPassword(){
-        return password;
+        return hash;
     }
 
     public String getAddress(){
@@ -36,6 +51,7 @@ public class UserBean implements Serializable {
         return res;
     }
 
+
     //setterメソッド集
     public void setName(String name){
         this.name = name;
@@ -47,6 +63,15 @@ public class UserBean implements Serializable {
 
     public void setPassword(String password){
         this.password = password;
+        try {
+            MessageDigest md = MessageDigest.getInstance("SHA-256");
+            md.update(this.password.getBytes());
+            byte[] hashBytes = md.digest();
+            hash = Base64.getEncoder().encodeToString(hashBytes);
+            System.out.println("Hashed Password: " + hash);
+            } catch (NoSuchAlgorithmException e) {
+            e.printStackTrace();
+            }
     }
 
     public void setAddress(String address){
@@ -61,10 +86,5 @@ public class UserBean implements Serializable {
         this.res = res;
     }
 
-
-    //空のコンストラクタ
-    public UserBean(){
-
-    }
     
 }

@@ -47,12 +47,12 @@
     </servlet-mapping>
 
     <servlet>
-        <servlet-name>AccountRegister</servlet-name>
-        <servlet-class>AccountRegister</servlet-class>
+        <servlet-name>UserRegister</servlet-name>
+        <servlet-class>UserRegister</servlet-class>
     </servlet>
     <servlet-mapping>
-        <servlet-name>AccountRegister</servlet-name>
-        <url-pattern>/accountRegister</url-pattern>
+        <servlet-name>UserRegister</servlet-name>
+        <url-pattern>/userRegisterResult</url-pattern>
     </servlet-mapping>
 
     <servlet>

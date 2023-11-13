@@ -58,8 +58,8 @@
             <option value="エンジニア">エンジニア</option>
             <option value="薬剤師">薬剤師</option>
             <option value="研究職">美容師</option>
-            <option value="奈良">医師</option>
-            <option value="和歌山">デザイナー</option>
+            <option value="医師">医師</option>
+            <option value="デザイナー">デザイナー</option>
         </select>
     </form>
       </div>
