@@ -8,6 +8,7 @@ import java.util.Base64;
 
 public class UserBean implements Serializable {
     //各データベースのカラムに登録するプロパティ
+    private int id;
     private String name;
     private String email;
     private String password;
@@ -18,7 +19,14 @@ public class UserBean implements Serializable {
     //SQLでインサートした結果の件数を入れるための変数
     private int res;
 
-    
+
+    //正規表現パターンの概要：
+    //- `(?=.*[a-z])`：少なくとも1つの小文字を含む
+    //- `(?=.*[A-Z])`：少なくとも1つの大文字を含む
+    //- `(?=.*\d)`：少なくとも1つの数字を含む
+    //- `(?=.*[@$!%*?&])`：少なくとも1つの記号を含む
+    //- `[A-Za-z\d@$!%*?&]{8,}`：アルファベット（大文字・小文字）、数字、記号からなる8文字以上の文字列
+    final private String pattern = "^(?=.*[a-z])(?=.*[A-Z])(?=.*\\d)(?=.*[@$!%*?&])[A-Za-z\\d@$!%*?&]{8,}$";
 
 
     //空のコンストラクタ
@@ -27,6 +35,10 @@ public class UserBean implements Serializable {
     }
 
     //getterメソッド集
+    public int getId(){
+        return id;
+    }
+
     public String getName(){
         return name;
     }
@@ -36,6 +48,10 @@ public class UserBean implements Serializable {
     }
 
     public String getPassword(){
+        return password;
+    }
+
+    public String getHash(){
         return hash;
     }
 
@@ -53,6 +69,10 @@ public class UserBean implements Serializable {
 
 
     //setterメソッド集
+    public void setId(int id){
+        this.id = id;
+    }
+
     public void setName(String name){
         this.name = name;
     }
@@ -63,12 +83,15 @@ public class UserBean implements Serializable {
 
     public void setPassword(String password){
         this.password = password;
+    }
+
+    public void setHash(String password){
         try {
             MessageDigest md = MessageDigest.getInstance("SHA-256");
-            md.update(this.password.getBytes());
+            md.update(password.getBytes());
             byte[] hashBytes = md.digest();
             hash = Base64.getEncoder().encodeToString(hashBytes);
-            System.out.println("Hashed Password: " + hash);
+
             } catch (NoSuchAlgorithmException e) {
             e.printStackTrace();
             }
@@ -82,8 +105,18 @@ public class UserBean implements Serializable {
         this.job = job;
     }
 
+    //executeUpdateの戻り値(int)をセット
     public void setRes(int res){
         this.res = res;
+    }
+
+    public boolean validatePassword(String password){
+        if(password.matches(pattern)){
+            return true;
+
+        }else {
+            return false;
+        }
     }
 
     

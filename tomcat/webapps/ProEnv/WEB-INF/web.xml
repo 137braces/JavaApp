@@ -85,7 +85,7 @@
         <url-pattern>/user_edit</url-pattern>
     </servlet-mapping>
 
-       <servlet>
+    <servlet>
         <servlet-name>SearchResult</servlet-name>
         <servlet-class>SearchResult</servlet-class>
     </servlet>
@@ -96,6 +96,26 @@
     </servlet-mapping>
 
 
+    <servlet>
+        <servlet-name>Setting</servlet-name>
+        <servlet-class>Setting</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>Setting</servlet-name>
+        <url-pattern>/setting</url-pattern>
+    </servlet-mapping>
+
+
+    <servlet>
+        <servlet-name>AlterPassword</servlet-name>
+        <servlet-class>AlterPassword</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>AlterPassword</servlet-name>
+        <url-pattern>/alter_password</url-pattern>
+    </servlet-mapping>
         
     
 </web-app>

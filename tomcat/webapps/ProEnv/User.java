@@ -26,23 +26,23 @@ public class User extends HttpServlet {
 
     public void doPost(HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException {
 
-        String email = request.getParameter("email");
-        String password = request.getParameter("password");
-
-        //ハッシュ化したパスワードを入れる変数
-        String hash = "";
+        //インスタンス化
+        UserBean userBean = new UserBean();
 
         
-        //パスワードをハッシュ化
-        try {
-            MessageDigest md = MessageDigest.getInstance("SHA-256");
-            md.update(password.getBytes());
-            byte[] hashBytes = md.digest();
-            hash = Base64.getEncoder().encodeToString(hashBytes);
-            System.out.println("Hashed Password: " + hash);
-            } catch (NoSuchAlgorithmException e) {
-            e.printStackTrace();
-            }
+        userBean.setEmail(request.getParameter("email"));
+        userBean.setPassword(request.getParameter("password"));
+
+
+        userBean.setHash(userBean.getPassword());
+        
+
+        String email = userBean.getEmail();
+
+        //ハッシュ化したパスワードを入れる変数
+        String hash = userBean.getHash();
+
+        
 
         
         //ログイン後、遷移先ページのパス

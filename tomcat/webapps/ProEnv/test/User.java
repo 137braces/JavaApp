@@ -1,7 +1,6 @@
 package test;
 
 import java.util.*;
-import java.io.*;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 import java.sql.*;
@@ -61,6 +60,8 @@ public class User {
                 
                 System.out.println(id + " " + name + " " +  age + "歳" + " " + address + " " + job);
                 System.out.println("ログイン成功");
+
+                System.out.println(res);
 
             } else {
                 System.out.println("ログイン失敗");

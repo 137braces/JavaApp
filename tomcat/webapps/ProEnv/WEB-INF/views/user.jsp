@@ -29,10 +29,10 @@
         <h3 class="logo"><a href="#">Java Portfolio</a></h3>
         <nav>
           <ul class="nav__list">
-            <li class="nav__item"><a href="#"><%= name %></a></li>
+            <li class="nav__item"><a href="user">プロフィール</a></li>
             <li class="nav__item"><a href="search">さがす</a></li>
-            
             <li class="nav__item"><a href="post">つぶやき</a></li>
+            <li class="nav__item"><a href="setting">各種設定</a></li>
             <li class="nav__item"><a href="#">ログアウト</a></li>
           </ul>
         </nav>
@@ -41,7 +41,7 @@
       
       
       <h1 style="padding-top:100px;">プロフィール</h1>
-      <img style="border-radius:50%; width:200px; height:200px; border: solid 1px #6b6767;" 
+      <img style="border-radius:50%; width:150px; height:150px; border: solid 1px #6b6767;" 
       src= "<%=request.getContextPath() %><%= image %>">
 
       <h4>基本情報</h4>
