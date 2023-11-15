@@ -85,6 +85,8 @@ public class UserBean implements Serializable {
         this.password = password;
     }
 
+
+    //変更したいパスワードをハッシュ化するためのメソッド。
     public void setHash(String password){
         try {
             MessageDigest md = MessageDigest.getInstance("SHA-256");
