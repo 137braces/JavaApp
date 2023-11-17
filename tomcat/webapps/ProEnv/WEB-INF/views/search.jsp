@@ -13,6 +13,7 @@
     </head>
     <body>
 
+      
         <!-- リクエストスコープからログインユーザーのIDを取得する -->
         <%String name = (String)session.getAttribute("name");%>
 
@@ -21,23 +22,21 @@
        
 
         <header id="header">
-            <h3 class="logo"><a href="#">Java Portfolio</a></h3>
-            <nav>
-              <ul class="nav__list">
-                <li class="nav__item"><a href="user"><%= name %></a></li>
-              
-                <li class="nav__item"><a href="">さがす</a></li>
-                
-               
-                <li class="nav__item"><a href="#">ログアウト</a></li>
-              </ul>
-            </nav>
-          </header>
+          <h3 class="logo"><a href="#">Java Portfolio</a></h3>
+          <nav>
+            <ul class="nav__list">
+              <li class="nav__item"><a href="user">プロフィール</a></li>
+              <li class="nav__item"><a href="search">さがす</a></li>
+              <li class="nav__item"><a href="setting">各種設定</a></li>
+              <li class="nav__item"><a href="logout">ログアウト</a></li>
+            </ul>
+          </nav>
+        </header>
 
           <div id="app">
             <button @click="isShow = !isShow">表示切り替え</button>
             <div v-show="isShow">
-              <form method="get" action="search_result">
+              <form method="get" action="search">
               <label class="selectbox-002">
                 <select name="age1">
                     <option value="0">こだわらない</option>
@@ -82,30 +81,35 @@
     
         
           <div class="arraylist">
-           
-            <div>
+            
               <% ArrayList<HashMap<String,String>> rows = (ArrayList<HashMap<String,String>>)request.getAttribute("rows");%>
-
-                <%for (HashMap<String,String> columns : rows) { %>
                 
-                      <img style="border-radius:50%; width: 150px; height: 150px; border: solid 1px #6b6767;" 
+                <%for (HashMap<String,String> columns : rows) { %>
+                  <div class="item">
+                      <img style="border-radius:10px; width: 150px; height: 150px; border: solid 1px #6b6767;" 
                       src= "<%=request.getContextPath() %><%= columns.get("image") %>">
-
+                      
                       <p><a href="other_user?id=<%= columns.get("id") %>"><%= columns.get("name") %></a></p>
                       <p><%= columns.get("age") %>歳</p>
-                
+                  </div>
                 <% } %>
-            </div>            
+              
+                      
           </div>          
     </body>
 </html>
 
 <style>
 .arraylist {
-  padding-top:20px;
+  margin-top: 20px;
   display: flex;
-  flex-direction: row;
+  justify-content: space-around;
+}
 
+.arraylist-prf{
+  display: flex;
+  flex-direction: column;
+  padding: 8px 25px;
 }
 
 #app {
@@ -162,6 +166,8 @@
 .selectbox-002 select:focus {
     outline: 1px solid #2589d0;
 }
+
+
 </style>
 
 <script>

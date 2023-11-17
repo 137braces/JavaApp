@@ -25,8 +25,9 @@ public class OtherUser extends HttpServlet {
         }
 
         //ユーザーid
-        String id = request.getParameter("id");
-    
+        int id = Integer.parseInt(request.getParameter("id"));
+
+
         //ユーザーidを検索
         String sql = "SELECT * FROM users where id = ?";
 
@@ -34,13 +35,15 @@ public class OtherUser extends HttpServlet {
         try (Connection connection = DriverManager.getConnection(url, root, password);
              PreparedStatement ps = connection.prepareStatement(sql)){
             
-             ps.setString(1, id);
+             ps.setInt(1, id);
             
              
              ResultSet res = ps.executeQuery();
 
 
-            if (res.next()) {
+             if (res.next()) {
+                //ユーザーID
+                String other_id = res.getString("id");
 
                 //ユーザーアイコン
                 String image = res.getString("image");
@@ -51,17 +54,32 @@ public class OtherUser extends HttpServlet {
                 //ユーザーの年齢
                 String age = res.getString("age");
 
+                //ユーザーの住所
+                String address = res.getString("address");
+
+                //ユーザーの職業
+                String job = res.getString("job");
+
+                
+                request.setAttribute("id", other_id);
                 request.setAttribute("image",image);
                 request.setAttribute("name",name);
                 request.setAttribute("age",age);
+                request.setAttribute("address",address);
+                request.setAttribute("job", job);
+
+                String view = "/WEB-INF/views/other_user.jsp";
+                RequestDispatcher dispatcher = request.getRequestDispatcher(view);
+                dispatcher.forward(request, response);
             } 
 
         } catch (Exception e) {
             //request.setAttribute("message", "Exception:" + e.getMessage());
         }
 
-        String view = "/WEB-INF/views/other_user.jsp";
-        RequestDispatcher dispatcher = request.getRequestDispatcher(view);
-        dispatcher.forward(request, response);
+    }
+
+    public void doPost(HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException {
+        
     }
 }

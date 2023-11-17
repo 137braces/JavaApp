@@ -28,11 +28,10 @@
         <h3 class="logo"><a href="#">Java Portfolio</a></h3>
         <nav>
           <ul class="nav__list">
-            <li class="nav__item"><a href="#"><%= name %></a></li>
+            <li class="nav__item"><a href="user">プロフィール</a></li>
             <li class="nav__item"><a href="search">さがす</a></li>
-            
-            <li class="nav__item"><a href="post">つぶやき</a></li>
-            <li class="nav__item"><a href="#">ログアウト</a></li>
+            <li class="nav__item"><a href="setting">各種設定</a></li>
+            <li class="nav__item"><a href="logout">ログアウト</a></li>
           </ul>
         </nav>
       </header>

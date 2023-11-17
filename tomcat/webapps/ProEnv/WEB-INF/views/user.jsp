@@ -31,27 +31,30 @@
           <ul class="nav__list">
             <li class="nav__item"><a href="user">プロフィール</a></li>
             <li class="nav__item"><a href="search">さがす</a></li>
-            <li class="nav__item"><a href="post">つぶやき</a></li>
             <li class="nav__item"><a href="setting">各種設定</a></li>
-            <li class="nav__item"><a href="#">ログアウト</a></li>
+            <li class="nav__item"><a href="logout">ログアウト</a></li>
           </ul>
         </nav>
       </header>
       
       
-      
-      <h1 style="padding-top:100px;">プロフィール</h1>
-      <img style="border-radius:50%; width:150px; height:150px; border: solid 1px #6b6767;" 
-      src= "<%=request.getContextPath() %><%= image %>">
+      <div class="container">
+        <img style="border-radius:50%; width:150px; height:150px; border: solid 1px #6b6767;" 
+        src= "<%=request.getContextPath() %><%= image %>">
+      </div>
 
-      <h4>基本情報</h4>
-      <p>ニックネーム : <span class="user-info"><%= name %></span></p>
-      <p>年齢 : <span class="user-info"><%= age %>歳</span></p>
-      <p>居住地 : <span class="user-info"><%= address %></span></p>
-      <p>職業 : <span class="user-info"><%= job %></span></p>
-      <a href="user_edit" class="btn btn--orange btn--radius">編集する</a>
-
+      <p style="text-align: center;"><span class="user-info"><%= name %></span></p>
       
+      <div class="profile_eria">
+        <h4>ABOUT</h4>
+        <p>年齢 : <span class="user-info"><%= age %>歳</span></p>
+        <p>居住地 : <span class="user-info"><%= address %></span></p>
+        <p>職業 : <span class="user-info"><%= job %></span></p>
+      </div>
+      
+      <div class="edit_button">
+        <a href="user_edit" class="btn btn--orange btn--radius">プロフィールを編集する</a>
+      </div>
     </body>
 </html>
 <style>
@@ -75,6 +78,22 @@ a.btn--radius {
    border-radius: 100vh;
    
 }
+
+.container{
+  margin-top:110px;
+  display: flex;
+  justify-content: center;
+}
+
+.profile_eria{
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.edit_button{
+  text-align: center;
+}
+
 </style>
 
 <script>

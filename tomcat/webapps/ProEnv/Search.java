@@ -2,6 +2,8 @@ import java.util.*;
 import java.io.*;
 import jakarta.servlet.*;
 import jakarta.servlet.http.*;
+import pakage.searchbean.SearchBean;
+
 import java.sql.*;
 
 public class Search extends HttpServlet {
@@ -18,25 +20,46 @@ public class Search extends HttpServlet {
             e.printStackTrace();
         }
 
-        //利用ユーザーが男性の場合、女性ユーザーを全検索。
-        String sql = "SELECT * FROM users where gender = ?";
         HttpSession session = request.getSession();
-        String filter_gender = (String)session.getAttribute("gender");
-        String man = "";
 
-        if(filter_gender.equals("男性")){
-            man = "女性";
-        }else if(filter_gender.equals("女性")){
-            man = "男性";
+        //性別のみの検索に必要な変数。
+        String gender = (String)session.getAttribute("gender");
+        
+        //インスタンス化
+        SearchBean searchBean = new SearchBean();
+
+        //SearchBeanの各メソッドはSQL文を追加していく。
+        //利用ユーザーが男性の場合、女性ユーザーを全検索※女性の場合は男性を検索。
+        searchBean.ifGender(gender);
+
+        //man変数をSQL文の(?)部分にsetStringする
+        String man = searchBean.getMan();
+
+        //リンクからの画面遷移はnullで値を取得
+        String age1 = request.getParameter("age1");
+        String age2 = request.getParameter("age2");
+
+        if(age1 == null || age2 == null){
+            //nullの場合、ifAgeメソッド(年齢範囲の検索)は実行されない。
+        }else {
+            int intAge1 = Integer.parseInt(request.getParameter("age1"));
+            int intAge2 = Integer.parseInt(request.getParameter("age2")); 
+             //年齢の範囲検索をするメソッド。初期は全検索に設定。
+            searchBean.ifAge(intAge1,intAge2);
         }
+        
+
+        //上記ifメソッドで生成したSQL文をalterSql変数に格納。
+        String alterSql = searchBean.getAlterSql();
+
 
 
         try (Connection connection = DriverManager.getConnection(url, root, password);
-             PreparedStatement ps = connection.prepareStatement(sql)){
+             PreparedStatement ps = connection.prepareStatement(alterSql)){
             ps.setString(1, man);
              
              
-             ResultSet results = ps.executeQuery();
+            ResultSet results = ps.executeQuery();
 
             ArrayList<HashMap<String, String>> rows = new ArrayList<HashMap<String, String>>();
 
@@ -60,6 +83,7 @@ public class Search extends HttpServlet {
 
                 rows.add(columns);
             }
+
 
             request.setAttribute("rows", rows);
         

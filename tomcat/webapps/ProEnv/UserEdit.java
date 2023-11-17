@@ -71,21 +71,21 @@ public class UserEdit extends HttpServlet {
             try (Connection con = DriverManager.getConnection(SqlUrl, SqlRoot, SqlPass);
             PreparedStatement ps = con.prepareStatement(sql)) {
     
-            if(name != null){
-                ps.setString(1, user_bean.getName());
-            }else if(address != null){
-                ps.setString(1, user_bean.getAddress());
-            }else if(job != null){
-                ps.setString(1, user_bean.getJob());
-            }
-            
-            ps.setString(2, id);
-            
-            int res = ps.executeUpdate();
-
-            if(res != 0){
+                if(name != null){
+                    ps.setString(1, user_bean.getName());
+                }else if(address != null){
+                    ps.setString(1, user_bean.getAddress());
+                }else if(job != null){
+                    ps.setString(1, user_bean.getJob());
+                }
                 
-            }
+                ps.setString(2, id);
+                
+                int res = ps.executeUpdate();
+
+                if(res != 0){
+                    
+                }
     
         
             }catch (SQLException e) {

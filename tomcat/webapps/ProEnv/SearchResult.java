@@ -2,6 +2,7 @@ import java.util.*;
 import java.io.*;
 import jakarta.servlet.*;
 import jakarta.servlet.http.*;
+import pakage.searchbean.SearchBean;
 import pakage.userbean.UserBean;
 
 import java.sql.*;
@@ -14,36 +15,11 @@ public class SearchResult extends HttpServlet {
 
     public void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException {
         
-        try {
-            Class.forName("com.mysql.jdbc.Driver");
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-
-        final String url = "jdbc:mysql://localhost/mydb";
-        final String root = "root";
-        final String psword = "";
-
-        //全検索(異性)↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓
-        
-        HttpSession session = request.getSession();
-        String filter_gender = (String)session.getAttribute("gender");
-        String man = "";
-
-        
-        //ここまで↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑
-
-        String name = request.getParameter("name");
-
-        //age1とage2は年齢の範囲検索に利用する
-        int age1 = Integer.parseInt(request.getParameter("age1"));
-        int age2 = Integer.parseInt(request.getParameter("age2")); 
-
-        String address = request.getParameter("job");
+       
 
         //年齢(age)検索の部分
         //①age1とage2の年齢数値が逆転しても通常のbetween検索ができるの処理
-        SearchMethod search_method = new SearchMethod();
+        SearchBean search_method = new SearchBean();
         search_method.ifAge(age1,age2);
 
         final String alterSql = search_method.getAlterSql();
