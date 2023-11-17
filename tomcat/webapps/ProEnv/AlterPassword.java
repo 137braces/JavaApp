@@ -14,6 +14,9 @@ import java.sql.*;
 public class AlterPassword extends HttpServlet {
 
     public void doPost(HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException {
+        
+        //遷移先
+        String path = "";
 
         String success_message = "";
         String error_message = "";
@@ -32,11 +35,11 @@ public class AlterPassword extends HttpServlet {
         userBean.setId(id);
 
         //セッションに保存していた元のパスワード(ハッシュ化は既にされている)
-        final String origin_password = "0HZCrZa+RN65MUlirxhEZ4nsWHKpxFep3QvspuMQL8s=";
+        final String origin_password = (String)session.getAttribute("password");
 
         //ユーザーが入力した元のパスワード
         //final String password = "mikan0713";
-        final String password = "mikan0000";
+        final String password = request.getParameter("password");
         String hash = "";
 
         //上記password変数をハッシュ化
@@ -52,12 +55,12 @@ public class AlterPassword extends HttpServlet {
 
 
         //ユーザーが変更したいパスワード
-        final String alter_password1 = "Ringo0713@"; //成功例
+        final String alter_password1 = request.getParameter("alter_password1"); //成功例
         //final String alter_password1 = "ringo0713"; //・小文字と数字はあるが、大文字と記号がないパターン。
         //final String alter_password1 = "ringo0713@"; //・小文字と数字はあるが、記号がないパターン。
 
         //ユーザーが再入力するパスワード
-        final String alter_password2 = "Ringo0713@"; //成功例
+        final String alter_password2 = request.getParameter("alter_password2"); //成功例
         //final String alter_password2 = "ringo0713";・小文字と数字はあるが、大文字と記号がないパターン。
         //final String alter_password2 = "ringo0713@";・小文字と数字はあるが、記号がないパターン。
         //final String alter_password2 = "Ringo0919@";・間違ったパスワードを再入力したパターン。
@@ -81,33 +84,55 @@ public class AlterPassword extends HttpServlet {
 
                     if(res != 0){
                         success_message = "1.パスワードの変更が完了しました。";
-                        System.out.println(success_message);
+                        
+                        //セッションに再度パスワードを格納
+                        session.setAttribute("password", userBean.getHash());
+
+                        request.setAttribute("success_message",success_message);
+
+                        path = "/WEB-INF/views/alter_password.jsp";
+                        RequestDispatcher rd = request.getRequestDispatcher(path);
+                        rd.forward(request, response);
 
                     }else if(res == 0){
                         error_message = "1.パスワードの変更に失敗しました。";
-                        System.out.println(error_message);
+                        
+                        request.setAttribute("error_message",error_message);
+                        path = "/WEB-INF/views/setting.jsp";
+                        RequestDispatcher rd = request.getRequestDispatcher(path);
+                        rd.forward(request, response);
                     }
 
                 }else if(origin_password.equals(userBean.getHash())){
-                    error_message = "2.新しいパスワードに設定してください。";
-                    System.out.println(error_message);
+                    error_message = "新しいパスワードに設定してください。";
+                    request.setAttribute("error_message",error_message);
+
+                    path = "/WEB-INF/views/setting.jsp";
+                    RequestDispatcher rd = request.getRequestDispatcher(path);
+                    rd.forward(request, response);
                 }
                 
             
             //パスワードがパターンとマッチしなかった場合の処理
             }else if((userBean.validatePassword(alter_password1) == false) || (alter_password1.equals(alter_password2)) == false) {
             
-                error_message = "3.パスワードが間違っているか、入力内容に不備があります。";
-                System.out.println(error_message);
-                System.out.println("対象パスワード：" + alter_password1);
+                error_message = "パスワードが間違っているか、入力内容に不備があります。";
+                request.setAttribute("error_message",error_message);
+
+                path = "/WEB-INF/views/setting.jsp";
+                RequestDispatcher rd = request.getRequestDispatcher(path);
+                rd.forward(request, response);
 
             }
             
         //現在のパスワードが間違っていた際の処理
         }else if(origin_password.equals(hash) == false){
-            System.out.println("4.入力された現在のパスワードが間違っています。");
-            System.out.println("セッションのパスワード" + origin_password);
-            System.out.println("入力されたパスワード" + hash);
+            error_message = "入力された現在のパスワードが間違っています。";
+            request.setAttribute("error_message",error_message);
+
+            path = "/WEB-INF/views/setting.jsp";
+            RequestDispatcher rd = request.getRequestDispatcher(path);
+            rd.forward(request, response);
         }
         
     

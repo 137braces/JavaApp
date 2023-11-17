@@ -27,8 +27,8 @@ public class AlterPassword {
         final String origin_password = "0HZCrZa+RN65MUlirxhEZ4nsWHKpxFep3QvspuMQL8s=";
 
         //ユーザーが入力した元のパスワード
-        //final String password = "mikan0713";
-        final String password = "mikan0000";
+        final String password = "mikan0713";
+        //final String password = "mikan0000";
         String hash = "";
 
         //上記password変数をハッシュ化

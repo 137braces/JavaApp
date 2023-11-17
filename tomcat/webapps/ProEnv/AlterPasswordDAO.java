@@ -22,7 +22,7 @@ public class AlterPasswordDAO {
         try (Connection con = DriverManager.getConnection(SqlUrl, SqlRoot, SqlPass);
         PreparedStatement ps = con.prepareStatement(sql)) {
 
-        ps.setString(1, user_bean.getPassword());
+        ps.setString(1, user_bean.getHash());
         ps.setInt(2, user_bean.getId());
         
         

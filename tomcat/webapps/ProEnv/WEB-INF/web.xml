@@ -56,16 +56,6 @@
     </servlet-mapping>
 
     <servlet>
-        <servlet-name>Post</servlet-name>
-        <servlet-class>Post</servlet-class>
-    </servlet>
-
-    <servlet-mapping>
-        <servlet-name>Post</servlet-name>
-        <url-pattern>/post</url-pattern>
-    </servlet-mapping>
-
-    <servlet>
         <servlet-name>OtherUser</servlet-name>
         <servlet-class>OtherUser</servlet-class>
     </servlet>
@@ -84,17 +74,6 @@
         <servlet-name>UserEdit</servlet-name>
         <url-pattern>/user_edit</url-pattern>
     </servlet-mapping>
-
-    <servlet>
-        <servlet-name>SearchResult</servlet-name>
-        <servlet-class>SearchResult</servlet-class>
-    </servlet>
-
-    <servlet-mapping>
-        <servlet-name>SearchResult</servlet-name>
-        <url-pattern>/search_result</url-pattern>
-    </servlet-mapping>
-
 
     <servlet>
         <servlet-name>Setting</servlet-name>
@@ -123,10 +102,9 @@
         <servlet-class>Logout</servlet-class>
     </servlet>
 
-  <servlet-mapping>
-        <servlet-name>Logout</servlet-name>
-        <url-pattern>/logout</url-pattern>
-  </servlet-mapping>
-        
-    
+    <servlet-mapping>
+            <servlet-name>Logout</servlet-name>
+            <url-pattern>/logout</url-pattern>
+    </servlet-mapping>
+
 </web-app>
