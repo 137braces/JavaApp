@@ -8,9 +8,9 @@ public class UserLogin {
 
         //実際はリクエストされた値をgetParameterメソッドで取得。
         String email = "test_taro@gmail.com";
-        String password = "mikan0713";
+        String password = "Ringo0713@";
 
-        System.out.println(password);
+        
 
         //インスタンス化
         UserBean userBean = new UserBean();
@@ -35,7 +35,7 @@ public class UserLogin {
 
         }else{
             System.out.println("ログイン失敗:遷移先はlogin.jsp");
-            
+            System.out.println(password);
         }
     }
 
