@@ -36,7 +36,7 @@
           <div id="app">
             <button @click="isShow = !isShow">表示切り替え</button>
             <div v-show="isShow">
-              <form method="get" action="search">
+              <form method="post" action="search">
               <label class="selectbox-002">
                 <select name="age1">
                     <option value="0">こだわらない</option>
@@ -86,11 +86,13 @@
                 
                 <%for (HashMap<String,String> columns : rows) { %>
                   <div class="item">
+                      <a href="other_user?id=<%= columns.get("id") %>">
                       <img style="border-radius:10px; width: 150px; height: 150px; border: solid 1px #6b6767;" 
                       src= "<%=request.getContextPath() %><%= columns.get("image") %>">
                       
-                      <p><a href="other_user?id=<%= columns.get("id") %>"><%= columns.get("name") %></a></p>
+                      <p><%= columns.get("name") %></p>
                       <p><%= columns.get("age") %>歳</p>
+                      </a>
                   </div>
                 <% } %>
               
@@ -104,12 +106,16 @@
   margin-top: 20px;
   display: flex;
   justify-content: space-around;
+  
+  margin-left: 15%;
+  margin-right: 15%;
 }
 
 .arraylist-prf{
   display: flex;
   flex-direction: column;
   padding: 8px 25px;
+  
 }
 
 #app {

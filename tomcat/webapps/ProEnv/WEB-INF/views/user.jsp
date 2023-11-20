@@ -31,6 +31,7 @@
           <ul class="nav__list">
             <li class="nav__item"><a href="user">プロフィール</a></li>
             <li class="nav__item"><a href="search">さがす</a></li>
+            <li class="nav__item"><a href="">トーク</a></li>
             <li class="nav__item"><a href="setting">各種設定</a></li>
             <li class="nav__item"><a href="logout">ログアウト</a></li>
           </ul>
@@ -55,6 +56,7 @@
       <div class="edit_button">
         <a href="user_edit" class="btn btn--orange btn--radius">プロフィールを編集する</a>
       </div>
+      
     </body>
 </html>
 <style>

@@ -1,6 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <%@ page import="java.util.*" %>
+<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
 
 <!DOCTYPE html>
 <html>
@@ -11,15 +12,21 @@
     </head>
     <body>
 
-        <form method="get" action="user">
-            <input type="submit" value="GETで送信">
+        <%String error_message = (String)request.getAttribute("error_message");%>
+
+        <% if(error_message != null) { %>
+          <p style ="color:red;"><%= error_message %></p>
+        <% } %>
+
+        <form method="post" action="user">
+            <h1>Java App</h1>
+            <input type="text" name="email" placeholder="Email"/>
+            <input type="password" name="password" placeholder="Password"/>
+            <button type="submit">ログイン</button>
         </form>
 
         <form method="post" action="user">
-            <h1>Times Square</h1>
-            <input type="text" name="email" placeholder="Email"/>
-            <input type="password" name="password" placeholder="Password"/>
-            <button type="submit">Login</button>
+          <input name="gest" style="cursor: pointer;" type="submit" value="ゲストユーザーでログイン">
         </form>
 
         <p style="text-align: center; font-size:20px;"><a style="text-decoration:none;" href="signup">新規登録はこちら</a></p>
@@ -29,15 +36,7 @@
 </html>
 
 
-
-<script src="https://unpkg.com/vue@2.6.14/dist/vue.min.js"></script>
-<script>
-  new Vue({
-    el:"#app",
-    /* Vue.jsの各種処理 */
-  })
-</script>
-
+  
 
 <style>
 a{
@@ -77,11 +76,6 @@ a:hover{
   -webkit-box-sizing: border-box;
      -moz-box-sizing: border-box;
           box-sizing: border-box;
-}
-
-body {
-  font:15px/1.25 'Alef';
-  color:@text;
 }
 
 form {

@@ -21,7 +21,7 @@ public class AlterPassword {
         UserBean userBean = new UserBean();
 
         //今回はテスト用アカウントのid = 1を使用
-        userBean.setId(1);
+        userBean.setId("1");
 
         //セッションに保存していた元のパスワード(ハッシュ化は既にされている)
         final String origin_password = "0HZCrZa+RN65MUlirxhEZ4nsWHKpxFep3QvspuMQL8s=";

@@ -23,7 +23,7 @@ public class AlterPasswordDAO {
         PreparedStatement ps = con.prepareStatement(sql)) {
 
         ps.setString(1, user_bean.getHash());
-        ps.setInt(2, user_bean.getId());
+        ps.setString(2, user_bean.getId());
         
         
         int res = ps.executeUpdate();

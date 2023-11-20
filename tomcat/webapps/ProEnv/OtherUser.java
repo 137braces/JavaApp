@@ -25,7 +25,7 @@ public class OtherUser extends HttpServlet {
         }
 
         //ユーザーid
-        int id = Integer.parseInt(request.getParameter("id"));
+        String id = request.getParameter("id");
 
 
         //ユーザーidを検索
@@ -35,7 +35,7 @@ public class OtherUser extends HttpServlet {
         try (Connection connection = DriverManager.getConnection(url, root, password);
              PreparedStatement ps = connection.prepareStatement(sql)){
             
-             ps.setInt(1, id);
+             ps.setString(1, id);
             
              
              ResultSet res = ps.executeQuery();

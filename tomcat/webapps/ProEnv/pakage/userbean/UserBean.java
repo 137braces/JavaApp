@@ -8,16 +8,23 @@ import java.util.Base64;
 
 public class UserBean implements Serializable {
     //各データベースのカラムに登録するプロパティ
-    private int id;
+    private String id;
     private String name;
     private String email;
     private String password;
+    private int age;
+    private String gender;
     private String address;
     private String job;
     private String hash;
+    private String image;
+    
 
-    //SQLでインサートした結果の件数を入れるための変数
+    //SQLでインサートした結果の件数を入れる変数
     private int res;
+
+    //SQLでSELECT検索したときの結果を入れる変数
+    private boolean resNext;
 
 
     //正規表現パターンの概要：
@@ -35,7 +42,7 @@ public class UserBean implements Serializable {
     }
 
     //getterメソッド集
-    public int getId(){
+    public String getId(){
         return id;
     }
 
@@ -55,6 +62,14 @@ public class UserBean implements Serializable {
         return hash;
     }
 
+    public int getAge(){
+        return age;
+    }
+
+    public String getGender(){
+        return gender;
+    }
+
     public String getAddress(){
         return address;
     }
@@ -67,9 +82,18 @@ public class UserBean implements Serializable {
         return res;
     }
 
+    public boolean getResNext(){
+        return resNext;
+    }
+
+    public String getImage(){
+        return image;
+    }
+
+
 
     //setterメソッド集
-    public void setId(int id){
+    public void setId(String id){
         this.id = id;
     }
 
@@ -99,6 +123,14 @@ public class UserBean implements Serializable {
             }
     }
 
+    public void setAge(int age){
+        this.age = age;
+    }
+
+    public void setGender(String gender){
+        this.gender = gender;
+    }
+
     public void setAddress(String address){
         this.address = address;
     }
@@ -107,10 +139,20 @@ public class UserBean implements Serializable {
         this.job = job;
     }
 
+    public void setImage(String image){
+        this.image = image;
+    }
+
     //executeUpdateの戻り値(int)をセット
     public void setRes(int res){
         this.res = res;
     }
+
+    public void setResNext(boolean resNext){
+        this.resNext  = resNext;
+    }
+
+    
 
     public boolean validatePassword(String password){
         if(password.matches(pattern)){
@@ -122,4 +164,4 @@ public class UserBean implements Serializable {
     }
 
     
-}
+}  

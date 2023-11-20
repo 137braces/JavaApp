@@ -10,12 +10,12 @@ private String man;
     public String getMan(){
         return man;
     }
-
+    
     public void ifGender(String gender){
-        if(gender.equals("男性")){
+        if("男性".equals(gender)){
             man = "女性";
 
-        }else if(gender.equals("女性")){
+        }else if("女性".equals(gender)){
             man = "男性";
         }
     }
@@ -26,12 +26,13 @@ private String man;
         if(age1 != 0 && age2 != 0){
             if(age1 <= age2){
                 alterSql += " and age between " + age1 + " and " + age2;
-            }else if(age1 > age2){
+            }else if(age1 >= age2){
                 alterSql += " and age between " + age2 + " and " + age1;
             }
         //②age1に年齢が選択され、age2は年齢にこだわりがない場合の処理    
         }else if(age1 != 0 && age2 == 0){
-            alterSql += " and age" + " >= " + age1;
+            //alterSql += " and age" + " >= " + age1;
+            alterSql += " and age between " + age1 + " and " + 60;
         
         //③age1は年齢にこだわりがなく、age2に年齢が選択された場合の処理。
         }else if(age1 == 0 && age2 != 0){

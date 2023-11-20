@@ -29,7 +29,7 @@ public class AlterPassword extends HttpServlet {
 
         HttpSession session = request.getSession();
         //自分のユーザーID
-        int id = Integer.parseInt((String)session.getAttribute("id"));
+        String id = (String)session.getAttribute("id");
 
         //今回はテスト用アカウントのid = 1を使用
         userBean.setId(id);
