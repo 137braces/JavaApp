@@ -2,12 +2,16 @@
     "java.compile.nullAnalysis.mode": "automatic",
     "java.project.referencedLibraries": [
         "lib/**/*.jar",
-        "mysql-connector-j-8.1.0/mysql-connector-j-8.1.0.jar"
+        "mysql-connector-j-8.1.0/mysql-connector-j-8.1.0.jar",
+        "tomcat/lib/mysql-connector-j-8.1.0-1.jar",
+        "/Users/aokihayata/aoki_app/tomcat/lib/mysql-connector-j-8.1.0-1.jar"
     ],
     "java.debug.settings.onBuildFailureProceed": true,
     "java.project.sourcePaths": [
         "tomcat/webapps/ProEnv",
         "tomcat",
-        "mysql-connector-j-8.1.0"
+        "mysql-connector-j-8.1.0",
+        ".vscode",
+        "tomcat/lib/mysql-connector-j-8.1.0-1.jar"
     ]
 }
