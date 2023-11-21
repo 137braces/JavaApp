@@ -38,15 +38,15 @@
         <div id="alter_password" style="margin-top:20px;"> 
             <i @click="isShow = !isShow" class="fa-solid fa-shield-halved" style="color: #2464e5;"><span style="color:black"> パスワード変更</span></i>
             <div v-show="isShow">
-                <form method="post" action="alter_password">
+                <form method="post" action="alter_password" onsubmit="return checkForm()">
                     <p>現在のパスワード</p>
-                    <input type="password" name="password" id="pass" placeholder=""/>
+                    <input type="password" name="password" id="password" placeholder=""/>
 
                     <p>新しいパスワード(半角英数・大文字・小文字・記号・8〜100文字)</p>
-                    <input type="password" name="alter_password1" id="pass" placeholder=""/>
+                    <input type="password" name="alter_password1" id="alter_password1" placeholder=""/>
 
                     <p>新しいパスワードの再入力</p>
-                    <input type="password" name="alter_password2" id="pass" placeholder="確認のため、もう一度入力してください。"/>
+                    <input type="password" name="alter_password2" id="alter_password2" placeholder="確認のため、もう一度入力してください。"/>
 
                     <button type="submit">パスワード変更</button>
                 </form>
@@ -60,6 +60,7 @@
     </body>
 </html>
 <script>
+//Vue.js側の処理
     new Vue({
         el: '#alter_password',
         data() {
@@ -68,6 +69,23 @@
             }
         },
     })
+
+
+function checkForm() {
+
+    const password = document.getElementById("password");
+    const alter_password1 = document.getElementById("alter_password2");
+    const alter_password2 = document.getElementById("alter_password2");
+
+    if(password.value === "" || alter_password1.value === "" || alter_password2.value === ""){
+        alert("必須項目が記入されていません。");
+        return false;
+    }
+
+}
+
+
+
 </script>
 
 <style>
