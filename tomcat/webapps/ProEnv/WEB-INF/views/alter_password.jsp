@@ -13,7 +13,7 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
-        <title>Java - paiza</title>
+        <title>JavaApp</title>
     </head>
     <body>
         <!-- リクエストスコープから受け取ったidを基に他ユーザーの詳細情報を取得する -->

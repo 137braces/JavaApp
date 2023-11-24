@@ -1535,3 +1535,8 @@ Stacktrace:] が根本的要因と共に投げられました
 		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
 		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
 		at java.base/java.lang.Thread.run(Thread.java:831)
+21-Nov-2023 22:01:58.544 情報 [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextDestroyed()
+21-Nov-2023 22:01:58.544 情報 [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextDestroyed()
+21-Nov-2023 22:02:01.815 情報 [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextInitialized()
+21-Nov-2023 22:02:01.815 情報 [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextInitialized()
+21-Nov-2023 22:02:01.816 情報 [main] org.apache.catalina.core.ApplicationContext.log ContextListener: attributeAdded('StockTicker', 'async.Stockticker@4bbc21bd')

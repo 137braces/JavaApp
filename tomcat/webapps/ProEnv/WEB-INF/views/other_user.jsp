@@ -13,21 +13,20 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
-        <title>Java - paiza</title>
+        <title>JavaApp</title>
     </head>
     <body>
-        <!-- セッションスコープからログインユーザーのIDを取得する -->
-        <%String user_name = (String)session.getAttribute("name");%>
+     <!-- セッションスコープからログインユーザーのIDを取得する -->
+     <%String user_name = (String)session.getAttribute("name");%>
 
-        <!-- リクエストスコープから受け取ったidを基に他ユーザーの詳細情報を取得する -->
-        <%String id = (String)request.getAttribute("id"); %>
-        <%String age = (String)request.getAttribute("age");%>
-        <%String other_user_name = (String)request.getAttribute("name");%>
-        <%String image = (String)request.getAttribute("image");%>
-        <%String address = (String)request.getAttribute("address");%>
-        <%String job = (String)request.getAttribute("job");%>
+     <!-- リクエストスコープから受け取ったidを基に他ユーザーの詳細情報を取得する -->
+     <%String id = (String)request.getAttribute("id"); %>
+     <%String age = (String)request.getAttribute("age");%>
+     <%String other_user_name = (String)request.getAttribute("name");%>
+     <%String image = (String)request.getAttribute("image");%>
+     <%String address = (String)request.getAttribute("address");%>
+     <%String job = (String)request.getAttribute("job");%>
         
-  
         <header id="header">
           <h3 class="logo"><a href="#">Java Portfolio</a></h3>
           <nav>
@@ -40,28 +39,26 @@
           </nav>
         </header>
 
-        <div class="container">
-          <img style="border-radius:50%; width:150px; height:150px; border: solid 1px #6b6767;" 
-          src= "<%=request.getContextPath() %><%= image %>">
-        </div>
-  
-        <p style="text-align: center;"><span class="user-info"><%= other_user_name %></span></p>
-        
-        <div class="profile_eria">
-          <h4>ABOUT</h4>
-          <p>年齢 : <span class="user-info"><%= age %>歳</span></p>
-          <p>居住地 : <span class="user-info"><%= address %></span></p>
-          <p>職業 : <span class="user-info"><%= job %></span></p>
-        </div>
-        
-        
-        <form id="follow_button">
-          <a type="submit" name="followee_id" value="<%=id %>" v-if="isActive" v-on:click="active" class="btn btn--orange btn--radius followYet"><i class="fa-solid fa-heart"></i>いいね！</a>
-          <a v-else class="btn btn--orange btn--radius followDone"><i class="fa-solid fa-heart"></i>いいね！</a>
-        </form>
-        
-        
-      </div>
+          <div class="container">
+            <img style="border-radius:50%; width:150px; height:150px; border: solid 1px #6b6767;" 
+            src= "<%=request.getContextPath() %><%= image %>">
+          </div>
+    
+          <p style="text-align: center;"><span class="user-info"><%= other_user_name %></span></p>
+          
+          <div class="profile_eria">
+            <h4>ABOUT</h4>
+            <p>年齢 : <span class="user-info"><%= age %>歳</span></p>
+            <p>居住地 : <span class="user-info"><%= address %></span></p>
+            <p>職業 : <span class="user-info"><%= job %></span></p>
+          </div>
+          
+          
+          <form id="follow_button">
+            <a type="submit" name="followee_id" value="<%=id %>" v-if="isActive" v-on:click="active" class="btn btn--orange btn--radius followYet"><i class="fa-solid fa-heart"></i>いいね！</a>
+            <a v-else class="btn btn--orange btn--radius followDone"><i class="fa-solid fa-heart"></i>いいね！</a>
+          </form>
+       
 
     </body>
 </html>

@@ -10,7 +10,7 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
-        <title>Java - paiza</title>
+        <title>JavaApp</title>
     </head>
 
 
@@ -28,7 +28,7 @@
               </ul>
             </nav>
         </header>
-
+      
       <h1 style="margin-top:120px;">各種設定</h1>
       
         <a href="">

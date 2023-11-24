@@ -26,7 +26,7 @@ public class AlterPassword extends HttpServlet {
         AlterPasswordDAO alterPasswordDAO = new AlterPasswordDAO();
 
         //セッションに保存していたidを取得。
-        HttpSession session = request.getSession();
+        HttpSession session = request.getSession(false);
         String id = (String)session.getAttribute("id");
 
         //ユーザーが入力した元のパスワード
@@ -89,7 +89,7 @@ public class AlterPassword extends HttpServlet {
                                 rd.forward(request, response);
 
                             }else if(res == 0){
-                                error_message = "1.パスワードの変更に失敗しました。";
+                                error_message = "パスワードの変更に失敗しました。";
                                 
                                 request.setAttribute("error_message",error_message);
                                 path = "/WEB-INF/views/setting.jsp";

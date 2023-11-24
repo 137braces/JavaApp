@@ -163,5 +163,15 @@ public class UserBean implements Serializable {
         }
     }
 
+
+    public void ifGender(String gender){
+        if("男性".equals(gender)){
+            setGender("女性");
+
+        }else if("女性".equals(gender)){
+            setGender("男性");
+        }
+    }
+
     
 }  

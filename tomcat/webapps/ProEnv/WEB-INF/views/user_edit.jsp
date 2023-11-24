@@ -10,7 +10,7 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
-        <title>Java - paiza</title>
+        <title>JavaApp</title>
     </head>
 
 
@@ -42,8 +42,12 @@
                   <th>ニックネーム</th>
                   <td>
                     <div class="box">
-                      <%= name %>
-                      <i style="padding-top: 3px;" class="fa-solid fa-pen-to-square"></i>
+                      <% if(name != null){ %>
+                        <%= name %>
+                      <% }else if(name == null){ %>
+                        <p>未設定</p>
+                      <% } %>
+                      
                     </div>
                   </td>
                 </tr>

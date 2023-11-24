@@ -1,0 +1,1179 @@
+22-Nov-2023 00:10:01.510 重大 [http-nio-8080-exec-2] org.apache.catalina.core.ApplicationDispatcher.invoke サーブレット [jsp] のServlet.service()が例外を投げました
+	org.apache.jasper.JasperException: JSPのクラスをコンパイルできません: 
+
+JSPファイル: [/WEB-INF/views/user_edit.jsp] の中の [49] 行目でエラーが発生しました
+Syntax error, insert "Finally" to complete TryStatement
+46:                         <%= name %>
+47:                       <% }else if(name == null){} %>
+48:                         <p>  </p>
+49:                       <% } %>
+50:                       
+51:                     </div>
+52:                   </td>
+
+
+生成されたJavaファイル: [/Users/aokihayata/aoki_app/tomcat/work/Catalina/localhost/ProEnv/org/apache/jsp/WEB_002dINF/views/user_005fedit_jsp.java] の [559] 行でエラーが発生しました
+Syntax error on token "catch", Identifier expected
+
+生成されたJavaファイル: [/Users/aokihayata/aoki_app/tomcat/work/Catalina/localhost/ProEnv/org/apache/jsp/WEB_002dINF/views/user_005fedit_jsp.java] の [561] 行でエラーが発生しました
+out cannot be resolved to a variable
+
+生成されたJavaファイル: [/Users/aokihayata/aoki_app/tomcat/work/Catalina/localhost/ProEnv/org/apache/jsp/WEB_002dINF/views/user_005fedit_jsp.java] の [561] 行でエラーが発生しました
+_jspx_out cannot be resolved to a variable
+
+生成されたJavaファイル: [/Users/aokihayata/aoki_app/tomcat/work/Catalina/localhost/ProEnv/org/apache/jsp/WEB_002dINF/views/user_005fedit_jsp.java] の [562] 行でエラーが発生しました
+out cannot be resolved to a variable
+
+生成されたJavaファイル: [/Users/aokihayata/aoki_app/tomcat/work/Catalina/localhost/ProEnv/org/apache/jsp/WEB_002dINF/views/user_005fedit_jsp.java] の [562] 行でエラーが発生しました
+out cannot be resolved
+
+生成されたJavaファイル: [/Users/aokihayata/aoki_app/tomcat/work/Catalina/localhost/ProEnv/org/apache/jsp/WEB_002dINF/views/user_005fedit_jsp.java] の [564] 行でエラーが発生しました
+response cannot be resolved
+
+生成されたJavaファイル: [/Users/aokihayata/aoki_app/tomcat/work/Catalina/localhost/ProEnv/org/apache/jsp/WEB_002dINF/views/user_005fedit_jsp.java] の [565] 行でエラーが発生しました
+out cannot be resolved
+
+生成されたJavaファイル: [/Users/aokihayata/aoki_app/tomcat/work/Catalina/localhost/ProEnv/org/apache/jsp/WEB_002dINF/views/user_005fedit_jsp.java] の [567] 行でエラーが発生しました
+out cannot be resolved
+
+生成されたJavaファイル: [/Users/aokihayata/aoki_app/tomcat/work/Catalina/localhost/ProEnv/org/apache/jsp/WEB_002dINF/views/user_005fedit_jsp.java] の [570] 行でエラーが発生しました
+_jspx_page_context cannot be resolved to a variable
+
+生成されたJavaファイル: [/Users/aokihayata/aoki_app/tomcat/work/Catalina/localhost/ProEnv/org/apache/jsp/WEB_002dINF/views/user_005fedit_jsp.java] の [570] 行でエラーが発生しました
+_jspx_page_context cannot be resolved
+
+生成されたJavaファイル: [/Users/aokihayata/aoki_app/tomcat/work/Catalina/localhost/ProEnv/org/apache/jsp/WEB_002dINF/views/user_005fedit_jsp.java] の [573] 行でエラーが発生しました
+Syntax error on token "finally", { expected
+
+生成されたJavaファイル: [/Users/aokihayata/aoki_app/tomcat/work/Catalina/localhost/ProEnv/org/apache/jsp/WEB_002dINF/views/user_005fedit_jsp.java] の [574] 行でエラーが発生しました
+_jspx_page_context cannot be resolved to a variable
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:213)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:513)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:402)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:372)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:356)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:396)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:642)
+		at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:408)
+		at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:340)
+		at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:277)
+		at UserEdit.doGet(UserEdit.java:28)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:894)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1740)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:831)
+22-Nov-2023 00:10:01.512 重大 [http-nio-8080-exec-2] org.apache.catalina.core.StandardWrapperValve.invoke パス [/ProEnv] を持つコンテキスト内のサーブレット [UserEdit] のServlet.service() が例外 [JSPのクラスをコンパイルできません: 
+
+JSPファイル: [/WEB-INF/views/user_edit.jsp] の中の [49] 行目でエラーが発生しました
+Syntax error, insert "Finally" to complete TryStatement
+46:                         <%= name %>
+47:                       <% }else if(name == null){} %>
+48:                         <p>  </p>
+49:                       <% } %>
+50:                       
+51:                     </div>
+52:                   </td>
+
+
+生成されたJavaファイル: [/Users/aokihayata/aoki_app/tomcat/work/Catalina/localhost/ProEnv/org/apache/jsp/WEB_002dINF/views/user_005fedit_jsp.java] の [559] 行でエラーが発生しました
+Syntax error on token "catch", Identifier expected
+
+生成されたJavaファイル: [/Users/aokihayata/aoki_app/tomcat/work/Catalina/localhost/ProEnv/org/apache/jsp/WEB_002dINF/views/user_005fedit_jsp.java] の [561] 行でエラーが発生しました
+out cannot be resolved to a variable
+
+生成されたJavaファイル: [/Users/aokihayata/aoki_app/tomcat/work/Catalina/localhost/ProEnv/org/apache/jsp/WEB_002dINF/views/user_005fedit_jsp.java] の [561] 行でエラーが発生しました
+_jspx_out cannot be resolved to a variable
+
+生成されたJavaファイル: [/Users/aokihayata/aoki_app/tomcat/work/Catalina/localhost/ProEnv/org/apache/jsp/WEB_002dINF/views/user_005fedit_jsp.java] の [562] 行でエラーが発生しました
+out cannot be resolved to a variable
+
+生成されたJavaファイル: [/Users/aokihayata/aoki_app/tomcat/work/Catalina/localhost/ProEnv/org/apache/jsp/WEB_002dINF/views/user_005fedit_jsp.java] の [562] 行でエラーが発生しました
+out cannot be resolved
+
+生成されたJavaファイル: [/Users/aokihayata/aoki_app/tomcat/work/Catalina/localhost/ProEnv/org/apache/jsp/WEB_002dINF/views/user_005fedit_jsp.java] の [564] 行でエラーが発生しました
+response cannot be resolved
+
+生成されたJavaファイル: [/Users/aokihayata/aoki_app/tomcat/work/Catalina/localhost/ProEnv/org/apache/jsp/WEB_002dINF/views/user_005fedit_jsp.java] の [565] 行でエラーが発生しました
+out cannot be resolved
+
+生成されたJavaファイル: [/Users/aokihayata/aoki_app/tomcat/work/Catalina/localhost/ProEnv/org/apache/jsp/WEB_002dINF/views/user_005fedit_jsp.java] の [567] 行でエラーが発生しました
+out cannot be resolved
+
+生成されたJavaファイル: [/Users/aokihayata/aoki_app/tomcat/work/Catalina/localhost/ProEnv/org/apache/jsp/WEB_002dINF/views/user_005fedit_jsp.java] の [570] 行でエラーが発生しました
+_jspx_page_context cannot be resolved to a variable
+
+生成されたJavaファイル: [/Users/aokihayata/aoki_app/tomcat/work/Catalina/localhost/ProEnv/org/apache/jsp/WEB_002dINF/views/user_005fedit_jsp.java] の [570] 行でエラーが発生しました
+_jspx_page_context cannot be resolved
+
+生成されたJavaファイル: [/Users/aokihayata/aoki_app/tomcat/work/Catalina/localhost/ProEnv/org/apache/jsp/WEB_002dINF/views/user_005fedit_jsp.java] の [573] 行でエラーが発生しました
+Syntax error on token "finally", { expected
+
+生成されたJavaファイル: [/Users/aokihayata/aoki_app/tomcat/work/Catalina/localhost/ProEnv/org/apache/jsp/WEB_002dINF/views/user_005fedit_jsp.java] の [574] 行でエラーが発生しました
+_jspx_page_context cannot be resolved to a variable
+
+Stacktrace:] が根本的要因と共に投げられました
+	org.apache.jasper.JasperException: JSPのクラスをコンパイルできません: 
+
+JSPファイル: [/WEB-INF/views/user_edit.jsp] の中の [49] 行目でエラーが発生しました
+Syntax error, insert "Finally" to complete TryStatement
+46:                         <%= name %>
+47:                       <% }else if(name == null){} %>
+48:                         <p>  </p>
+49:                       <% } %>
+50:                       
+51:                     </div>
+52:                   </td>
+
+
+生成されたJavaファイル: [/Users/aokihayata/aoki_app/tomcat/work/Catalina/localhost/ProEnv/org/apache/jsp/WEB_002dINF/views/user_005fedit_jsp.java] の [559] 行でエラーが発生しました
+Syntax error on token "catch", Identifier expected
+
+生成されたJavaファイル: [/Users/aokihayata/aoki_app/tomcat/work/Catalina/localhost/ProEnv/org/apache/jsp/WEB_002dINF/views/user_005fedit_jsp.java] の [561] 行でエラーが発生しました
+out cannot be resolved to a variable
+
+生成されたJavaファイル: [/Users/aokihayata/aoki_app/tomcat/work/Catalina/localhost/ProEnv/org/apache/jsp/WEB_002dINF/views/user_005fedit_jsp.java] の [561] 行でエラーが発生しました
+_jspx_out cannot be resolved to a variable
+
+生成されたJavaファイル: [/Users/aokihayata/aoki_app/tomcat/work/Catalina/localhost/ProEnv/org/apache/jsp/WEB_002dINF/views/user_005fedit_jsp.java] の [562] 行でエラーが発生しました
+out cannot be resolved to a variable
+
+生成されたJavaファイル: [/Users/aokihayata/aoki_app/tomcat/work/Catalina/localhost/ProEnv/org/apache/jsp/WEB_002dINF/views/user_005fedit_jsp.java] の [562] 行でエラーが発生しました
+out cannot be resolved
+
+生成されたJavaファイル: [/Users/aokihayata/aoki_app/tomcat/work/Catalina/localhost/ProEnv/org/apache/jsp/WEB_002dINF/views/user_005fedit_jsp.java] の [564] 行でエラーが発生しました
+response cannot be resolved
+
+生成されたJavaファイル: [/Users/aokihayata/aoki_app/tomcat/work/Catalina/localhost/ProEnv/org/apache/jsp/WEB_002dINF/views/user_005fedit_jsp.java] の [565] 行でエラーが発生しました
+out cannot be resolved
+
+生成されたJavaファイル: [/Users/aokihayata/aoki_app/tomcat/work/Catalina/localhost/ProEnv/org/apache/jsp/WEB_002dINF/views/user_005fedit_jsp.java] の [567] 行でエラーが発生しました
+out cannot be resolved
+
+生成されたJavaファイル: [/Users/aokihayata/aoki_app/tomcat/work/Catalina/localhost/ProEnv/org/apache/jsp/WEB_002dINF/views/user_005fedit_jsp.java] の [570] 行でエラーが発生しました
+_jspx_page_context cannot be resolved to a variable
+
+生成されたJavaファイル: [/Users/aokihayata/aoki_app/tomcat/work/Catalina/localhost/ProEnv/org/apache/jsp/WEB_002dINF/views/user_005fedit_jsp.java] の [570] 行でエラーが発生しました
+_jspx_page_context cannot be resolved
+
+生成されたJavaファイル: [/Users/aokihayata/aoki_app/tomcat/work/Catalina/localhost/ProEnv/org/apache/jsp/WEB_002dINF/views/user_005fedit_jsp.java] の [573] 行でエラーが発生しました
+Syntax error on token "finally", { expected
+
+生成されたJavaファイル: [/Users/aokihayata/aoki_app/tomcat/work/Catalina/localhost/ProEnv/org/apache/jsp/WEB_002dINF/views/user_005fedit_jsp.java] の [574] 行でエラーが発生しました
+_jspx_page_context cannot be resolved to a variable
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:213)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:513)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:402)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:372)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:356)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:396)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:642)
+		at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:408)
+		at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:340)
+		at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:277)
+		at UserEdit.doGet(UserEdit.java:28)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:894)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1740)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:831)
+22-Nov-2023 00:11:22.095 重大 [http-nio-8080-exec-10] org.apache.catalina.core.ApplicationDispatcher.invoke サーブレット [jsp] のServlet.service()が例外を投げました
+	java.lang.NullPointerException: Cannot invoke "java.lang.Integer.intValue()" because the return value of "jakarta.servlet.http.HttpSession.getAttribute(String)" is null
+		at org.apache.jsp.WEB_002dINF.views.user_jsp._jspService(user_jsp.java:146)
+		at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:456)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:642)
+		at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:408)
+		at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:340)
+		at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:277)
+		at UserLogin.doGet(UserLogin.java:16)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:894)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1740)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:831)
+22-Nov-2023 00:11:22.095 重大 [http-nio-8080-exec-10] org.apache.catalina.core.StandardWrapperValve.invoke パス [/ProEnv] を持つコンテキスト内のサーブレット [UserLogin] のServlet.service() が例外 [[/WEB-INF/views/user.jsp] の処理中に行番号 [20] で例外が発生しました。
+
+17: 
+18:       <!-- リクエストスコープからログインユーザーのIDを取得する -->
+19:       <%String name = (String)session.getAttribute("name");%>
+20:       <%int age = (int)session.getAttribute("age");%>
+21:       <%String image = (String)session.getAttribute("image");%>
+22:       <%String gender = (String)session.getAttribute("gender");%>
+23:       <%String address = (String)session.getAttribute("address");%>
+
+
+Stacktrace:] が根本的要因と共に投げられました
+	java.lang.NullPointerException: Cannot invoke "java.lang.Integer.intValue()" because the return value of "jakarta.servlet.http.HttpSession.getAttribute(String)" is null
+		at org.apache.jsp.WEB_002dINF.views.user_jsp._jspService(user_jsp.java:146)
+		at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:456)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:642)
+		at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:408)
+		at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:340)
+		at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:277)
+		at UserLogin.doGet(UserLogin.java:16)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:894)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1740)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:831)
+22-Nov-2023 00:16:50.154 重大 [http-nio-8080-exec-5] org.apache.catalina.core.ApplicationDispatcher.invoke サーブレット [jsp] のServlet.service()が例外を投げました
+	java.lang.NullPointerException: Cannot invoke "java.lang.Integer.intValue()" because the return value of "jakarta.servlet.http.HttpSession.getAttribute(String)" is null
+		at org.apache.jsp.WEB_002dINF.views.user_jsp._jspService(user_jsp.java:146)
+		at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:456)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:642)
+		at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:408)
+		at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:340)
+		at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:277)
+		at UserLogin.doGet(UserLogin.java:16)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:894)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1740)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:831)
+22-Nov-2023 00:16:50.155 重大 [http-nio-8080-exec-5] org.apache.catalina.core.StandardWrapperValve.invoke パス [/ProEnv] を持つコンテキスト内のサーブレット [UserLogin] のServlet.service() が例外 [[/WEB-INF/views/user.jsp] の処理中に行番号 [20] で例外が発生しました。
+
+17: 
+18:       <!-- リクエストスコープからログインユーザーのIDを取得する -->
+19:       <%String name = (String)session.getAttribute("name");%>
+20:       <%int age = (int)session.getAttribute("age");%>
+21:       <%String image = (String)session.getAttribute("image");%>
+22:       <%String gender = (String)session.getAttribute("gender");%>
+23:       <%String address = (String)session.getAttribute("address");%>
+
+
+Stacktrace:] が根本的要因と共に投げられました
+	java.lang.NullPointerException: Cannot invoke "java.lang.Integer.intValue()" because the return value of "jakarta.servlet.http.HttpSession.getAttribute(String)" is null
+		at org.apache.jsp.WEB_002dINF.views.user_jsp._jspService(user_jsp.java:146)
+		at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:456)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:642)
+		at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:408)
+		at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:340)
+		at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:277)
+		at UserLogin.doGet(UserLogin.java:16)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:894)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1740)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:831)
+22-Nov-2023 01:11:57.641 情報 [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextDestroyed()
+22-Nov-2023 01:11:57.642 情報 [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextDestroyed()
+22-Nov-2023 01:12:00.969 情報 [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextInitialized()
+22-Nov-2023 01:12:00.969 情報 [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextInitialized()
+22-Nov-2023 01:12:00.971 情報 [main] org.apache.catalina.core.ApplicationContext.log ContextListener: attributeAdded('StockTicker', 'async.Stockticker@4bbc21bd')
+22-Nov-2023 01:18:14.071 重大 [http-nio-8080-exec-7] org.apache.catalina.core.ApplicationDispatcher.invoke サーブレット [jsp] のServlet.service()が例外を投げました
+	org.apache.jasper.JasperException: JSPのクラスをコンパイルできません: 
+
+JSPファイル: [/WEB-INF/views/other_user.jsp] の中の [34] 行目でエラーが発生しました
+image cannot be resolved to a variable
+31: 
+32:         <div class="container">
+33:           <img style="border-radius:50%; width:150px; height:150px; border: solid 1px #6b6767;" 
+34:           src= "<%=request.getContextPath() %><%= image %>">
+35:         </div>
+36:         
+37:         <% int message_id = session.getAttribute("message_id"); %>
+
+
+JSPファイル: [/WEB-INF/views/other_user.jsp] の中の [37] 行目でエラーが発生しました
+Type mismatch: cannot convert from Object to int
+34:           src= "<%=request.getContextPath() %><%= image %>">
+35:         </div>
+36:         
+37:         <% int message_id = session.getAttribute("message_id"); %>
+38:         
+39:           <!-- セッションスコープからログインユーザーのIDを取得する -->
+40:           <%String user_name = (String)session.getAttribute("name");%>
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:213)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:513)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:402)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:372)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:356)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:396)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:642)
+		at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:408)
+		at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:340)
+		at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:277)
+		at OtherUser.doGet(OtherUser.java:73)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:894)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1740)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:831)
+22-Nov-2023 01:18:31.796 重大 [http-nio-8080-exec-9] org.apache.catalina.core.ApplicationDispatcher.invoke サーブレット [jsp] のServlet.service()が例外を投げました
+	org.apache.jasper.JasperException: JSPのクラスをコンパイルできません: 
+
+JSPファイル: [/WEB-INF/views/other_user.jsp] の中の [34] 行目でエラーが発生しました
+image cannot be resolved to a variable
+31: 
+32:         <div class="container">
+33:           <img style="border-radius:50%; width:150px; height:150px; border: solid 1px #6b6767;" 
+34:           src= "<%=request.getContextPath() %><%= image %>">
+35:         </div>
+36:         
+37:         
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:213)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:513)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:402)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:372)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:356)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:396)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:642)
+		at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:408)
+		at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:340)
+		at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:277)
+		at OtherUser.doGet(OtherUser.java:73)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:894)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1740)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:831)
+22-Nov-2023 01:19:03.590 重大 [http-nio-8080-exec-2] org.apache.catalina.core.ApplicationDispatcher.invoke サーブレット [jsp] のServlet.service()が例外を投げました
+	org.apache.jasper.JasperException: JSPのクラスをコンパイルできません: 
+
+JSPファイル: [/WEB-INF/views/other_user.jsp] の中の [34] 行目でエラーが発生しました
+image cannot be resolved to a variable
+31: 
+32:         <div class="container">
+33:           <img style="border-radius:50%; width:150px; height:150px; border: solid 1px #6b6767;" 
+34:           src= "<%=request.getContextPath() %><%= image %>">
+35:         </div>
+36:         
+37: 
+
+
+JSPファイル: [/WEB-INF/views/other_user.jsp] の中の [39] 行目でエラーが発生しました
+other_user_name cannot be resolved to a variable
+36:         
+37: 
+38:         
+39:         <p style="text-align: center;"><span class="user-info"><%= other_user_name %></span></p>
+40:         
+41:         <div class="profile_eria">
+42:           <h4>ABOUT</h4>
+
+
+JSPファイル: [/WEB-INF/views/other_user.jsp] の中の [43] 行目でエラーが発生しました
+age cannot be resolved to a variable
+40:         
+41:         <div class="profile_eria">
+42:           <h4>ABOUT</h4>
+43:           <p>年齢 : <span class="user-info"><%= age %>歳</span></p>
+44:           <p>居住地 : <span class="user-info"><%= address %></span></p>
+45:           <p>職業 : <span class="user-info"><%= job %></span></p>
+46:         </div>
+
+
+JSPファイル: [/WEB-INF/views/other_user.jsp] の中の [44] 行目でエラーが発生しました
+address cannot be resolved to a variable
+41:         <div class="profile_eria">
+42:           <h4>ABOUT</h4>
+43:           <p>年齢 : <span class="user-info"><%= age %>歳</span></p>
+44:           <p>居住地 : <span class="user-info"><%= address %></span></p>
+45:           <p>職業 : <span class="user-info"><%= job %></span></p>
+46:         </div>
+47:         
+
+
+JSPファイル: [/WEB-INF/views/other_user.jsp] の中の [45] 行目でエラーが発生しました
+job cannot be resolved to a variable
+42:           <h4>ABOUT</h4>
+43:           <p>年齢 : <span class="user-info"><%= age %>歳</span></p>
+44:           <p>居住地 : <span class="user-info"><%= address %></span></p>
+45:           <p>職業 : <span class="user-info"><%= job %></span></p>
+46:         </div>
+47:         
+48:         
+
+
+JSPファイル: [/WEB-INF/views/other_user.jsp] の中の [50] 行目でエラーが発生しました
+id cannot be resolved to a variable
+47:         
+48:         
+49:         <form id="follow_button">
+50:           <a type="submit" name="followee_id" value="<%=id %>" v-if="isActive" v-on:click="active" class="btn btn--orange btn--radius followYet"><i class="fa-solid fa-heart"></i>いいね！</a>
+51:           <a v-else class="btn btn--orange btn--radius followDone"><i class="fa-solid fa-heart"></i>いいね！</a>
+52:         </form>
+53:         
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:213)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:513)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:402)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:372)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:356)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:396)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:642)
+		at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:408)
+		at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:340)
+		at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:277)
+		at OtherUser.doGet(OtherUser.java:73)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:894)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1740)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:831)
+22-Nov-2023 01:22:32.527 重大 [http-nio-8080-exec-2] org.apache.catalina.core.ApplicationDispatcher.invoke サーブレット [jsp] のServlet.service()が例外を投げました
+	org.apache.jasper.JasperException: JSPのクラスをコンパイルできません: 
+
+JSPファイル: [/WEB-INF/views/other_user.jsp] の中の [19] 行目でエラーが発生しました
+Type mismatch: cannot convert from Object to int
+16:         <title>JavaApp</title>
+17:     </head>
+18:     <body>
+19:         <% int message_id = session.getAttribute("message_id"); %>
+20: 
+21:         <!-- セッションスコープからログインユーザーのIDを取得する -->
+22:         <%String user_name = (String)session.getAttribute("name");%>
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:213)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:513)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:402)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:372)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:356)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:396)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:642)
+		at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:408)
+		at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:340)
+		at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:277)
+		at OtherUser.doGet(OtherUser.java:73)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:894)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1740)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:831)
+22-Nov-2023 01:22:37.518 重大 [http-nio-8080-exec-3] org.apache.catalina.core.ApplicationDispatcher.invoke サーブレット [jsp] のServlet.service()が例外を投げました
+	org.apache.jasper.JasperException: JSPのクラスをコンパイルできません: 
+
+JSPファイル: [/WEB-INF/views/other_user.jsp] の中の [19] 行目でエラーが発生しました
+Type mismatch: cannot convert from Object to int
+16:         <title>JavaApp</title>
+17:     </head>
+18:     <body>
+19:         <% int message_id = session.getAttribute("message_id"); %>
+20: 
+21:         <!-- セッションスコープからログインユーザーのIDを取得する -->
+22:         <%String user_name = (String)session.getAttribute("name");%>
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:213)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:513)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:402)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:372)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:356)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:396)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:642)
+		at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:408)
+		at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:340)
+		at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:277)
+		at OtherUser.doGet(OtherUser.java:73)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:894)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1740)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:831)
+22-Nov-2023 01:22:42.423 重大 [http-nio-8080-exec-5] org.apache.catalina.core.ApplicationDispatcher.invoke サーブレット [jsp] のServlet.service()が例外を投げました
+	org.apache.jasper.JasperException: JSPのクラスをコンパイルできません: 
+
+JSPファイル: [/WEB-INF/views/other_user.jsp] の中の [19] 行目でエラーが発生しました
+Type mismatch: cannot convert from Object to int
+16:         <title>JavaApp</title>
+17:     </head>
+18:     <body>
+19:         <% int message_id = session.getAttribute("message_id"); %>
+20: 
+21:         <!-- セッションスコープからログインユーザーのIDを取得する -->
+22:         <%String user_name = (String)session.getAttribute("name");%>
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:213)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:513)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:402)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:372)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:356)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:396)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:642)
+		at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:408)
+		at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:340)
+		at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:277)
+		at OtherUser.doGet(OtherUser.java:73)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:894)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1740)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:831)
+22-Nov-2023 01:27:07.800 重大 [http-nio-8080-exec-3] org.apache.catalina.core.ApplicationDispatcher.invoke サーブレット [jsp] のServlet.service()が例外を投げました
+	org.apache.jasper.JasperException: JSPのクラスをコンパイルできません: 
+
+JSPファイル: [/WEB-INF/views/other_user.jsp] の中の [34] 行目でエラーが発生しました
+Incompatible operand types String and int
+31:         </header>
+32: 
+33: 
+34:         <% if(message_id == 1) { %>
+35:           <!-- セッションスコープからログインユーザーのIDを取得する -->
+36:           <%String user_name = (String)session.getAttribute("name");%>
+37: 
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:213)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:513)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:402)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:372)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:356)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:396)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:642)
+		at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:408)
+		at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:340)
+		at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:277)
+		at OtherUser.doGet(OtherUser.java:73)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:894)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1740)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:831)
+22-Nov-2023 01:27:12.214 重大 [http-nio-8080-exec-5] org.apache.catalina.core.ApplicationDispatcher.invoke サーブレット [jsp] のServlet.service()が例外を投げました
+	org.apache.jasper.JasperException: JSPのクラスをコンパイルできません: 
+
+JSPファイル: [/WEB-INF/views/other_user.jsp] の中の [34] 行目でエラーが発生しました
+Incompatible operand types String and int
+31:         </header>
+32: 
+33: 
+34:         <% if(message_id == 1) { %>
+35:           <!-- セッションスコープからログインユーザーのIDを取得する -->
+36:           <%String user_name = (String)session.getAttribute("name");%>
+37: 
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:213)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:513)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:402)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:372)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:356)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:396)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:642)
+		at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:408)
+		at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:340)
+		at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:277)
+		at OtherUser.doGet(OtherUser.java:73)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:894)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1740)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:831)
+22-Nov-2023 01:30:01.656 重大 [http-nio-8080-exec-9] org.apache.catalina.core.ApplicationDispatcher.invoke サーブレット [jsp] のServlet.service()が例外を投げました
+	org.apache.jasper.JasperException: JSPのクラスをコンパイルできません: 
+
+JSPファイル: [/WEB-INF/views/other_user.jsp] の中の [34] 行目でエラーが発生しました
+Incompatible operand types String and int
+31:         </header>
+32: 
+33: 
+34:         <% if(message_id == 1) { %>
+35:           <!-- セッションスコープからログインユーザーのIDを取得する -->
+36:           <%String user_name = (String)session.getAttribute("name");%>
+37: 
+
+
+JSPファイル: [/WEB-INF/views/other_user.jsp] の中の [64] 行目でエラーが発生しました
+Incompatible operand types String and int
+61:             <a type="submit" name="followee_id" value="<%=id %>" v-if="isActive" v-on:click="active" class="btn btn--orange btn--radius followYet"><i class="fa-solid fa-heart"></i>いいね！</a>
+62:             <a v-else class="btn btn--orange btn--radius followDone"><i class="fa-solid fa-heart"></i>いいね！</a>
+63:           </form>
+64:           <% }else if(message_id == null || message_id == 2){ %>
+65:             <p>お探しのページは見つかりません</p>
+66:           <% } %> 
+67:        
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:213)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:513)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:402)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:372)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:356)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:396)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:642)
+		at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:408)
+		at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:340)
+		at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:277)
+		at OtherUser.doGet(OtherUser.java:73)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:894)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1740)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:831)
+22-Nov-2023 01:31:48.460 重大 [http-nio-8080-exec-3] org.apache.catalina.core.ApplicationDispatcher.invoke サーブレット [jsp] のServlet.service()が例外を投げました
+	java.lang.NumberFormatException: null
+		at java.base/java.lang.Integer.parseInt(Integer.java:622)
+		at java.base/java.lang.Integer.parseInt(Integer.java:778)
+		at org.apache.jsp.WEB_002dINF.views.other_005fuser_jsp._jspService(other_005fuser_jsp.java:143)
+		at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:456)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:642)
+		at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:408)
+		at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:340)
+		at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:277)
+		at OtherUser.doGet(OtherUser.java:73)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:894)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1740)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:831)
+22-Nov-2023 01:32:20.776 重大 [http-nio-8080-exec-7] org.apache.catalina.core.ApplicationDispatcher.invoke サーブレット [jsp] のServlet.service()が例外を投げました
+	org.apache.jasper.JasperException: JSPのクラスをコンパイルできません: 
+
+JSPファイル: [/WEB-INF/views/other_user.jsp] の中の [34] 行目でエラーが発生しました
+message_id cannot be resolved to a variable
+31:         </header>
+32: 
+33: 
+34:         <% if(message_id == 1) { %>
+35:           <!-- セッションスコープからログインユーザーのIDを取得する -->
+36:           <%String user_name = (String)session.getAttribute("name");%>
+37: 
+
+
+生成されたJavaファイル: [/Users/aokihayata/aoki_app/tomcat/work/Catalina/localhost/ProEnv/org/apache/jsp/WEB_002dINF/views/other_005fuser_jsp.java] の [292] 行でエラーが発生しました
+Syntax error, insert "else Statement" to complete IfStatement
+
+生成されたJavaファイル: [/Users/aokihayata/aoki_app/tomcat/work/Catalina/localhost/ProEnv/org/apache/jsp/WEB_002dINF/views/other_005fuser_jsp.java] の [292] 行でエラーが発生しました
+Syntax error, insert "}" to complete Block
+
+生成されたJavaファイル: [/Users/aokihayata/aoki_app/tomcat/work/Catalina/localhost/ProEnv/org/apache/jsp/WEB_002dINF/views/other_005fuser_jsp.java] の [309] 行でエラーが発生しました
+Syntax error on token "}", delete this token
+
+生成されたJavaファイル: [/Users/aokihayata/aoki_app/tomcat/work/Catalina/localhost/ProEnv/org/apache/jsp/WEB_002dINF/views/other_005fuser_jsp.java] の [310] 行でエラーが発生しました
+Syntax error, insert "}" to complete ClassBody
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:213)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:513)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:402)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:372)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:356)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:396)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:642)
+		at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:408)
+		at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:340)
+		at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:277)
+		at OtherUser.doGet(OtherUser.java:73)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:894)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1740)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:831)
+22-Nov-2023 01:47:46.791 情報 [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextDestroyed()
+22-Nov-2023 01:47:46.791 情報 [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextDestroyed()
+22-Nov-2023 01:47:49.697 情報 [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextInitialized()
+22-Nov-2023 01:47:49.697 情報 [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextInitialized()
+22-Nov-2023 01:47:49.698 情報 [main] org.apache.catalina.core.ApplicationContext.log ContextListener: attributeAdded('StockTicker', 'async.Stockticker@13e1e816')

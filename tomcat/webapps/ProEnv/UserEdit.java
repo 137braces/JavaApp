@@ -31,7 +31,7 @@ public class UserEdit extends HttpServlet {
 
     public void doPost(HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException {
        
-            HttpSession session = request.getSession();
+            HttpSession session = request.getSession(false);
             String id = (String)session.getAttribute("id");
 
             // Beanを生成
