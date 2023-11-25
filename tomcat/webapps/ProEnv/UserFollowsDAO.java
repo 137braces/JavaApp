@@ -55,7 +55,8 @@ public class UserFollowsDAO {
             //要は相手も自分をフォローしているか検索したい。
 
             ResultSet res = ps.executeQuery();
-
+            
+            //SELECT文の結果を格納する変数
             boolean resNext;
             
             //相互フォロー状態(マッチング)になったときの処理。
@@ -68,7 +69,7 @@ public class UserFollowsDAO {
 
             followBean.setResNext(resNext);
             
-            
+
             }catch (SQLException e) {
                 e.printStackTrace();          
             }
