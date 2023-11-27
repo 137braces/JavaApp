@@ -2,37 +2,66 @@ package test;
 
 import pakage.userbean.UserBean;
 
-public class UserRegister {
+public class UserRegister{
+
     public static void main(String[] args) {
-        //getParameter()から取り出した値
-        String name = "22222";
-        String email = "aokitaddwro0713@gmail.com";
-        String password = "mikan0713";
+        
+        //テストを実行したら下記DELETE文でデータを削除。
+        //delete from users where name = 'カミキヒカル';
+        String error_message = "";
+
+        String name = "カミキヒカル";
+        //String name = null;
+
+        String email = "hikaru@gmail.com";
+        //String email = null;
+
+        String password = "Ringo0713@";
+        //String password = null;
+        //String password = ringo0713;
+
 
         // Beanを生成
         UserBean userBean = new UserBean();
 
-        // getterを使ってプロパティを代入
-        userBean.setName(name);
-        userBean.setEmail(email);
+        if((name == null || email == null) || (password == null || userBean.validatePassword(password))){
 
-        //setPasswordメソッドはパスワードをハッシュ化。
-        userBean.setPassword(password);
+            // getterを使ってプロパティを代入
+            userBean.setName(name);
+            userBean.setEmail(email);
+            userBean.setHash(password);
 
-        //パスワードがハッシュ化されているかの確認。
-        System.out.println(userBean.getPassword());
+            UserRegisterDAO dbRegister = new UserRegisterDAO(userBean);
+            
+            if(userBean.getRes() != 0){
+                if(userBean.getResNext()){
+                    //ユーザー登録(INSERT)に成功した場合の処理
+                    System.out.println("登録内容：" + userBean.getName() + 
+                    userBean.getEmail() + userBean.getHash());
 
-        UserRegisterDAO dbRegister = new UserRegisterDAO(userBean);
+                    String path = "/WEB-INF/views/userRegisterResult.jsp";
+                    System.out.println("遷移先："+ path);
+                }else{
+                    System.out.println("テスト失敗");
+                }
 
+            }else if(userBean.getRes() == 0){
+                error_message = "入力内容に不備があります。";
+                System.out.println(error_message);
 
-        if(userBean.getRes() != 0){
-            System.out.println("登録成功");
-        } else if(userBean.getRes() == 0) {
-            System.out.println("登録失敗");
+                String path = "/WEB-INF/views/login.jsp";
+                System.out.println("遷移先："+ path);
+            }
+        
+        }else{
+            error_message = "入力された内容に不備があります。";
+            System.out.println(error_message);
+
+            String path = "/WEB-INF/views/login.jsp";
+            System.out.println("遷移先："+ path);
         }
+    }        
 
-        //↓↓テストが終わったら登録した1行のデータを削除
-        //DELETE FROM users ORDER BY column_name id LIMIT 1;
-    
-    }
 }
+
+//INSERT INTO users (name, email, password, gender, address, age ) VALUES ("星野さん", "ho@gmail.com", "mikan0713", "男性", "兵庫県", 29)

@@ -1,7 +1,5 @@
 package test;
 
-import java.util.Random;
-
 import pakage.follwbean.FollowBean;
 
 public class UserVisit_doPost {

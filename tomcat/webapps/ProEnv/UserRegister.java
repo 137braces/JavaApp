@@ -19,36 +19,55 @@ public class UserRegister extends HttpServlet {
     
     public void doPost(HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException {
         
+        //テストを実行したら下記DELETE文でデータを削除。
+        //Delete from users where id = (select is from users order by id desc limit1);
+        String error_message = "";
+
         String name = request.getParameter("name");
         String email = request.getParameter("email");
         String password = request.getParameter("password");
 
-        
-        
         // Beanを生成
         UserBean userBean = new UserBean();
 
-        // getterを使ってプロパティを代入
-        userBean.setName(name);
-        userBean.setEmail(email);
-        userBean.setPassword(password);
+        if((name == null || email == null) || (userBean.validatePassword(password))){
 
-        UserRegisterDAO dbRegister = new UserRegisterDAO(userBean);
-        HttpSession session = request.getSession();
-        session.setAttribute("name", userBean.getName());
+            // getterを使ってプロパティを代入
+            userBean.setName(name);
+            userBean.setEmail(email);
+            userBean.setHash(password);
 
-        if(userBean.getRes() != 0){
+            UserRegisterDAO dbRegister = new UserRegisterDAO(userBean);
             
+            if(userBean.getRes() != 0){
+                if(userBean.getResNext()){
+                    //ユーザー登録(INSERT)に成功した場合の処理
+                    HttpSession session = request.getSession();
+                    session.setAttribute("name", userBean.getId());
+                    session.setAttribute("name", userBean.getName());
 
-        } else {
+                    String path = "/WEB-INF/views/userRegisterResult.jsp";
+                    RequestDispatcher rd = request.getRequestDispatcher(path);
+                    rd.forward(request, response);
 
+                }else{
+
+                }
+
+            }else if(userBean.getRes() == 0){
+                String path = "/WEB-INF/views/login.jsp";
+                RequestDispatcher rd = request.getRequestDispatcher(path);
+                rd.forward(request, response);
+            }
+        
+        }else{
+            error_message = "入力された内容に不備があります。";
+            request.setAttribute("error_message",error_message);
+
+            String path = "/WEB-INF/views/login.jsp";
+            RequestDispatcher rd = request.getRequestDispatcher(path);
+            rd.forward(request, response);
         }
-
-        
-        String path = "/WEB-INF/views/userRegisterResult.jsp";
-        RequestDispatcher rd = request.getRequestDispatcher(path);
-        rd.forward(request, response);
-        
         
     }
         
